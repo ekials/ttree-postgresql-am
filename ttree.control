@@ -1,0 +1,4 @@
+comment = 'T-Tree como Index Access Method (proyecto BD2)'
+default_version = '1.0'
+module_pathname = '$libdir/ttree'
+relocatable = true
