@@ -1,0 +1,22 @@
+fecha: 2026-11-20T12:42:43-05:00
+par;rtt_min_ms;rtt_prom_ms;rtt_max_ms (ping, 10 paquetes)
+nodo_a->nodo_b;20.186;20.668;22.432
+nodo_a->nodo_c;40.223;40.496;41.054
+nodo_b->nodo_a;20.213;20.423;21.378
+nodo_b->nodo_c;25.224;25.486;26.902
+nodo_c->nodo_a;40.209;40.719;42.152
+nodo_c->nodo_b;25.331;25.677;27.048
+
+reglas tc activas por nodo:
+-- nodo_a
+qdisc prio 1: root refcnt 9 bands 4 priomap 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+qdisc netem 10: parent 1:1 limit 1000 delay 10ms seed 4141038554879657077
+qdisc netem 20: parent 1:2 limit 1000 delay 20ms seed 9705414326490237595
+-- nodo_b
+qdisc prio 1: root refcnt 9 bands 4 priomap 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+qdisc netem 10: parent 1:1 limit 1000 delay 10ms seed 5009920650640724107
+qdisc netem 20: parent 1:2 limit 1000 delay 12.5ms seed 10720078303607019617
+-- nodo_c
+qdisc prio 1: root refcnt 9 bands 4 priomap 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+qdisc netem 10: parent 1:1 limit 1000 delay 20ms seed 12860941563986430774
+qdisc netem 20: parent 1:2 limit 1000 delay 12.5ms seed 9163400137196469374
