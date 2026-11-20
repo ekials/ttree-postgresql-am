@@ -8,6 +8,7 @@ METODOS="${METODOS:-sin_indice btree ttree}"
 DATASETS="${DATASETS:-d1 d2 d3}"
 TAMANOS="${TAMANOS:-100000 500000 1000000}"
 REPS="${REPS:-5}"
+REP_INICIO="${REP_INICIO:-1}"
 SALIDA="benchmarks/results/${CFG}"
 
 PSQL=(docker compose exec -T -e PGOPTIONS=-cclient_min_messages=warning db psql -X -U postgres -v ON_ERROR_STOP=1)
@@ -66,7 +67,7 @@ for ds in $DATASETS; do
             -v archivo_w1="/benchdata/${ds}_${n}_w1.csv" -v archivo_w2="/benchdata/${ds}_${n}_w2.csv" \
             -v archivo_w3="/benchdata/${ds}_${n}_w3.csv" -v archivo_w4="/benchdata/${ds}_${n}_w4.csv" \
             -f /benchmarks/sql/cargar.sql
-        for rep in $(seq 1 "$REPS"); do
+        for rep in $(seq "$REP_INICIO" "$REPS"); do
             for metodo in $METODOS; do
                 if [[ "$metodo" == "ttree" && ( "$ds" == "d4" || "$ds" == "d5" ) ]]; then
                     [[ "$rep" == "1" ]] && log "$ds: ttree no aplica (opclass solo para int4)"
