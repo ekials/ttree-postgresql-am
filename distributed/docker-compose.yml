@@ -1,0 +1,79 @@
+name: ttree-dist
+
+x-nodo: &nodo
+  image: ttree-dist-nodo
+  pull_policy: never
+  cap_add:
+    - NET_ADMIN
+  environment:
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_DB: dist
+  command:
+    - postgres
+    - -c
+    - shared_buffers=512MB
+    - -c
+    - wal_level=logical
+    - -c
+    - max_wal_senders=10
+    - -c
+    - max_replication_slots=10
+    - -c
+    - max_wal_size=4GB
+    - -c
+    - listen_addresses=*
+  healthcheck:
+    test: ["CMD-SHELL", "pg_isready -U postgres -d dist"]
+    interval: 3s
+    timeout: 3s
+    retries: 30
+
+services:
+  nodo_a:
+    <<: *nodo
+    build:
+      context: ..
+      dockerfile: distributed/docker/Dockerfile
+      args:
+        TT_MAX_KEYS: "${TT_MAX_KEYS:-500}"
+    container_name: nodo_a
+    hostname: nodo_a
+    networks:
+      red:
+        ipv4_address: 172.28.0.11
+    volumes:
+      - datos_a:/var/lib/postgresql
+      - .:/distributed:ro
+
+  nodo_b:
+    <<: *nodo
+    container_name: nodo_b
+    hostname: nodo_b
+    networks:
+      red:
+        ipv4_address: 172.28.0.12
+    volumes:
+      - datos_b:/var/lib/postgresql
+      - .:/distributed:ro
+
+  nodo_c:
+    <<: *nodo
+    container_name: nodo_c
+    hostname: nodo_c
+    networks:
+      red:
+        ipv4_address: 172.28.0.13
+    volumes:
+      - datos_c:/var/lib/postgresql
+      - .:/distributed:ro
+
+networks:
+  red:
+    ipam:
+      config:
+        - subnet: 172.28.0.0/24
+
+volumes:
+  datos_a:
+  datos_b:
+  datos_c:

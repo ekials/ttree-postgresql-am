@@ -1,0 +1,63 @@
+Pager usage is off.
+SET
+== cobertura y solapamiento de fragmentos (consultado desde el nodo A) ==
+CREATE TABLE
+DO
+ estrategia |  tabla   |        fragmento        | filas  | min_cliente | max_cliente 
+------------+----------+-------------------------+--------+-------------+-------------
+ hash       | clientes | hash.clientes_a         | 100375 |           2 |      300000
+ hash       | clientes | remoto.hash_clientes_b  |  99822 |           3 |      299999
+ hash       | clientes | remoto.hash_clientes_c  |  99803 |           1 |      299998
+ hash       | detalle  | hash.detalle_a          | 669316 |           2 |      300000
+ hash       | detalle  | remoto.hash_detalle_b   | 666530 |           3 |      299999
+ hash       | detalle  | remoto.hash_detalle_c   | 664154 |           1 |      299998
+ hash       | pedidos  | hash.pedidos_a          | 334796 |           2 |      300000
+ hash       | pedidos  | remoto.hash_pedidos_b   | 332827 |           3 |      299999
+ hash       | pedidos  | remoto.hash_pedidos_c   | 332377 |           1 |      299998
+ rango      | clientes | rango.clientes_a        | 100000 |           1 |      100000
+ rango      | clientes | remoto.rango_clientes_b | 100000 |      100001 |      200000
+ rango      | clientes | remoto.rango_clientes_c | 100000 |      200001 |      300000
+ rango      | detalle  | rango.detalle_a         | 667720 |           1 |      100000
+ rango      | detalle  | remoto.rango_detalle_b  | 663772 |      100002 |      200000
+ rango      | detalle  | remoto.rango_detalle_c  | 668508 |      200001 |      300000
+ rango      | pedidos  | rango.pedidos_a         | 334256 |           1 |      100000
+ rango      | pedidos  | remoto.rango_pedidos_b  | 331767 |      100002 |      200000
+ rango      | pedidos  | remoto.rango_pedidos_c  | 333977 |      200001 |      300000
+(18 rows)
+
+CREATE TABLE
+DO
+ estrategia |  tabla   |                          prueba                          | ok |      detalle      
+------------+----------+----------------------------------------------------------+----+-------------------
+ hash       | clientes | cobertura: filas globales = filas generadas              | t  | 300000 / 300000
+ hash       | clientes | reconstruccion: generadas EXCEPT ALL union de fragmentos | t  | 0
+ hash       | clientes | sin solapamiento: claves distintas = filas               | t  | 300000 / 300000
+ hash       | detalle  | cobertura: filas globales = filas generadas              | t  | 2000000 / 2000000
+ hash       | detalle  | reconstruccion: generadas EXCEPT ALL union de fragmentos | t  | 0
+ hash       | detalle  | sin solapamiento: claves distintas = filas               | t  | 2000000 / 2000000
+ hash       | pedidos  | cobertura: filas globales = filas generadas              | t  | 1000000 / 1000000
+ hash       | pedidos  | pedido en el mismo nodo que su cliente                   | t  | 0
+ hash       | pedidos  | reconstruccion: generadas EXCEPT ALL union de fragmentos | t  | 0
+ hash       | pedidos  | sin solapamiento: claves distintas = filas               | t  | 1000000 / 1000000
+ rango      | *        | predicado de rango respetado en cada fragmento           | t  | 0
+ rango      | clientes | cobertura: filas globales = filas generadas              | t  | 300000 / 300000
+ rango      | clientes | reconstruccion: generadas EXCEPT ALL union de fragmentos | t  | 0
+ rango      | clientes | sin solapamiento: claves distintas = filas               | t  | 300000 / 300000
+ rango      | detalle  | cobertura: filas globales = filas generadas              | t  | 2000000 / 2000000
+ rango      | detalle  | reconstruccion: generadas EXCEPT ALL union de fragmentos | t  | 0
+ rango      | detalle  | sin solapamiento: claves distintas = filas               | t  | 2000000 / 2000000
+ rango      | pedidos  | cobertura: filas globales = filas generadas              | t  | 1000000 / 1000000
+ rango      | pedidos  | reconstruccion: generadas EXCEPT ALL union de fragmentos | t  | 0
+ rango      | pedidos  | sin solapamiento: claves distintas = filas               | t  | 1000000 / 1000000
+(20 rows)
+
+    resultado    
+-----------------
+ VERIFICACION OK
+(1 row)
+
+ fallar_si_hay_error 
+---------------------
+                   1
+(1 row)
+
