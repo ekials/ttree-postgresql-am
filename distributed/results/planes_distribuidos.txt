@@ -1,0 +1,544 @@
+==== hash / btree / q1_cliente_remoto_c ====
+SELECT p.id_pedido, p.fecha, p.total, d.linea, d.id_producto, d.cantidad
+               FROM pedidos p JOIN detalle d ON d.id_pedido = p.id_pedido AND d.id_cliente = p.id_cliente
+               WHERE p.id_cliente = 1000
+Foreign Scan (actual time=81.253..81.257 rows=1.00 loops=1)
+  Output: p.id_pedido, p.fecha, p.total, d.linea, d.id_producto, d.cantidad
+  Relations: (remoto.hash_pedidos_c p) INNER JOIN (remoto.hash_detalle_c d)
+  Remote SQL: SELECT r4.id_pedido, r4.fecha, r4.total, r5.linea, r5.id_producto, r5.cantidad FROM (hash.pedidos_c r4 INNER JOIN hash.detalle_c r5 ON (((r4.id_pedido = r5.id_pedido)) AND ((r5.id_cliente = 1000)) AND ((r4.id_cliente = 1000))))
+Planning Time: 0.121 ms
+Execution Time: 161.991 ms
+
+==== hash / btree / q2_rango_1000_clientes ====
+SELECT count(*), sum(total) FROM pedidos WHERE id_cliente BETWEEN 150000 AND 150999
+Finalize Aggregate (actual time=207.030..207.037 rows=1.00 loops=1)
+  Output: count(*), sum(pedidos.total)
+  Buffers: shared hit=942
+  ->  Append (actual time=1.495..207.023 rows=3.00 loops=1)
+        Buffers: shared hit=942
+        ->  Partial Aggregate (actual time=1.494..1.497 rows=1.00 loops=1)
+              Output: PARTIAL count(*), PARTIAL sum(pedidos.total)
+              Buffers: shared hit=942
+              ->  Bitmap Heap Scan on hash.pedidos_a pedidos (actual time=0.282..1.374 rows=1178.00 loops=1)
+                    Output: pedidos.total
+                    Recheck Cond: ((pedidos.id_cliente >= 150000) AND (pedidos.id_cliente <= 150999))
+                    Heap Blocks: exact=937
+                    Buffers: shared hit=942
+                    ->  Bitmap Index Scan on pedidos_a_cliente_idx (actual time=0.182..0.182 rows=1178.00 loops=1)
+                          Index Cond: ((pedidos.id_cliente >= 150000) AND (pedidos.id_cliente <= 150999))
+                          Index Searches: 1
+                          Buffers: shared hit=5
+        ->  Partial Aggregate (actual time=83.014..83.015 rows=1.00 loops=1)
+              Output: PARTIAL count(*), PARTIAL sum(pedidos_1.total)
+              ->  Foreign Scan on remoto.hash_pedidos_b pedidos_1 (actual time=62.393..82.931 rows=1159.00 loops=1)
+                    Output: pedidos_1.total
+                    Remote SQL: SELECT total FROM hash.pedidos_b WHERE ((id_cliente >= 150000)) AND ((id_cliente <= 150999))
+        ->  Partial Aggregate (actual time=122.503..122.504 rows=1.00 loops=1)
+              Output: PARTIAL count(*), PARTIAL sum(pedidos_2.total)
+              ->  Foreign Scan on remoto.hash_pedidos_c pedidos_2 (actual time=82.012..122.420 rows=1019.00 loops=1)
+                    Output: pedidos_2.total
+                    Remote SQL: SELECT total FROM hash.pedidos_c WHERE ((id_cliente >= 150000)) AND ((id_cliente <= 150999))
+Planning Time: 0.121 ms
+Execution Time: 328.940 ms
+
+==== hash / btree / q3_agregado_global_region ====
+SELECT c.region, count(*), sum(p.total) FROM pedidos p JOIN clientes c ON c.id_cliente = p.id_cliente GROUP BY c.region
+Finalize GroupAggregate (actual time=27733.896..27733.913 rows=3.00 loops=1)
+  Output: c.region, count(*), sum(p.total)
+  Group Key: c.region
+  Buffers: shared hit=3376
+  ->  Sort (actual time=27733.878..27733.893 rows=9.00 loops=1)
+        Output: c.region, (PARTIAL count(*)), (PARTIAL sum(p.total))
+        Sort Key: c.region
+        Sort Method: quicksort  Memory: 25kB
+        Buffers: shared hit=3376
+        ->  Append (actual time=129.497..27733.859 rows=9.00 loops=1)
+              Buffers: shared hit=3376
+              ->  Partial HashAggregate (actual time=129.496..129.503 rows=3.00 loops=1)
+                    Output: c.region, PARTIAL count(*), PARTIAL sum(p.total)
+                    Group Key: c.region
+                    Batches: 1  Memory Usage: 32kB
+                    Buffers: shared hit=3376
+                    ->  Hash Join (actual time=24.396..94.785 rows=334821.00 loops=1)
+                          Output: c.region, p.total
+                          Hash Cond: (p.id_cliente = c.id_cliente)
+                          Buffers: shared hit=3376
+                          ->  Seq Scan on hash.pedidos_a p (actual time=9.638..25.528 rows=334821.00 loops=1)
+                                Output: p.total, p.id_cliente
+                                Buffers: shared hit=2549
+                          ->  Hash (actual time=14.390..14.392 rows=100375.00 loops=1)
+                                Output: c.region, c.id_cliente
+                                Buckets: 131072  Batches: 1  Memory Usage: 5206kB
+                                Buffers: shared hit=827
+                                ->  Seq Scan on hash.clientes_a c (actual time=0.027..5.304 rows=100375.00 loops=1)
+                                      Output: c.region, c.id_cliente
+                                      Buffers: shared hit=827
+              ->  Partial HashAggregate (actual time=9378.919..9378.924 rows=3.00 loops=1)
+                    Output: c_1.region, PARTIAL count(*), PARTIAL sum(p_1.total)
+                    Group Key: c_1.region
+                    Batches: 1  Memory Usage: 32kB
+                    ->  Hash Join (actual time=2175.311..9339.649 rows=332827.00 loops=1)
+                          Output: c_1.region, p_1.total
+                          Hash Cond: (p_1.id_cliente = c_1.id_cliente)
+                          ->  Foreign Scan on remoto.hash_pedidos_b p_1 (actual time=41.206..6996.932 rows=332827.00 loops=1)
+                                Output: p_1.total, p_1.id_cliente
+                                Remote SQL: SELECT id_cliente, total FROM hash.pedidos_b
+                          ->  Hash (actual time=2133.476..2133.478 rows=99822.00 loops=1)
+                                Output: c_1.region, c_1.id_cliente
+                                Buckets: 131072  Batches: 1  Memory Usage: 5183kB
+                                ->  Foreign Scan on remoto.hash_clientes_b c_1 (actual time=41.252..2102.953 rows=99822.00 loops=1)
+                                      Output: c_1.region, c_1.id_cliente
+                                      Remote SQL: SELECT id_cliente, region FROM hash.clientes_b
+              ->  Partial HashAggregate (actual time=18225.421..18225.424 rows=3.00 loops=1)
+                    Output: c_2.region, PARTIAL count(*), PARTIAL sum(p_2.total)
+                    Group Key: c_2.region
+                    Batches: 1  Memory Usage: 32kB
+                    ->  Hash Join (actual time=4304.005..18183.505 rows=332429.00 loops=1)
+                          Output: c_2.region, p_2.total
+                          Hash Cond: (p_2.id_cliente = c_2.id_cliente)
+                          ->  Foreign Scan on remoto.hash_pedidos_c p_2 (actual time=122.850..13776.126 rows=332429.00 loops=1)
+                                Output: p_2.total, p_2.id_cliente
+                                Remote SQL: SELECT id_cliente, total FROM hash.pedidos_c
+                          ->  Hash (actual time=4180.308..4180.309 rows=99803.00 loops=1)
+                                Output: c_2.region, c_2.id_cliente
+                                Buckets: 131072  Batches: 1  Memory Usage: 5184kB
+                                ->  Foreign Scan on remoto.hash_clientes_c c_2 (actual time=82.290..4147.073 rows=99803.00 loops=1)
+                                      Output: c_2.region, c_2.id_cliente
+                                      Remote SQL: SELECT id_cliente, region FROM hash.clientes_c
+Planning:
+  Buffers: shared hit=16
+Planning Time: 0.345 ms
+Execution Time: 27919.682 ms
+
+==== hash / btree / q5_join_productos_replicados ====
+SELECT pr.categoria, sum(d.cantidad * d.precio) FROM detalle d JOIN ref.productos pr ON pr.id_producto = d.id_producto
+     WHERE d.id_cliente BETWEEN 250000 AND 250499 GROUP BY pr.categoria
+GroupAggregate (actual time=212.547..212.926 rows=8.00 loops=1)
+  Output: pr.categoria, sum(((d.cantidad)::numeric * d.precio))
+  Group Key: pr.categoria
+  Buffers: shared hit=584
+  ->  Sort (actual time=212.465..212.561 rows=3433.00 loops=1)
+        Output: pr.categoria, d.cantidad, d.precio
+        Sort Key: pr.categoria
+        Sort Method: quicksort  Memory: 231kB
+        Buffers: shared hit=584
+        ->  Hash Join (actual time=1.303..211.738 rows=3433.00 loops=1)
+              Output: pr.categoria, d.cantidad, d.precio
+              Inner Unique: true
+              Hash Cond: (d.id_producto = pr.id_producto)
+              Buffers: shared hit=584
+              ->  Append (actual time=0.303..209.867 rows=3433.00 loops=1)
+                    Buffers: shared hit=544
+                    ->  Bitmap Heap Scan on hash.detalle_a d_1 (actual time=0.301..1.444 rows=1118.00 loops=1)
+                          Output: d_1.cantidad, d_1.precio, d_1.id_producto
+                          Recheck Cond: ((d_1.id_cliente >= 250000) AND (d_1.id_cliente <= 250499))
+                          Heap Blocks: exact=540
+                          Buffers: shared hit=544
+                          ->  Bitmap Index Scan on detalle_a_cliente_idx (actual time=0.167..0.168 rows=1118.00 loops=1)
+                                Index Cond: ((d_1.id_cliente >= 250000) AND (d_1.id_cliente <= 250499))
+                                Index Searches: 1
+                                Buffers: shared hit=4
+                    ->  Foreign Scan on remoto.hash_detalle_b d_2 (actual time=63.635..84.359 rows=1149.00 loops=1)
+                          Output: d_2.cantidad, d_2.precio, d_2.id_producto
+                          Remote SQL: SELECT id_producto, cantidad, precio FROM hash.detalle_b WHERE ((id_cliente >= 250000)) AND ((id_cliente <= 250499))
+                    ->  Foreign Scan on remoto.hash_detalle_c d_3 (actual time=82.674..123.849 rows=1166.00 loops=1)
+                          Output: d_3.cantidad, d_3.precio, d_3.id_producto
+                          Remote SQL: SELECT id_producto, cantidad, precio FROM hash.detalle_c WHERE ((id_cliente >= 250000)) AND ((id_cliente <= 250499))
+              ->  Hash (actual time=0.988..0.989 rows=5000.00 loops=1)
+                    Output: pr.categoria, pr.id_producto
+                    Buckets: 8192  Batches: 1  Memory Usage: 292kB
+                    Buffers: shared hit=40
+                    ->  Seq Scan on ref.productos pr (actual time=0.010..0.339 rows=5000.00 loops=1)
+                          Output: pr.categoria, pr.id_producto
+                          Buffers: shared hit=40
+Planning:
+  Buffers: shared hit=6
+Planning Time: 0.301 ms
+Execution Time: 335.631 ms
+
+==== hash / ttree / q1_cliente_remoto_c ====
+SELECT p.id_pedido, p.fecha, p.total, d.linea, d.id_producto, d.cantidad
+               FROM pedidos p JOIN detalle d ON d.id_pedido = p.id_pedido AND d.id_cliente = p.id_cliente
+               WHERE p.id_cliente = 1000
+Foreign Scan (actual time=81.720..81.723 rows=1.00 loops=1)
+  Output: p.id_pedido, p.fecha, p.total, d.linea, d.id_producto, d.cantidad
+  Relations: (remoto.hash_pedidos_c p) INNER JOIN (remoto.hash_detalle_c d)
+  Remote SQL: SELECT r4.id_pedido, r4.fecha, r4.total, r5.linea, r5.id_producto, r5.cantidad FROM (hash.pedidos_c r4 INNER JOIN hash.detalle_c r5 ON (((r4.id_pedido = r5.id_pedido)) AND ((r5.id_cliente = 1000)) AND ((r4.id_cliente = 1000))))
+Planning Time: 0.158 ms
+Execution Time: 162.737 ms
+
+==== hash / ttree / q2_rango_1000_clientes ====
+SELECT count(*), sum(total) FROM pedidos WHERE id_cliente BETWEEN 150000 AND 150999
+Finalize Aggregate (actual time=207.878..207.882 rows=1.00 loops=1)
+  Output: count(*), sum(pedidos.total)
+  Buffers: shared hit=1192
+  ->  Append (actual time=1.966..207.869 rows=3.00 loops=1)
+        Buffers: shared hit=1192
+        ->  Partial Aggregate (actual time=1.965..1.966 rows=1.00 loops=1)
+              Output: PARTIAL count(*), PARTIAL sum(pedidos.total)
+              Buffers: shared hit=1192
+              ->  Index Scan using pedidos_a_cliente_idx on hash.pedidos_a pedidos (actual time=0.202..1.884 rows=1181.00 loops=1)
+                    Output: pedidos.total
+                    Index Cond: ((pedidos.id_cliente >= 150000) AND (pedidos.id_cliente <= 150999))
+                    Index Searches: 1
+                    Buffers: shared hit=1192
+        ->  Partial Aggregate (actual time=82.939..82.940 rows=1.00 loops=1)
+              Output: PARTIAL count(*), PARTIAL sum(pedidos_1.total)
+              ->  Foreign Scan on remoto.hash_pedidos_b pedidos_1 (actual time=62.264..82.843 rows=1159.00 loops=1)
+                    Output: pedidos_1.total
+                    Remote SQL: SELECT total FROM hash.pedidos_b WHERE ((id_cliente >= 150000)) AND ((id_cliente <= 150999))
+        ->  Partial Aggregate (actual time=122.958..122.958 rows=1.00 loops=1)
+              Output: PARTIAL count(*), PARTIAL sum(pedidos_2.total)
+              ->  Foreign Scan on remoto.hash_pedidos_c pedidos_2 (actual time=82.342..122.887 rows=1020.00 loops=1)
+                    Output: pedidos_2.total
+                    Remote SQL: SELECT total FROM hash.pedidos_c WHERE ((id_cliente >= 150000)) AND ((id_cliente <= 150999))
+Planning Time: 0.159 ms
+Execution Time: 330.069 ms
+
+==== hash / ttree / q3_agregado_global_region ====
+SELECT c.region, count(*), sum(p.total) FROM pedidos p JOIN clientes c ON c.id_cliente = p.id_cliente GROUP BY c.region
+Finalize GroupAggregate (actual time=27529.294..27529.303 rows=3.00 loops=1)
+  Output: c.region, count(*), sum(p.total)
+  Group Key: c.region
+  Buffers: shared hit=3382
+  ->  Sort (actual time=27529.283..27529.290 rows=9.00 loops=1)
+        Output: c.region, (PARTIAL count(*)), (PARTIAL sum(p.total))
+        Sort Key: c.region
+        Sort Method: quicksort  Memory: 25kB
+        Buffers: shared hit=3382
+        ->  Append (actual time=122.464..27529.273 rows=9.00 loops=1)
+              Buffers: shared hit=3382
+              ->  Partial HashAggregate (actual time=122.463..122.469 rows=3.00 loops=1)
+                    Output: c.region, PARTIAL count(*), PARTIAL sum(p.total)
+                    Group Key: c.region
+                    Batches: 1  Memory Usage: 32kB
+                    Buffers: shared hit=3382
+                    ->  Hash Join (actual time=30.556..90.810 rows=335293.00 loops=1)
+                          Output: c.region, p.total
+                          Hash Cond: (p.id_cliente = c.id_cliente)
+                          Buffers: shared hit=3382
+                          ->  Seq Scan on hash.pedidos_a p (actual time=13.240..27.310 rows=335293.00 loops=1)
+                                Output: p.total, p.id_cliente
+                                Buffers: shared hit=2555
+                          ->  Hash (actual time=16.823..16.824 rows=100375.00 loops=1)
+                                Output: c.region, c.id_cliente
+                                Buckets: 131072  Batches: 1  Memory Usage: 5206kB
+                                Buffers: shared hit=827
+                                ->  Seq Scan on hash.clientes_a c (actual time=0.020..5.855 rows=100375.00 loops=1)
+                                      Output: c.region, c.id_cliente
+                                      Buffers: shared hit=827
+              ->  Partial HashAggregate (actual time=9326.538..9326.541 rows=3.00 loops=1)
+                    Output: c_1.region, PARTIAL count(*), PARTIAL sum(p_1.total)
+                    Group Key: c_1.region
+                    Batches: 1  Memory Usage: 32kB
+                    ->  Hash Join (actual time=2158.319..9291.925 rows=333191.00 loops=1)
+                          Output: c_1.region, p_1.total
+                          Hash Cond: (p_1.id_cliente = c_1.id_cliente)
+                          ->  Foreign Scan on remoto.hash_pedidos_b p_1 (actual time=41.334..6960.815 rows=333191.00 loops=1)
+                                Output: p_1.total, p_1.id_cliente
+                                Remote SQL: SELECT id_cliente, total FROM hash.pedidos_b
+                          ->  Hash (actual time=2116.357..2116.358 rows=99822.00 loops=1)
+                                Output: c_1.region, c_1.id_cliente
+                                Buckets: 131072  Batches: 1  Memory Usage: 5183kB
+                                ->  Foreign Scan on remoto.hash_clientes_b c_1 (actual time=41.199..2092.378 rows=99822.00 loops=1)
+                                      Output: c_1.region, c_1.id_cliente
+                                      Remote SQL: SELECT id_cliente, region FROM hash.clientes_b
+              ->  Partial HashAggregate (actual time=18080.252..18080.254 rows=3.00 loops=1)
+                    Output: c_2.region, PARTIAL count(*), PARTIAL sum(p_2.total)
+                    Group Key: c_2.region
+                    Batches: 1  Memory Usage: 32kB
+                    ->  Hash Join (actual time=4266.481..18044.918 rows=332867.00 loops=1)
+                          Output: c_2.region, p_2.total
+                          Hash Cond: (p_2.id_cliente = c_2.id_cliente)
+                          ->  Foreign Scan on remoto.hash_pedidos_c p_2 (actual time=121.701..13689.040 rows=332867.00 loops=1)
+                                Output: p_2.total, p_2.id_cliente
+                                Remote SQL: SELECT id_cliente, total FROM hash.pedidos_c
+                          ->  Hash (actual time=4144.090..4144.090 rows=99803.00 loops=1)
+                                Output: c_2.region, c_2.id_cliente
+                                Buckets: 131072  Batches: 1  Memory Usage: 5184kB
+                                ->  Foreign Scan on remoto.hash_clientes_c c_2 (actual time=81.991..4117.060 rows=99803.00 loops=1)
+                                      Output: c_2.region, c_2.id_cliente
+                                      Remote SQL: SELECT id_cliente, region FROM hash.clientes_c
+Planning:
+  Buffers: shared hit=8
+Planning Time: 0.213 ms
+Execution Time: 27712.787 ms
+
+==== hash / ttree / q5_join_productos_replicados ====
+SELECT pr.categoria, sum(d.cantidad * d.precio) FROM detalle d JOIN ref.productos pr ON pr.id_producto = d.id_producto
+     WHERE d.id_cliente BETWEEN 250000 AND 250499 GROUP BY pr.categoria
+GroupAggregate (actual time=208.659..209.066 rows=8.00 loops=1)
+  Output: pr.categoria, sum(((d.cantidad)::numeric * d.precio))
+  Group Key: pr.categoria
+  Buffers: shared hit=623
+  ->  Sort (actual time=208.585..208.682 rows=3433.00 loops=1)
+        Output: pr.categoria, d.cantidad, d.precio
+        Sort Key: pr.categoria
+        Sort Method: quicksort  Memory: 231kB
+        Buffers: shared hit=623
+        ->  Hash Join (actual time=0.713..207.951 rows=3433.00 loops=1)
+              Output: pr.categoria, d.cantidad, d.precio
+              Inner Unique: true
+              Hash Cond: (d.id_producto = pr.id_producto)
+              Buffers: shared hit=623
+              ->  Append (actual time=0.048..206.586 rows=3433.00 loops=1)
+                    Buffers: shared hit=583
+                    ->  Index Scan using detalle_a_cliente_idx on hash.detalle_a d_1 (actual time=0.047..0.636 rows=1118.00 loops=1)
+                          Output: d_1.cantidad, d_1.precio, d_1.id_producto
+                          Index Cond: ((d_1.id_cliente >= 250000) AND (d_1.id_cliente <= 250499))
+                          Index Searches: 1
+                          Buffers: shared hit=583
+                    ->  Foreign Scan on remoto.hash_detalle_b d_2 (actual time=62.082..83.080 rows=1149.00 loops=1)
+                          Output: d_2.cantidad, d_2.precio, d_2.id_producto
+                          Remote SQL: SELECT id_producto, cantidad, precio FROM hash.detalle_b WHERE ((id_cliente >= 250000)) AND ((id_cliente <= 250499))
+                    ->  Foreign Scan on remoto.hash_detalle_c d_3 (actual time=81.955..122.706 rows=1166.00 loops=1)
+                          Output: d_3.cantidad, d_3.precio, d_3.id_producto
+                          Remote SQL: SELECT id_producto, cantidad, precio FROM hash.detalle_c WHERE ((id_cliente >= 250000)) AND ((id_cliente <= 250499))
+              ->  Hash (actual time=0.656..0.657 rows=5000.00 loops=1)
+                    Output: pr.categoria, pr.id_producto
+                    Buckets: 8192  Batches: 1  Memory Usage: 292kB
+                    Buffers: shared hit=40
+                    ->  Seq Scan on ref.productos pr (actual time=0.010..0.233 rows=5000.00 loops=1)
+                          Output: pr.categoria, pr.id_producto
+                          Buffers: shared hit=40
+Planning:
+  Buffers: shared hit=6
+Planning Time: 0.195 ms
+Execution Time: 330.709 ms
+
+==== rango / btree / q1_cliente_remoto_c ====
+SELECT p.id_pedido, p.fecha, p.total, d.linea, d.id_producto, d.cantidad
+               FROM pedidos p JOIN detalle d ON d.id_pedido = p.id_pedido AND d.id_cliente = p.id_cliente
+               WHERE p.id_cliente = 200001
+Foreign Scan (actual time=81.292..81.295 rows=9.00 loops=1)
+  Output: p.id_pedido, p.fecha, p.total, d.linea, d.id_producto, d.cantidad
+  Relations: (remoto.rango_pedidos_c p) INNER JOIN (remoto.rango_detalle_c d)
+  Remote SQL: SELECT r4.id_pedido, r4.fecha, r4.total, r5.linea, r5.id_producto, r5.cantidad FROM (rango.pedidos_c r4 INNER JOIN rango.detalle_c r5 ON (((r4.id_pedido = r5.id_pedido)) AND ((r5.id_cliente = 200001)) AND ((r4.id_cliente = 200001))))
+Planning Time: 0.114 ms
+Execution Time: 161.957 ms
+
+==== rango / btree / q2_rango_1000_clientes ====
+SELECT count(*), sum(total) FROM pedidos WHERE id_cliente BETWEEN 150000 AND 150999
+Aggregate (actual time=125.411..125.412 rows=1.00 loops=1)
+  Output: count(*), sum(pedidos.total)
+  ->  Foreign Scan on remoto.rango_pedidos_b pedidos (actual time=62.189..125.215 rows=3356.00 loops=1)
+        Output: pedidos.total
+        Remote SQL: SELECT total FROM rango.pedidos_b WHERE ((id_cliente >= 150000)) AND ((id_cliente <= 150999))
+Planning Time: 0.089 ms
+Execution Time: 165.971 ms
+
+==== rango / btree / q3_agregado_global_region ====
+SELECT c.region, count(*), sum(p.total) FROM pedidos p JOIN clientes c ON c.id_cliente = p.id_cliente GROUP BY c.region
+Finalize GroupAggregate (actual time=27698.466..27698.478 rows=3.00 loops=1)
+  Output: c.region, count(*), sum(p.total)
+  Group Key: c.region
+  Buffers: shared hit=3349
+  ->  Sort (actual time=27698.446..27698.455 rows=3.00 loops=1)
+        Output: c.region, (PARTIAL count(*)), (PARTIAL sum(p.total))
+        Sort Key: c.region
+        Sort Method: quicksort  Memory: 25kB
+        Buffers: shared hit=3349
+        ->  Append (actual time=114.101..27698.436 rows=3.00 loops=1)
+              Buffers: shared hit=3349
+              ->  Partial HashAggregate (actual time=114.100..114.104 rows=1.00 loops=1)
+                    Output: c.region, PARTIAL count(*), PARTIAL sum(p.total)
+                    Group Key: c.region
+                    Batches: 1  Memory Usage: 32kB
+                    Buffers: shared hit=3349
+                    ->  Hash Join (actual time=23.787..83.547 rows=334281.00 loops=1)
+                          Output: c.region, p.total
+                          Hash Cond: (p.id_cliente = c.id_cliente)
+                          Buffers: shared hit=3349
+                          ->  Seq Scan on rango.pedidos_a p (actual time=9.329..24.114 rows=334281.00 loops=1)
+                                Output: p.total, p.id_cliente
+                                Buffers: shared hit=2545
+                          ->  Hash (actual time=13.984..13.985 rows=100000.00 loops=1)
+                                Output: c.region, c.id_cliente
+                                Buckets: 131072  Batches: 1  Memory Usage: 4931kB
+                                Buffers: shared hit=804
+                                ->  Seq Scan on rango.clientes_a c (actual time=0.022..4.883 rows=100000.00 loops=1)
+                                      Output: c.region, c.id_cliente
+                                      Buffers: shared hit=804
+              ->  Partial HashAggregate (actual time=9258.668..9258.671 rows=1.00 loops=1)
+                    Output: c_1.region, PARTIAL count(*), PARTIAL sum(p_1.total)
+                    Group Key: c_1.region
+                    Batches: 1  Memory Usage: 32kB
+                    ->  Hash Join (actual time=2165.365..9223.428 rows=331767.00 loops=1)
+                          Output: c_1.region, p_1.total
+                          Hash Cond: (p_1.id_cliente = c_1.id_cliente)
+                          ->  Foreign Scan on remoto.rango_pedidos_b p_1 (actual time=41.377..6914.975 rows=331767.00 loops=1)
+                                Output: p_1.total, p_1.id_cliente
+                                Remote SQL: SELECT id_cliente, total FROM rango.pedidos_b
+                          ->  Hash (actual time=2123.390..2123.391 rows=100000.00 loops=1)
+                                Output: c_1.region, c_1.id_cliente
+                                Buckets: 131072  Batches: 1  Memory Usage: 5321kB
+                                ->  Foreign Scan on remoto.rango_clientes_b c_1 (actual time=40.982..2101.122 rows=100000.00 loops=1)
+                                      Output: c_1.region, c_1.id_cliente
+                                      Remote SQL: SELECT id_cliente, region FROM rango.clientes_b
+              ->  Partial HashAggregate (actual time=18325.652..18325.654 rows=1.00 loops=1)
+                    Output: c_2.region, PARTIAL count(*), PARTIAL sum(p_2.total)
+                    Group Key: c_2.region
+                    Batches: 1  Memory Usage: 32kB
+                    ->  Hash Join (actual time=4390.108..18287.807 rows=334056.00 loops=1)
+                          Output: c_2.region, p_2.total
+                          Hash Cond: (p_2.id_cliente = c_2.id_cliente)
+                          ->  Foreign Scan on remoto.rango_pedidos_c p_2 (actual time=121.740..13815.969 rows=334056.00 loops=1)
+                                Output: p_2.total, p_2.id_cliente
+                                Remote SQL: SELECT id_cliente, total FROM rango.pedidos_c
+                          ->  Hash (actual time=4267.248..4267.248 rows=100000.00 loops=1)
+                                Output: c_2.region, c_2.id_cliente
+                                Buckets: 131072  Batches: 1  Memory Usage: 5321kB
+                                ->  Foreign Scan on remoto.rango_clientes_c c_2 (actual time=122.325..4233.237 rows=100000.00 loops=1)
+                                      Output: c_2.region, c_2.id_cliente
+                                      Remote SQL: SELECT id_cliente, region FROM rango.clientes_c
+Planning:
+  Buffers: shared hit=14
+Planning Time: 0.214 ms
+Execution Time: 27883.301 ms
+
+==== rango / btree / q5_join_productos_replicados ====
+SELECT pr.categoria, sum(d.cantidad * d.precio) FROM detalle d JOIN ref.productos pr ON pr.id_producto = d.id_producto
+     WHERE d.id_cliente BETWEEN 250000 AND 250499 GROUP BY pr.categoria
+HashAggregate (actual time=208.972..208.975 rows=8.00 loops=1)
+  Output: pr.categoria, sum(((d.cantidad)::numeric * d.precio))
+  Group Key: pr.categoria
+  Batches: 1  Memory Usage: 32kB
+  Buffers: shared hit=40
+  ->  Hash Join (actual time=83.911..208.399 rows=3433.00 loops=1)
+        Output: pr.categoria, d.cantidad, d.precio
+        Inner Unique: true
+        Hash Cond: (d.id_producto = pr.id_producto)
+        Buffers: shared hit=40
+        ->  Foreign Scan on remoto.rango_detalle_c d (actual time=82.830..206.715 rows=3433.00 loops=1)
+              Output: d.cantidad, d.precio, d.id_producto
+              Remote SQL: SELECT id_producto, cantidad, precio FROM rango.detalle_c WHERE ((id_cliente >= 250000)) AND ((id_cliente <= 250499))
+        ->  Hash (actual time=1.063..1.064 rows=5000.00 loops=1)
+              Output: pr.categoria, pr.id_producto
+              Buckets: 8192  Batches: 1  Memory Usage: 292kB
+              Buffers: shared hit=40
+              ->  Seq Scan on ref.productos pr (actual time=0.024..0.537 rows=5000.00 loops=1)
+                    Output: pr.categoria, pr.id_producto
+                    Buffers: shared hit=40
+Planning:
+  Buffers: shared hit=6
+Planning Time: 0.178 ms
+Execution Time: 290.042 ms
+
+==== rango / ttree / q1_cliente_remoto_c ====
+SELECT p.id_pedido, p.fecha, p.total, d.linea, d.id_producto, d.cantidad
+               FROM pedidos p JOIN detalle d ON d.id_pedido = p.id_pedido AND d.id_cliente = p.id_cliente
+               WHERE p.id_cliente = 200001
+Foreign Scan (actual time=81.547..81.550 rows=9.00 loops=1)
+  Output: p.id_pedido, p.fecha, p.total, d.linea, d.id_producto, d.cantidad
+  Relations: (remoto.rango_pedidos_c p) INNER JOIN (remoto.rango_detalle_c d)
+  Remote SQL: SELECT r4.id_pedido, r4.fecha, r4.total, r5.linea, r5.id_producto, r5.cantidad FROM (rango.pedidos_c r4 INNER JOIN rango.detalle_c r5 ON (((r4.id_pedido = r5.id_pedido)) AND ((r5.id_cliente = 200001)) AND ((r4.id_cliente = 200001))))
+Planning Time: 0.127 ms
+Execution Time: 162.574 ms
+
+==== rango / ttree / q2_rango_1000_clientes ====
+SELECT count(*), sum(total) FROM pedidos WHERE id_cliente BETWEEN 150000 AND 150999
+Aggregate (actual time=135.634..135.636 rows=1.00 loops=1)
+  Output: count(*), sum(pedidos.total)
+  ->  Foreign Scan on remoto.rango_pedidos_b pedidos (actual time=65.376..135.409 rows=3361.00 loops=1)
+        Output: pedidos.total
+        Remote SQL: SELECT total FROM rango.pedidos_b WHERE ((id_cliente >= 150000)) AND ((id_cliente <= 150999))
+Planning Time: 0.085 ms
+Execution Time: 176.658 ms
+
+==== rango / ttree / q3_agregado_global_region ====
+SELECT c.region, count(*), sum(p.total) FROM pedidos p JOIN clientes c ON c.id_cliente = p.id_cliente GROUP BY c.region
+Finalize GroupAggregate (actual time=27829.116..27829.138 rows=3.00 loops=1)
+  Output: c.region, count(*), sum(p.total)
+  Group Key: c.region
+  Buffers: shared hit=3420
+  ->  Sort (actual time=27829.098..27829.118 rows=3.00 loops=1)
+        Output: c.region, (PARTIAL count(*)), (PARTIAL sum(p.total))
+        Sort Key: c.region
+        Sort Method: quicksort  Memory: 25kB
+        Buffers: shared hit=3420
+        ->  Append (actual time=108.984..27829.068 rows=3.00 loops=1)
+              Buffers: shared hit=3420
+              ->  Partial HashAggregate (actual time=108.983..108.998 rows=1.00 loops=1)
+                    Output: c.region, PARTIAL count(*), PARTIAL sum(p.total)
+                    Group Key: c.region
+                    Batches: 1  Memory Usage: 32kB
+                    Buffers: shared hit=3420
+                    ->  Hash Join (actual time=23.286..80.184 rows=343492.00 loops=1)
+                          Output: c.region, p.total
+                          Hash Cond: (p.id_cliente = c.id_cliente)
+                          Buffers: shared hit=3420
+                          ->  Seq Scan on rango.pedidos_a p (actual time=11.037..26.516 rows=343492.00 loops=1)
+                                Output: p.total, p.id_cliente
+                                Buffers: shared hit=2616
+                          ->  Hash (actual time=11.770..11.771 rows=100000.00 loops=1)
+                                Output: c.region, c.id_cliente
+                                Buckets: 131072  Batches: 1  Memory Usage: 4931kB
+                                Buffers: shared hit=804
+                                ->  Seq Scan on rango.clientes_a c (actual time=0.024..4.427 rows=100000.00 loops=1)
+                                      Output: c.region, c.id_cliente
+                                      Buffers: shared hit=804
+              ->  Partial HashAggregate (actual time=9345.768..9345.772 rows=1.00 loops=1)
+                    Output: c_1.region, PARTIAL count(*), PARTIAL sum(p_1.total)
+                    Group Key: c_1.region
+                    Batches: 1  Memory Usage: 32kB
+                    ->  Hash Join (actual time=2190.053..9311.295 rows=332202.00 loops=1)
+                          Output: c_1.region, p_1.total
+                          Hash Cond: (p_1.id_cliente = c_1.id_cliente)
+                          ->  Foreign Scan on remoto.rango_pedidos_b p_1 (actual time=41.475..6961.767 rows=332202.00 loops=1)
+                                Output: p_1.total, p_1.id_cliente
+                                Remote SQL: SELECT id_cliente, total FROM rango.pedidos_b
+                          ->  Hash (actual time=2147.904..2147.905 rows=100000.00 loops=1)
+                                Output: c_1.region, c_1.id_cliente
+                                Buckets: 131072  Batches: 1  Memory Usage: 5321kB
+                                ->  Foreign Scan on remoto.rango_clientes_b c_1 (actual time=41.312..2121.354 rows=100000.00 loops=1)
+                                      Output: c_1.region, c_1.id_cliente
+                                      Remote SQL: SELECT id_cliente, region FROM rango.clientes_b
+              ->  Partial HashAggregate (actual time=18374.288..18374.290 rows=1.00 loops=1)
+                    Output: c_2.region, PARTIAL count(*), PARTIAL sum(p_2.total)
+                    Group Key: c_2.region
+                    Batches: 1  Memory Usage: 32kB
+                    ->  Hash Join (actual time=4392.486..18338.729 rows=334751.00 loops=1)
+                          Output: c_2.region, p_2.total
+                          Hash Cond: (p_2.id_cliente = c_2.id_cliente)
+                          ->  Foreign Scan on remoto.rango_pedidos_c p_2 (actual time=123.205..13827.289 rows=334751.00 loops=1)
+                                Output: p_2.total, p_2.id_cliente
+                                Remote SQL: SELECT id_cliente, total FROM rango.pedidos_c
+                          ->  Hash (actual time=4268.367..4268.368 rows=100000.00 loops=1)
+                                Output: c_2.region, c_2.id_cliente
+                                Buckets: 131072  Batches: 1  Memory Usage: 5321kB
+                                ->  Foreign Scan on remoto.rango_clientes_c c_2 (actual time=121.929..4234.294 rows=100000.00 loops=1)
+                                      Output: c_2.region, c_2.id_cliente
+                                      Remote SQL: SELECT id_cliente, region FROM rango.clientes_c
+Planning:
+  Buffers: shared hit=6
+Planning Time: 0.367 ms
+Execution Time: 28015.362 ms
+
+==== rango / ttree / q5_join_productos_replicados ====
+SELECT pr.categoria, sum(d.cantidad * d.precio) FROM detalle d JOIN ref.productos pr ON pr.id_producto = d.id_producto
+     WHERE d.id_cliente BETWEEN 250000 AND 250499 GROUP BY pr.categoria
+HashAggregate (actual time=210.250..210.257 rows=8.00 loops=1)
+  Output: pr.categoria, sum(((d.cantidad)::numeric * d.precio))
+  Group Key: pr.categoria
+  Batches: 1  Memory Usage: 32kB
+  Buffers: shared hit=40
+  ->  Hash Join (actual time=83.329..209.425 rows=3434.00 loops=1)
+        Output: pr.categoria, d.cantidad, d.precio
+        Inner Unique: true
+        Hash Cond: (d.id_producto = pr.id_producto)
+        Buffers: shared hit=40
+        ->  Foreign Scan on remoto.rango_detalle_c d (actual time=82.385..207.610 rows=3434.00 loops=1)
+              Output: d.cantidad, d.precio, d.id_producto
+              Remote SQL: SELECT id_producto, cantidad, precio FROM rango.detalle_c WHERE ((id_cliente >= 250000)) AND ((id_cliente <= 250499))
+        ->  Hash (actual time=0.927..0.928 rows=5000.00 loops=1)
+              Output: pr.categoria, pr.id_producto
+              Buckets: 8192  Batches: 1  Memory Usage: 292kB
+              Buffers: shared hit=40
+              ->  Seq Scan on ref.productos pr (actual time=0.028..0.388 rows=5000.00 loops=1)
+                    Output: pr.categoria, pr.id_producto
+                    Buffers: shared hit=40
+Planning:
+  Buffers: shared hit=6
+Planning Time: 0.218 ms
+Execution Time: 291.161 ms
+
