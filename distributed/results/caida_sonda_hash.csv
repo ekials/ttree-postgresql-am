@@ -1,0 +1,816 @@
+estrategia,instante,consulta,ok,ms,error
+hash,2026-11-20 18:01:04.62727+00,lectura_local_a,t,4.487,
+hash,2026-11-20 18:01:04.632771+00,lectura_nodo_c,f,105.142,"server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+invalid socket"
+hash,2026-11-20 18:01:04.74165+00,lectura_global,f,3088.436,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:07.832517+00,escritura_nodo_c,f,297.476,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:08.333988+00,lectura_local_a,t,0.431,
+hash,2026-11-20 18:01:08.337339+00,lectura_nodo_c,f,25.346,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:08.365071+00,lectura_global,f,106.252,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:08.473696+00,escritura_nodo_c,f,22.942,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:08.701794+00,lectura_local_a,t,0.486,
+hash,2026-11-20 18:01:08.705443+00,lectura_nodo_c,f,15.777,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:08.723581+00,lectura_global,f,101.879,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:08.828511+00,escritura_nodo_c,f,21.3,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:09.054277+00,lectura_local_a,t,0.891,
+hash,2026-11-20 18:01:09.057438+00,lectura_nodo_c,f,13.819,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:09.074516+00,lectura_global,f,136.929,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:09.221126+00,escritura_nodo_c,f,46.934,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:09.47511+00,lectura_local_a,t,10.234,
+hash,2026-11-20 18:01:09.506117+00,lectura_nodo_c,f,479.009,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:09.991482+00,lectura_global,f,209.719,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:10.826557+00,escritura_nodo_c,f,21.021,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:11.051559+00,lectura_local_a,t,0.651,
+hash,2026-11-20 18:01:11.054665+00,lectura_nodo_c,f,13.533,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:11.069741+00,lectura_global,f,111.475,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:11.18359+00,escritura_nodo_c,f,17.532,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:11.405118+00,lectura_local_a,t,0.317,
+hash,2026-11-20 18:01:11.40859+00,lectura_nodo_c,f,20.661,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:11.431499+00,lectura_global,f,97.589,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:11.531537+00,escritura_nodo_c,f,56.166,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:11.79139+00,lectura_local_a,t,0.269,
+hash,2026-11-20 18:01:11.794931+00,lectura_nodo_c,f,66.323,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:11.864277+00,lectura_global,f,122.828,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:11.99641+00,escritura_nodo_c,f,18.464,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:12.217717+00,lectura_local_a,t,0.396,
+hash,2026-11-20 18:01:12.220072+00,lectura_nodo_c,f,35.095,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:12.257299+00,lectura_global,f,103.271,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:12.363356+00,escritura_nodo_c,f,65.567,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:12.630688+00,lectura_local_a,t,0.238,
+hash,2026-11-20 18:01:12.632749+00,lectura_nodo_c,f,27.654,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:12.661746+00,lectura_global,f,96.743,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:12.76052+00,escritura_nodo_c,f,64.775,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:13.029427+00,lectura_local_a,t,0.21,
+hash,2026-11-20 18:01:13.031657+00,lectura_nodo_c,f,37.638,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:13.07104+00,lectura_global,f,116.032,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:13.189043+00,escritura_nodo_c,f,74.017,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:13.466087+00,lectura_local_a,t,0.204,
+hash,2026-11-20 18:01:13.46826+00,lectura_nodo_c,f,45.379,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:13.515434+00,lectura_global,f,98.753,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:13.616349+00,escritura_nodo_c,f,24.068,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:13.843547+00,lectura_local_a,t,0.208,
+hash,2026-11-20 18:01:13.845773+00,lectura_nodo_c,f,32.05,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:13.879689+00,lectura_global,f,96.675,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:13.978607+00,escritura_nodo_c,f,34.494,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:14.216518+00,lectura_local_a,t,0.358,
+hash,2026-11-20 18:01:14.219199+00,lectura_nodo_c,f,25.029,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:14.245624+00,lectura_global,f,108.087,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:14.355953+00,escritura_nodo_c,f,22.876,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:14.581417+00,lectura_local_a,t,0.443,
+hash,2026-11-20 18:01:14.584704+00,lectura_nodo_c,f,69.022,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:14.655554+00,lectura_global,f,126.675,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:14.784324+00,escritura_nodo_c,f,38.141,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:15.025152+00,lectura_local_a,t,0.374,
+hash,2026-11-20 18:01:15.028072+00,lectura_nodo_c,f,18.3,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:15.04862+00,lectura_global,f,147.895,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:15.199627+00,escritura_nodo_c,f,13.168,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:15.417135+00,lectura_local_a,t,0.387,
+hash,2026-11-20 18:01:15.420553+00,lectura_nodo_c,f,44.222,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:15.466593+00,lectura_global,f,101.06,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:15.5701+00,escritura_nodo_c,f,23.997,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:15.79803+00,lectura_local_a,t,0.737,
+hash,2026-11-20 18:01:15.808591+00,lectura_nodo_c,f,41.59,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:15.853379+00,lectura_global,f,96.138,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:15.95131+00,escritura_nodo_c,f,13.958,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:16.16853+00,lectura_local_a,t,0.499,
+hash,2026-11-20 18:01:16.174628+00,lectura_nodo_c,f,13.502,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:16.190903+00,lectura_global,f,95.871,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:16.289202+00,escritura_nodo_c,f,17.135,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:16.510118+00,lectura_local_a,t,0.351,
+hash,2026-11-20 18:01:16.512541+00,lectura_nodo_c,f,22.077,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:16.536918+00,lectura_global,f,97.619,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:16.636995+00,escritura_nodo_c,f,12.228,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:16.852814+00,lectura_local_a,t,0.347,
+hash,2026-11-20 18:01:16.855494+00,lectura_nodo_c,f,23.95,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:16.881593+00,lectura_global,f,143.308,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:17.035362+00,escritura_nodo_c,f,25.379,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:17.264103+00,lectura_local_a,t,0.301,
+hash,2026-11-20 18:01:17.2663+00,lectura_nodo_c,f,33.468,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:17.30277+00,lectura_global,f,108.648,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:17.413543+00,escritura_nodo_c,f,23.297,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:17.641291+00,lectura_local_a,t,0.394,
+hash,2026-11-20 18:01:17.644007+00,lectura_nodo_c,f,23.734,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:17.670763+00,lectura_global,f,99.148,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:17.772503+00,escritura_nodo_c,f,11.207,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:17.988026+00,lectura_local_a,t,0.591,
+hash,2026-11-20 18:01:17.991789+00,lectura_nodo_c,f,35.448,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:18.030066+00,lectura_global,f,98.662,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:18.131771+00,escritura_nodo_c,f,99.18,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:18.434268+00,lectura_local_a,t,0.325,
+hash,2026-11-20 18:01:18.43762+00,lectura_nodo_c,f,18.211,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:18.457874+00,lectura_global,f,100.468,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:18.560663+00,escritura_nodo_c,f,10.127,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:18.774446+00,lectura_local_a,t,0.459,
+hash,2026-11-20 18:01:18.778384+00,lectura_nodo_c,f,26.984,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:18.808259+00,lectura_global,f,98.682,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:18.909392+00,escritura_nodo_c,f,70.937,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:19.185234+00,lectura_local_a,t,0.399,
+hash,2026-11-20 18:01:19.188735+00,lectura_nodo_c,f,33.57,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:19.224517+00,lectura_global,f,330.934,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:19.557362+00,escritura_nodo_c,f,20.365,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:19.781987+00,lectura_local_a,t,0.416,
+hash,2026-11-20 18:01:19.784881+00,lectura_nodo_c,f,13.97,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:19.80117+00,lectura_global,f,107.544,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:19.910464+00,escritura_nodo_c,f,53.113,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:20.167918+00,lectura_local_a,t,0.346,
+hash,2026-11-20 18:01:20.171487+00,lectura_nodo_c,f,66.128,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:20.240552+00,lectura_global,f,110.19,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:20.352885+00,escritura_nodo_c,f,61.577,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:20.618017+00,lectura_local_a,t,0.285,
+hash,2026-11-20 18:01:20.620435+00,lectura_nodo_c,f,85.176,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:20.707679+00,lectura_global,f,112.061,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:20.821557+00,escritura_nodo_c,f,24.957,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:21.050821+00,lectura_local_a,t,0.545,
+hash,2026-11-20 18:01:21.053535+00,lectura_nodo_c,f,23.232,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:21.079085+00,lectura_global,f,97.595,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:21.179525+00,escritura_nodo_c,f,11.918,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:21.395464+00,lectura_local_a,t,0.265,
+hash,2026-11-20 18:01:21.399167+00,lectura_nodo_c,f,20.683,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:21.421916+00,lectura_global,f,97.603,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:21.522619+00,escritura_nodo_c,f,14.023,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:21.741168+00,lectura_local_a,t,0.375,
+hash,2026-11-20 18:01:21.744884+00,lectura_nodo_c,f,74.005,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:21.821203+00,lectura_global,f,98.683,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:21.922434+00,escritura_nodo_c,f,10.19,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:22.136505+00,lectura_local_a,t,0.256,
+hash,2026-11-20 18:01:22.139436+00,lectura_nodo_c,f,16.879,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:22.158902+00,lectura_global,f,111.831,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:22.273251+00,escritura_nodo_c,f,24.664,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:22.502314+00,lectura_local_a,t,0.441,
+hash,2026-11-20 18:01:22.505598+00,lectura_nodo_c,f,39.64,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:22.547753+00,lectura_global,f,95.985,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:22.645875+00,escritura_nodo_c,f,58.388,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:22.908098+00,lectura_local_a,t,0.258,
+hash,2026-11-20 18:01:22.91098+00,lectura_nodo_c,f,15.178,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:22.928314+00,lectura_global,f,109.797,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:23.040873+00,escritura_nodo_c,f,106.981,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:23.351659+00,lectura_local_a,t,0.55,
+hash,2026-11-20 18:01:23.353803+00,lectura_nodo_c,f,32.401,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:23.387487+00,lectura_global,f,133.787,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:23.524161+00,escritura_nodo_c,f,74.68,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:23.802371+00,lectura_local_a,t,0.379,
+hash,2026-11-20 18:01:23.805577+00,lectura_nodo_c,f,18.108,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:23.825762+00,lectura_global,f,132.676,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:23.959588+00,escritura_nodo_c,f,12.884,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:24.176248+00,lectura_local_a,t,0.302,
+hash,2026-11-20 18:01:24.177679+00,lectura_nodo_c,f,13.329,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:24.192882+00,lectura_global,f,92.633,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:24.286889+00,escritura_nodo_c,f,34.193,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:24.524777+00,lectura_local_a,t,0.339,
+hash,2026-11-20 18:01:24.527042+00,lectura_nodo_c,f,19.135,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:24.548059+00,lectura_global,f,98.175,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:24.647434+00,escritura_nodo_c,f,25.731,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:24.876192+00,lectura_local_a,t,0.317,
+hash,2026-11-20 18:01:24.878502+00,lectura_nodo_c,f,41.139,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:24.92165+00,lectura_global,f,130.911,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:25.060839+00,escritura_nodo_c,f,65.143,"could not connect to server ""nodo_c"""
+hash,2026-11-20 18:01:25.329197+00,lectura_local_a,t,755.367,
+hash,2026-11-20 18:01:26.086114+00,lectura_nodo_c,t,3.365,
+hash,2026-11-20 18:01:26.090884+00,lectura_global,t,159.65,
+hash,2026-11-20 18:01:26.252914+00,escritura_nodo_c,f,0.687,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:26.456077+00,lectura_local_a,t,0.338,
+hash,2026-11-20 18:01:26.458319+00,lectura_nodo_c,t,0.257,
+hash,2026-11-20 18:01:26.460119+00,lectura_global,t,146.476,
+hash,2026-11-20 18:01:26.608993+00,escritura_nodo_c,f,0.334,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:26.812749+00,lectura_local_a,t,0.323,
+hash,2026-11-20 18:01:26.814863+00,lectura_nodo_c,t,0.339,
+hash,2026-11-20 18:01:26.816198+00,lectura_global,t,147.925,
+hash,2026-11-20 18:01:26.965983+00,escritura_nodo_c,f,0.239,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:27.169383+00,lectura_local_a,t,0.371,
+hash,2026-11-20 18:01:27.17215+00,lectura_nodo_c,t,0.269,
+hash,2026-11-20 18:01:27.174239+00,lectura_global,t,146.214,
+hash,2026-11-20 18:01:27.322124+00,escritura_nodo_c,f,0.247,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:27.52472+00,lectura_local_a,t,0.256,
+hash,2026-11-20 18:01:27.526839+00,lectura_nodo_c,t,0.293,
+hash,2026-11-20 18:01:27.528375+00,lectura_global,t,144.822,
+hash,2026-11-20 18:01:27.675996+00,escritura_nodo_c,f,0.252,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:27.878908+00,lectura_local_a,t,0.504,
+hash,2026-11-20 18:01:27.881422+00,lectura_nodo_c,t,0.262,
+hash,2026-11-20 18:01:27.882624+00,lectura_global,t,148.086,
+hash,2026-11-20 18:01:28.032705+00,escritura_nodo_c,f,0.216,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:28.235729+00,lectura_local_a,t,0.396,
+hash,2026-11-20 18:01:28.238756+00,lectura_nodo_c,t,0.363,
+hash,2026-11-20 18:01:28.241102+00,lectura_global,t,148.674,
+hash,2026-11-20 18:01:28.391731+00,escritura_nodo_c,f,0.299,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:28.595191+00,lectura_local_a,t,0.406,
+hash,2026-11-20 18:01:28.59865+00,lectura_nodo_c,t,0.238,
+hash,2026-11-20 18:01:28.59987+00,lectura_global,t,146.626,
+hash,2026-11-20 18:01:28.748459+00,escritura_nodo_c,f,0.201,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:28.951392+00,lectura_local_a,t,0.258,
+hash,2026-11-20 18:01:28.953399+00,lectura_nodo_c,t,0.183,
+hash,2026-11-20 18:01:28.954511+00,lectura_global,t,147.609,
+hash,2026-11-20 18:01:29.104052+00,escritura_nodo_c,f,0.338,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:29.307181+00,lectura_local_a,t,0.439,
+hash,2026-11-20 18:01:29.309234+00,lectura_nodo_c,t,0.167,
+hash,2026-11-20 18:01:29.310883+00,lectura_global,t,147.8,
+hash,2026-11-20 18:01:29.461118+00,escritura_nodo_c,f,0.228,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:29.664559+00,lectura_local_a,t,0.421,
+hash,2026-11-20 18:01:29.667196+00,lectura_nodo_c,t,0.246,
+hash,2026-11-20 18:01:29.668451+00,lectura_global,t,147.626,
+hash,2026-11-20 18:01:29.817168+00,escritura_nodo_c,f,0.239,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:30.019832+00,lectura_local_a,t,0.257,
+hash,2026-11-20 18:01:30.022227+00,lectura_nodo_c,t,0.223,
+hash,2026-11-20 18:01:30.02507+00,lectura_global,t,148.44,
+hash,2026-11-20 18:01:30.181271+00,escritura_nodo_c,f,0.394,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:30.384651+00,lectura_local_a,t,0.253,
+hash,2026-11-20 18:01:30.386558+00,lectura_nodo_c,t,0.255,
+hash,2026-11-20 18:01:30.388448+00,lectura_global,t,148.291,
+hash,2026-11-20 18:01:30.539517+00,escritura_nodo_c,f,0.241,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:30.7429+00,lectura_local_a,t,0.526,
+hash,2026-11-20 18:01:30.745494+00,lectura_nodo_c,t,0.28,
+hash,2026-11-20 18:01:30.747218+00,lectura_global,t,148.247,
+hash,2026-11-20 18:01:30.896566+00,escritura_nodo_c,f,0.186,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:31.09942+00,lectura_local_a,t,0.276,
+hash,2026-11-20 18:01:31.101647+00,lectura_nodo_c,t,0.197,
+hash,2026-11-20 18:01:31.10303+00,lectura_global,t,148.201,
+hash,2026-11-20 18:01:31.25382+00,escritura_nodo_c,f,0.311,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:31.457215+00,lectura_local_a,t,0.377,
+hash,2026-11-20 18:01:31.460937+00,lectura_nodo_c,t,0.286,
+hash,2026-11-20 18:01:31.463047+00,lectura_global,t,147.726,
+hash,2026-11-20 18:01:31.613122+00,escritura_nodo_c,f,0.251,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:31.816231+00,lectura_local_a,t,0.281,
+hash,2026-11-20 18:01:31.818429+00,lectura_nodo_c,t,0.211,
+hash,2026-11-20 18:01:31.819713+00,lectura_global,t,147.719,
+hash,2026-11-20 18:01:31.969307+00,escritura_nodo_c,f,0.263,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:32.172494+00,lectura_local_a,t,0.398,
+hash,2026-11-20 18:01:32.175665+00,lectura_nodo_c,t,0.185,
+hash,2026-11-20 18:01:32.177775+00,lectura_global,t,147.025,
+hash,2026-11-20 18:01:32.327485+00,escritura_nodo_c,f,0.217,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:32.53063+00,lectura_local_a,t,0.251,
+hash,2026-11-20 18:01:32.532172+00,lectura_nodo_c,t,0.165,
+hash,2026-11-20 18:01:32.534185+00,lectura_global,t,147.66,
+hash,2026-11-20 18:01:32.683669+00,escritura_nodo_c,f,0.231,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:32.885888+00,lectura_local_a,t,0.284,
+hash,2026-11-20 18:01:32.888125+00,lectura_nodo_c,t,0.218,
+hash,2026-11-20 18:01:32.890431+00,lectura_global,t,147.751,
+hash,2026-11-20 18:01:33.040431+00,escritura_nodo_c,f,0.214,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:33.243612+00,lectura_local_a,t,0.356,
+hash,2026-11-20 18:01:33.24609+00,lectura_nodo_c,t,0.238,
+hash,2026-11-20 18:01:33.247634+00,lectura_global,t,147.932,
+hash,2026-11-20 18:01:33.397182+00,escritura_nodo_c,f,0.424,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:33.600431+00,lectura_local_a,t,0.377,
+hash,2026-11-20 18:01:33.602566+00,lectura_nodo_c,t,0.247,
+hash,2026-11-20 18:01:33.604203+00,lectura_global,t,147.045,
+hash,2026-11-20 18:01:33.753088+00,escritura_nodo_c,f,0.208,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:33.956447+00,lectura_local_a,t,0.397,
+hash,2026-11-20 18:01:33.959085+00,lectura_nodo_c,t,0.288,
+hash,2026-11-20 18:01:33.960891+00,lectura_global,t,146.591,
+hash,2026-11-20 18:01:34.108794+00,escritura_nodo_c,f,0.299,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:34.311927+00,lectura_local_a,t,0.319,
+hash,2026-11-20 18:01:34.313612+00,lectura_nodo_c,t,0.517,
+hash,2026-11-20 18:01:34.315634+00,lectura_global,t,147.867,
+hash,2026-11-20 18:01:34.465272+00,escritura_nodo_c,f,0.204,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:34.667032+00,lectura_local_a,t,0.458,
+hash,2026-11-20 18:01:34.670562+00,lectura_nodo_c,t,0.253,
+hash,2026-11-20 18:01:34.672466+00,lectura_global,t,147.068,
+hash,2026-11-20 18:01:34.820708+00,escritura_nodo_c,f,0.206,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:35.023448+00,lectura_local_a,t,0.378,
+hash,2026-11-20 18:01:35.02611+00,lectura_nodo_c,t,0.312,
+hash,2026-11-20 18:01:35.02768+00,lectura_global,t,147.846,
+hash,2026-11-20 18:01:35.177959+00,escritura_nodo_c,f,0.294,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:35.380263+00,lectura_local_a,t,0.644,
+hash,2026-11-20 18:01:35.382268+00,lectura_nodo_c,t,0.18,
+hash,2026-11-20 18:01:35.383482+00,lectura_global,t,146.478,
+hash,2026-11-20 18:01:35.531455+00,escritura_nodo_c,f,0.201,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:35.734729+00,lectura_local_a,t,0.385,
+hash,2026-11-20 18:01:35.737298+00,lectura_nodo_c,t,0.21,
+hash,2026-11-20 18:01:35.739043+00,lectura_global,t,148.162,
+hash,2026-11-20 18:01:35.889473+00,escritura_nodo_c,f,0.243,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:36.092845+00,lectura_local_a,t,0.279,
+hash,2026-11-20 18:01:36.09499+00,lectura_nodo_c,t,0.213,
+hash,2026-11-20 18:01:36.097849+00,lectura_global,t,145.316,
+hash,2026-11-20 18:01:36.245285+00,escritura_nodo_c,f,0.198,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:36.448273+00,lectura_local_a,t,0.258,
+hash,2026-11-20 18:01:36.449875+00,lectura_nodo_c,t,0.244,
+hash,2026-11-20 18:01:36.451356+00,lectura_global,t,145.249,
+hash,2026-11-20 18:01:36.599991+00,escritura_nodo_c,f,0.217,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:36.802797+00,lectura_local_a,t,0.259,
+hash,2026-11-20 18:01:36.80471+00,lectura_nodo_c,t,0.181,
+hash,2026-11-20 18:01:36.806016+00,lectura_global,t,145.291,
+hash,2026-11-20 18:01:36.952844+00,escritura_nodo_c,f,0.199,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:37.155588+00,lectura_local_a,t,0.278,
+hash,2026-11-20 18:01:37.157535+00,lectura_nodo_c,t,0.179,
+hash,2026-11-20 18:01:37.158701+00,lectura_global,t,145.078,
+hash,2026-11-20 18:01:37.305794+00,escritura_nodo_c,f,0.207,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:37.508319+00,lectura_local_a,t,0.427,
+hash,2026-11-20 18:01:37.510459+00,lectura_nodo_c,t,0.371,
+hash,2026-11-20 18:01:37.512047+00,lectura_global,t,144.663,
+hash,2026-11-20 18:01:37.658505+00,escritura_nodo_c,f,0.197,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:37.861407+00,lectura_local_a,t,0.262,
+hash,2026-11-20 18:01:37.866353+00,lectura_nodo_c,t,0.22,
+hash,2026-11-20 18:01:37.868031+00,lectura_global,t,147.174,
+hash,2026-11-20 18:01:38.01646+00,escritura_nodo_c,f,0.251,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:38.219368+00,lectura_local_a,t,0.523,
+hash,2026-11-20 18:01:38.222087+00,lectura_nodo_c,t,0.264,
+hash,2026-11-20 18:01:38.22343+00,lectura_global,t,144.244,
+hash,2026-11-20 18:01:38.369107+00,escritura_nodo_c,f,0.203,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:38.571719+00,lectura_local_a,t,0.244,
+hash,2026-11-20 18:01:38.573833+00,lectura_nodo_c,t,0.251,
+hash,2026-11-20 18:01:38.575593+00,lectura_global,t,145.547,
+hash,2026-11-20 18:01:38.72345+00,escritura_nodo_c,f,0.19,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:38.92684+00,lectura_local_a,t,0.415,
+hash,2026-11-20 18:01:38.929098+00,lectura_nodo_c,t,0.163,
+hash,2026-11-20 18:01:38.930927+00,lectura_global,t,147.024,
+hash,2026-11-20 18:01:39.079512+00,escritura_nodo_c,f,0.201,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:39.282618+00,lectura_local_a,t,0.4,
+hash,2026-11-20 18:01:39.285092+00,lectura_nodo_c,t,0.263,
+hash,2026-11-20 18:01:39.286877+00,lectura_global,t,145.58,
+hash,2026-11-20 18:01:39.434563+00,escritura_nodo_c,f,0.217,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:39.637755+00,lectura_local_a,t,0.412,
+hash,2026-11-20 18:01:39.640349+00,lectura_nodo_c,t,0.233,
+hash,2026-11-20 18:01:39.642323+00,lectura_global,t,146.346,
+hash,2026-11-20 18:01:39.791102+00,escritura_nodo_c,f,0.289,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:39.995101+00,lectura_local_a,t,0.521,
+hash,2026-11-20 18:01:39.999254+00,lectura_nodo_c,t,0.26,
+hash,2026-11-20 18:01:40.001323+00,lectura_global,t,147.222,
+hash,2026-11-20 18:01:40.151081+00,escritura_nodo_c,f,0.267,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:40.354949+00,lectura_local_a,t,0.501,
+hash,2026-11-20 18:01:40.358463+00,lectura_nodo_c,t,0.24,
+hash,2026-11-20 18:01:40.360607+00,lectura_global,t,147.145,
+hash,2026-11-20 18:01:40.51062+00,escritura_nodo_c,f,0.244,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:40.714347+00,lectura_local_a,t,0.255,
+hash,2026-11-20 18:01:40.716735+00,lectura_nodo_c,t,0.405,
+hash,2026-11-20 18:01:40.718619+00,lectura_global,t,147.536,
+hash,2026-11-20 18:01:40.868619+00,escritura_nodo_c,f,0.219,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:41.071872+00,lectura_local_a,t,0.255,
+hash,2026-11-20 18:01:41.074382+00,lectura_nodo_c,t,0.186,
+hash,2026-11-20 18:01:41.076464+00,lectura_global,t,146.472,
+hash,2026-11-20 18:01:41.225337+00,escritura_nodo_c,f,0.272,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:41.428954+00,lectura_local_a,t,0.253,
+hash,2026-11-20 18:01:41.431388+00,lectura_nodo_c,t,0.198,
+hash,2026-11-20 18:01:41.433072+00,lectura_global,t,147.973,
+hash,2026-11-20 18:01:41.583529+00,escritura_nodo_c,f,0.191,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:41.786852+00,lectura_local_a,t,0.394,
+hash,2026-11-20 18:01:41.790166+00,lectura_nodo_c,t,0.274,
+hash,2026-11-20 18:01:41.792394+00,lectura_global,t,147.004,
+hash,2026-11-20 18:01:41.941348+00,escritura_nodo_c,f,0.272,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:42.144528+00,lectura_local_a,t,0.279,
+hash,2026-11-20 18:01:42.146966+00,lectura_nodo_c,t,0.268,
+hash,2026-11-20 18:01:42.1489+00,lectura_global,t,148.153,
+hash,2026-11-20 18:01:42.299495+00,escritura_nodo_c,f,0.224,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:42.50306+00,lectura_local_a,t,0.448,
+hash,2026-11-20 18:01:42.505885+00,lectura_nodo_c,t,0.291,
+hash,2026-11-20 18:01:42.508245+00,lectura_global,t,146.508,
+hash,2026-11-20 18:01:42.656574+00,escritura_nodo_c,f,0.217,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:42.860611+00,lectura_local_a,t,0.465,
+hash,2026-11-20 18:01:42.863536+00,lectura_nodo_c,t,0.242,
+hash,2026-11-20 18:01:42.866005+00,lectura_global,t,145.951,
+hash,2026-11-20 18:01:43.014757+00,escritura_nodo_c,f,0.222,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:43.218566+00,lectura_local_a,t,0.377,
+hash,2026-11-20 18:01:43.221694+00,lectura_nodo_c,t,0.256,
+hash,2026-11-20 18:01:43.225492+00,lectura_global,t,146.182,
+hash,2026-11-20 18:01:43.374778+00,escritura_nodo_c,f,0.243,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:43.577925+00,lectura_local_a,t,0.406,
+hash,2026-11-20 18:01:43.580507+00,lectura_nodo_c,t,0.234,
+hash,2026-11-20 18:01:43.58247+00,lectura_global,t,145.401,
+hash,2026-11-20 18:01:43.73075+00,escritura_nodo_c,f,0.22,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:43.934583+00,lectura_local_a,t,0.364,
+hash,2026-11-20 18:01:43.937953+00,lectura_nodo_c,t,0.243,
+hash,2026-11-20 18:01:43.939992+00,lectura_global,t,150.011,
+hash,2026-11-20 18:01:44.092171+00,escritura_nodo_c,f,0.484,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:44.297657+00,lectura_local_a,t,0.48,
+hash,2026-11-20 18:01:44.301258+00,lectura_nodo_c,t,0.289,
+hash,2026-11-20 18:01:44.303421+00,lectura_global,t,148.557,
+hash,2026-11-20 18:01:44.454191+00,escritura_nodo_c,f,0.187,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:44.655769+00,lectura_local_a,t,0.322,
+hash,2026-11-20 18:01:44.66311+00,lectura_nodo_c,t,0.281,
+hash,2026-11-20 18:01:44.665726+00,lectura_global,t,146.647,
+hash,2026-11-20 18:01:44.814238+00,escritura_nodo_c,f,0.388,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:45.017929+00,lectura_local_a,t,0.376,
+hash,2026-11-20 18:01:45.021299+00,lectura_nodo_c,t,0.348,
+hash,2026-11-20 18:01:45.023778+00,lectura_global,t,148.012,
+hash,2026-11-20 18:01:45.174735+00,escritura_nodo_c,f,0.353,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:45.37846+00,lectura_local_a,t,0.385,
+hash,2026-11-20 18:01:45.381145+00,lectura_nodo_c,t,0.219,
+hash,2026-11-20 18:01:45.383084+00,lectura_global,t,147.482,
+hash,2026-11-20 18:01:45.533652+00,escritura_nodo_c,f,0.326,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:45.738017+00,lectura_local_a,t,0.285,
+hash,2026-11-20 18:01:45.740648+00,lectura_nodo_c,t,0.205,
+hash,2026-11-20 18:01:45.74229+00,lectura_global,t,147.388,
+hash,2026-11-20 18:01:45.892246+00,escritura_nodo_c,f,0.214,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:46.095674+00,lectura_local_a,t,0.263,
+hash,2026-11-20 18:01:46.098712+00,lectura_nodo_c,t,0.306,
+hash,2026-11-20 18:01:46.101412+00,lectura_global,t,146.742,
+hash,2026-11-20 18:01:46.25151+00,escritura_nodo_c,f,0.24,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:46.455409+00,lectura_local_a,t,0.388,
+hash,2026-11-20 18:01:46.459673+00,lectura_nodo_c,t,0.393,
+hash,2026-11-20 18:01:46.461237+00,lectura_global,t,147.752,
+hash,2026-11-20 18:01:46.611623+00,escritura_nodo_c,f,0.21,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:46.815044+00,lectura_local_a,t,0.438,
+hash,2026-11-20 18:01:46.818057+00,lectura_nodo_c,t,0.244,
+hash,2026-11-20 18:01:46.820418+00,lectura_global,t,148.105,
+hash,2026-11-20 18:01:46.977939+00,escritura_nodo_c,f,0.223,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:47.183172+00,lectura_local_a,t,0.437,
+hash,2026-11-20 18:01:47.186085+00,lectura_nodo_c,t,0.359,
+hash,2026-11-20 18:01:47.187864+00,lectura_global,t,162.664,
+hash,2026-11-20 18:01:47.353636+00,escritura_nodo_c,f,0.267,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:47.557139+00,lectura_local_a,t,0.726,
+hash,2026-11-20 18:01:47.562657+00,lectura_nodo_c,t,0.326,
+hash,2026-11-20 18:01:47.564821+00,lectura_global,t,148.919,
+hash,2026-11-20 18:01:47.716713+00,escritura_nodo_c,f,0.199,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:47.920186+00,lectura_local_a,t,0.357,
+hash,2026-11-20 18:01:47.924799+00,lectura_nodo_c,t,0.3,
+hash,2026-11-20 18:01:47.926663+00,lectura_global,t,149.047,
+hash,2026-11-20 18:01:48.07858+00,escritura_nodo_c,f,0.249,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:48.281335+00,lectura_local_a,t,0.524,
+hash,2026-11-20 18:01:48.28498+00,lectura_nodo_c,t,0.198,
+hash,2026-11-20 18:01:48.286695+00,lectura_global,t,146.502,
+hash,2026-11-20 18:01:48.436063+00,escritura_nodo_c,f,0.224,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:48.638981+00,lectura_local_a,t,0.37,
+hash,2026-11-20 18:01:48.641356+00,lectura_nodo_c,t,0.212,
+hash,2026-11-20 18:01:48.643367+00,lectura_global,t,147.827,
+hash,2026-11-20 18:01:48.793216+00,escritura_nodo_c,f,0.217,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:48.996936+00,lectura_local_a,t,0.391,
+hash,2026-11-20 18:01:49.000528+00,lectura_nodo_c,t,0.242,
+hash,2026-11-20 18:01:49.002918+00,lectura_global,t,144.978,
+hash,2026-11-20 18:01:49.149023+00,escritura_nodo_c,f,0.186,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:49.350374+00,lectura_local_a,t,0.38,
+hash,2026-11-20 18:01:49.352616+00,lectura_nodo_c,t,0.184,
+hash,2026-11-20 18:01:49.353493+00,lectura_global,t,146.203,
+hash,2026-11-20 18:01:49.504481+00,escritura_nodo_c,f,0.256,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:49.708967+00,lectura_local_a,t,0.465,
+hash,2026-11-20 18:01:49.711336+00,lectura_nodo_c,t,0.485,
+hash,2026-11-20 18:01:49.712918+00,lectura_global,t,144.999,
+hash,2026-11-20 18:01:49.861811+00,escritura_nodo_c,f,0.207,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:50.066431+00,lectura_local_a,t,0.384,
+hash,2026-11-20 18:01:50.068343+00,lectura_nodo_c,t,0.407,
+hash,2026-11-20 18:01:50.070248+00,lectura_global,t,145.246,
+hash,2026-11-20 18:01:50.216637+00,escritura_nodo_c,f,0.204,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:50.41901+00,lectura_local_a,t,0.471,
+hash,2026-11-20 18:01:50.420374+00,lectura_nodo_c,t,0.263,
+hash,2026-11-20 18:01:50.421577+00,lectura_global,t,144.349,
+hash,2026-11-20 18:01:50.567099+00,escritura_nodo_c,f,0.329,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:50.769936+00,lectura_local_a,t,0.419,
+hash,2026-11-20 18:01:50.772836+00,lectura_nodo_c,t,0.144,
+hash,2026-11-20 18:01:50.774534+00,lectura_global,t,147.628,
+hash,2026-11-20 18:01:50.924055+00,escritura_nodo_c,f,0.224,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:51.127263+00,lectura_local_a,t,0.326,
+hash,2026-11-20 18:01:51.13117+00,lectura_nodo_c,t,0.285,
+hash,2026-11-20 18:01:51.133493+00,lectura_global,t,148.503,
+hash,2026-11-20 18:01:51.285204+00,escritura_nodo_c,f,0.263,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:51.488936+00,lectura_local_a,t,0.356,
+hash,2026-11-20 18:01:51.492222+00,lectura_nodo_c,t,0.337,
+hash,2026-11-20 18:01:51.494066+00,lectura_global,t,147.343,
+hash,2026-11-20 18:01:51.643431+00,escritura_nodo_c,f,0.212,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:51.847219+00,lectura_local_a,t,0.355,
+hash,2026-11-20 18:01:51.851212+00,lectura_nodo_c,t,0.279,
+hash,2026-11-20 18:01:51.853234+00,lectura_global,t,148.096,
+hash,2026-11-20 18:01:52.00354+00,escritura_nodo_c,f,0.191,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:52.206833+00,lectura_local_a,t,0.556,
+hash,2026-11-20 18:01:52.210877+00,lectura_nodo_c,t,0.338,
+hash,2026-11-20 18:01:52.212479+00,lectura_global,t,147.327,
+hash,2026-11-20 18:01:52.362802+00,escritura_nodo_c,f,0.317,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:52.566525+00,lectura_local_a,t,0.543,
+hash,2026-11-20 18:01:52.569858+00,lectura_nodo_c,t,0.396,
+hash,2026-11-20 18:01:52.572547+00,lectura_global,t,147.006,
+hash,2026-11-20 18:01:52.722598+00,escritura_nodo_c,f,0.462,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:52.927047+00,lectura_local_a,t,0.331,
+hash,2026-11-20 18:01:52.930534+00,lectura_nodo_c,t,0.353,
+hash,2026-11-20 18:01:52.933248+00,lectura_global,t,148.144,
+hash,2026-11-20 18:01:53.084139+00,escritura_nodo_c,f,0.423,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:53.287598+00,lectura_local_a,t,0.382,
+hash,2026-11-20 18:01:53.291033+00,lectura_nodo_c,t,0.519,
+hash,2026-11-20 18:01:53.293182+00,lectura_global,t,145.575,
+hash,2026-11-20 18:01:53.441598+00,escritura_nodo_c,f,0.384,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:53.644885+00,lectura_local_a,t,0.288,
+hash,2026-11-20 18:01:53.64725+00,lectura_nodo_c,t,0.234,
+hash,2026-11-20 18:01:53.649167+00,lectura_global,t,143.907,
+hash,2026-11-20 18:01:53.794866+00,escritura_nodo_c,f,0.202,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:53.99737+00,lectura_local_a,t,0.32,
+hash,2026-11-20 18:01:53.999529+00,lectura_nodo_c,t,0.173,
+hash,2026-11-20 18:01:54.00048+00,lectura_global,t,144.137,
+hash,2026-11-20 18:01:54.14676+00,escritura_nodo_c,f,0.21,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:54.350107+00,lectura_local_a,t,0.279,
+hash,2026-11-20 18:01:54.351901+00,lectura_nodo_c,t,0.145,
+hash,2026-11-20 18:01:54.353532+00,lectura_global,t,73.394,
+hash,2026-11-20 18:01:54.4281+00,escritura_nodo_c,f,0.208,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:54.630964+00,lectura_local_a,t,0.387,
+hash,2026-11-20 18:01:54.63409+00,lectura_nodo_c,t,0.203,
+hash,2026-11-20 18:01:54.635661+00,lectura_global,t,76.682,
+hash,2026-11-20 18:01:54.715113+00,escritura_nodo_c,f,0.303,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:54.918549+00,lectura_local_a,t,0.311,
+hash,2026-11-20 18:01:54.919921+00,lectura_nodo_c,t,0.145,
+hash,2026-11-20 18:01:54.921053+00,lectura_global,t,73.061,
+hash,2026-11-20 18:01:54.995214+00,escritura_nodo_c,f,0.201,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:55.197582+00,lectura_local_a,t,0.289,
+hash,2026-11-20 18:01:55.199562+00,lectura_nodo_c,t,0.146,
+hash,2026-11-20 18:01:55.20065+00,lectura_global,t,73.611,
+hash,2026-11-20 18:01:55.276609+00,escritura_nodo_c,f,0.207,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:55.479715+00,lectura_local_a,t,0.249,
+hash,2026-11-20 18:01:55.481657+00,lectura_nodo_c,t,0.14,
+hash,2026-11-20 18:01:55.482604+00,lectura_global,t,72.857,
+hash,2026-11-20 18:01:55.557103+00,escritura_nodo_c,f,0.306,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:55.759733+00,lectura_local_a,t,0.272,
+hash,2026-11-20 18:01:55.761857+00,lectura_nodo_c,t,0.195,
+hash,2026-11-20 18:01:55.76335+00,lectura_global,t,73.036,
+hash,2026-11-20 18:01:55.838262+00,escritura_nodo_c,f,0.215,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:56.040607+00,lectura_local_a,t,0.386,
+hash,2026-11-20 18:01:56.050529+00,lectura_nodo_c,t,0.28,
+hash,2026-11-20 18:01:56.053297+00,lectura_global,t,76.311,
+hash,2026-11-20 18:01:56.132122+00,escritura_nodo_c,f,0.224,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:56.335136+00,lectura_local_a,t,0.833,
+hash,2026-11-20 18:01:56.33905+00,lectura_nodo_c,t,0.236,
+hash,2026-11-20 18:01:56.340512+00,lectura_global,t,73.856,
+hash,2026-11-20 18:01:56.416484+00,escritura_nodo_c,f,0.188,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:56.619021+00,lectura_local_a,t,0.53,
+hash,2026-11-20 18:01:56.621374+00,lectura_nodo_c,t,0.228,
+hash,2026-11-20 18:01:56.623408+00,lectura_global,t,74.123,
+hash,2026-11-20 18:01:56.700068+00,escritura_nodo_c,f,0.206,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:56.903426+00,lectura_local_a,t,0.317,
+hash,2026-11-20 18:01:56.906285+00,lectura_nodo_c,t,0.238,
+hash,2026-11-20 18:01:56.908084+00,lectura_global,t,144.849,
+hash,2026-11-20 18:01:57.054567+00,escritura_nodo_c,f,0.199,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:57.257042+00,lectura_local_a,t,0.597,
+hash,2026-11-20 18:01:57.258939+00,lectura_nodo_c,t,0.184,
+hash,2026-11-20 18:01:57.26069+00,lectura_global,t,147.596,
+hash,2026-11-20 18:01:57.409901+00,escritura_nodo_c,f,0.198,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:57.612281+00,lectura_local_a,t,0.262,
+hash,2026-11-20 18:01:57.614376+00,lectura_nodo_c,t,0.365,
+hash,2026-11-20 18:01:57.61598+00,lectura_global,t,144.337,
+hash,2026-11-20 18:01:57.761539+00,escritura_nodo_c,f,0.187,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:57.963559+00,lectura_local_a,t,0.259,
+hash,2026-11-20 18:01:57.965537+00,lectura_nodo_c,t,0.145,
+hash,2026-11-20 18:01:57.966797+00,lectura_global,t,145.295,
+hash,2026-11-20 18:01:58.113395+00,escritura_nodo_c,f,0.191,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:58.316095+00,lectura_local_a,t,0.624,
+hash,2026-11-20 18:01:58.318877+00,lectura_nodo_c,t,1.574,
+hash,2026-11-20 18:01:58.32776+00,lectura_global,t,146.113,
+hash,2026-11-20 18:01:58.476018+00,escritura_nodo_c,f,0.213,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:58.678993+00,lectura_local_a,t,0.354,
+hash,2026-11-20 18:01:58.689431+00,lectura_nodo_c,t,0.39,
+hash,2026-11-20 18:01:58.69154+00,lectura_global,t,146.947,
+hash,2026-11-20 18:01:58.840692+00,escritura_nodo_c,f,0.218,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:59.043973+00,lectura_local_a,t,0.365,
+hash,2026-11-20 18:01:59.046367+00,lectura_nodo_c,t,0.234,
+hash,2026-11-20 18:01:59.048138+00,lectura_global,t,143.892,
+hash,2026-11-20 18:01:59.193061+00,escritura_nodo_c,f,0.197,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:59.395726+00,lectura_local_a,t,0.499,
+hash,2026-11-20 18:01:59.397858+00,lectura_nodo_c,t,0.187,
+hash,2026-11-20 18:01:59.398934+00,lectura_global,t,83.972,
+hash,2026-11-20 18:01:59.484694+00,escritura_nodo_c,f,0.192,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:59.687357+00,lectura_local_a,t,0.298,
+hash,2026-11-20 18:01:59.689382+00,lectura_nodo_c,t,0.204,
+hash,2026-11-20 18:01:59.691017+00,lectura_global,t,74.411,
+hash,2026-11-20 18:01:59.767877+00,escritura_nodo_c,f,0.238,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:01:59.97166+00,lectura_local_a,t,0.322,
+hash,2026-11-20 18:01:59.974308+00,lectura_nodo_c,t,0.18,
+hash,2026-11-20 18:01:59.975726+00,lectura_global,t,75.781,
+hash,2026-11-20 18:02:00.05439+00,escritura_nodo_c,f,0.295,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:00.257888+00,lectura_local_a,t,0.296,
+hash,2026-11-20 18:02:00.259528+00,lectura_nodo_c,t,0.177,
+hash,2026-11-20 18:02:00.261229+00,lectura_global,t,73.832,
+hash,2026-11-20 18:02:00.337209+00,escritura_nodo_c,f,0.4,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:00.540104+00,lectura_local_a,t,0.317,
+hash,2026-11-20 18:02:00.542142+00,lectura_nodo_c,t,0.161,
+hash,2026-11-20 18:02:00.542957+00,lectura_global,t,73.294,
+hash,2026-11-20 18:02:00.61806+00,escritura_nodo_c,f,0.197,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:00.820179+00,lectura_local_a,t,0.292,
+hash,2026-11-20 18:02:00.822746+00,lectura_nodo_c,t,0.193,
+hash,2026-11-20 18:02:00.823865+00,lectura_global,t,75.801,
+hash,2026-11-20 18:02:00.902086+00,escritura_nodo_c,f,0.252,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:01.105018+00,lectura_local_a,t,0.274,
+hash,2026-11-20 18:02:01.10667+00,lectura_nodo_c,t,0.295,
+hash,2026-11-20 18:02:01.108265+00,lectura_global,t,74.168,
+hash,2026-11-20 18:02:01.183789+00,escritura_nodo_c,f,0.209,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:01.386845+00,lectura_local_a,t,0.387,
+hash,2026-11-20 18:02:01.392086+00,lectura_nodo_c,t,0.235,
+hash,2026-11-20 18:02:01.394268+00,lectura_global,t,74.637,
+hash,2026-11-20 18:02:01.471003+00,escritura_nodo_c,f,0.189,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:01.675334+00,lectura_local_a,t,0.269,
+hash,2026-11-20 18:02:01.677407+00,lectura_nodo_c,t,0.141,
+hash,2026-11-20 18:02:01.67838+00,lectura_global,t,73.729,
+hash,2026-11-20 18:02:01.754115+00,escritura_nodo_c,f,0.216,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:01.956975+00,lectura_local_a,t,0.253,
+hash,2026-11-20 18:02:01.95939+00,lectura_nodo_c,t,0.348,
+hash,2026-11-20 18:02:01.961239+00,lectura_global,t,74.545,
+hash,2026-11-20 18:02:02.037783+00,escritura_nodo_c,f,0.222,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:02.242127+00,lectura_local_a,t,0.906,
+hash,2026-11-20 18:02:02.244202+00,lectura_nodo_c,t,0.146,
+hash,2026-11-20 18:02:02.245515+00,lectura_global,t,73.961,
+hash,2026-11-20 18:02:02.321812+00,escritura_nodo_c,f,0.442,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:02.524313+00,lectura_local_a,t,0.259,
+hash,2026-11-20 18:02:02.52621+00,lectura_nodo_c,t,0.164,
+hash,2026-11-20 18:02:02.52772+00,lectura_global,t,73.942,
+hash,2026-11-20 18:02:02.604941+00,escritura_nodo_c,f,0.231,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:02.807935+00,lectura_local_a,t,0.351,
+hash,2026-11-20 18:02:02.810425+00,lectura_nodo_c,t,0.15,
+hash,2026-11-20 18:02:02.811253+00,lectura_global,t,75.234,
+hash,2026-11-20 18:02:02.888812+00,escritura_nodo_c,f,0.381,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:03.090857+00,lectura_local_a,t,0.31,
+hash,2026-11-20 18:02:03.093797+00,lectura_nodo_c,t,0.166,
+hash,2026-11-20 18:02:03.095524+00,lectura_global,t,74.047,
+hash,2026-11-20 18:02:03.171763+00,escritura_nodo_c,f,0.417,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:03.375103+00,lectura_local_a,t,0.327,
+hash,2026-11-20 18:02:03.378588+00,lectura_nodo_c,t,0.891,
+hash,2026-11-20 18:02:03.380732+00,lectura_global,t,124.308,
+hash,2026-11-20 18:02:03.506531+00,escritura_nodo_c,f,0.22,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:03.709317+00,lectura_local_a,t,0.352,
+hash,2026-11-20 18:02:03.710804+00,lectura_nodo_c,t,0.161,
+hash,2026-11-20 18:02:03.711799+00,lectura_global,t,146.21,
+hash,2026-11-20 18:02:03.859909+00,escritura_nodo_c,f,0.208,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:04.062988+00,lectura_local_a,t,0.377,
+hash,2026-11-20 18:02:04.065191+00,lectura_nodo_c,t,0.285,
+hash,2026-11-20 18:02:04.067326+00,lectura_global,t,144.842,
+hash,2026-11-20 18:02:04.213661+00,escritura_nodo_c,f,0.373,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:04.416717+00,lectura_local_a,t,0.482,
+hash,2026-11-20 18:02:04.418762+00,lectura_nodo_c,t,0.169,
+hash,2026-11-20 18:02:04.420348+00,lectura_global,t,144.987,
+hash,2026-11-20 18:02:04.567155+00,escritura_nodo_c,f,0.234,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:04.769544+00,lectura_local_a,t,0.372,
+hash,2026-11-20 18:02:04.771628+00,lectura_nodo_c,t,0.177,
+hash,2026-11-20 18:02:04.773163+00,lectura_global,t,144.014,
+hash,2026-11-20 18:02:04.91848+00,escritura_nodo_c,f,0.214,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:05.121434+00,lectura_local_a,t,0.263,
+hash,2026-11-20 18:02:05.123192+00,lectura_nodo_c,t,0.215,
+hash,2026-11-20 18:02:05.124518+00,lectura_global,t,145.655,
+hash,2026-11-20 18:02:05.271971+00,escritura_nodo_c,f,0.198,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:05.474521+00,lectura_local_a,t,0.252,
+hash,2026-11-20 18:02:05.477119+00,lectura_nodo_c,t,0.172,
+hash,2026-11-20 18:02:05.478951+00,lectura_global,t,145.372,
+hash,2026-11-20 18:02:05.625918+00,escritura_nodo_c,f,0.22,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:05.828995+00,lectura_local_a,t,0.367,
+hash,2026-11-20 18:02:05.831534+00,lectura_nodo_c,t,0.143,
+hash,2026-11-20 18:02:05.832706+00,lectura_global,t,144.902,
+hash,2026-11-20 18:02:05.979758+00,escritura_nodo_c,f,0.3,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:06.18279+00,lectura_local_a,t,0.386,
+hash,2026-11-20 18:02:06.185663+00,lectura_nodo_c,t,0.17,
+hash,2026-11-20 18:02:06.187009+00,lectura_global,t,145.195,
+hash,2026-11-20 18:02:06.334192+00,escritura_nodo_c,f,0.222,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:06.536828+00,lectura_local_a,t,0.313,
+hash,2026-11-20 18:02:06.538979+00,lectura_nodo_c,t,0.191,
+hash,2026-11-20 18:02:06.540422+00,lectura_global,t,149.141,
+hash,2026-11-20 18:02:06.694749+00,escritura_nodo_c,f,0.325,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:06.897769+00,lectura_local_a,t,0.274,
+hash,2026-11-20 18:02:06.899228+00,lectura_nodo_c,t,0.217,
+hash,2026-11-20 18:02:06.900819+00,lectura_global,t,143.251,
+hash,2026-11-20 18:02:07.045998+00,escritura_nodo_c,f,0.221,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:07.2484+00,lectura_local_a,t,0.313,
+hash,2026-11-20 18:02:07.250474+00,lectura_nodo_c,t,0.137,
+hash,2026-11-20 18:02:07.251489+00,lectura_global,t,143.469,
+hash,2026-11-20 18:02:07.396024+00,escritura_nodo_c,f,0.199,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:07.598504+00,lectura_local_a,t,0.41,
+hash,2026-11-20 18:02:07.600936+00,lectura_nodo_c,t,0.161,
+hash,2026-11-20 18:02:07.602421+00,lectura_global,t,144.172,
+hash,2026-11-20 18:02:07.747911+00,escritura_nodo_c,f,0.196,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:07.950337+00,lectura_local_a,t,0.411,
+hash,2026-11-20 18:02:07.953159+00,lectura_nodo_c,t,0.355,
+hash,2026-11-20 18:02:07.954883+00,lectura_global,t,145.678,
+hash,2026-11-20 18:02:08.10245+00,escritura_nodo_c,f,0.267,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:08.30577+00,lectura_local_a,t,0.303,
+hash,2026-11-20 18:02:08.307859+00,lectura_nodo_c,t,0.169,
+hash,2026-11-20 18:02:08.309114+00,lectura_global,t,144.59,
+hash,2026-11-20 18:02:08.455166+00,escritura_nodo_c,f,0.25,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:08.657645+00,lectura_local_a,t,0.257,
+hash,2026-11-20 18:02:08.659302+00,lectura_nodo_c,t,0.187,
+hash,2026-11-20 18:02:08.660806+00,lectura_global,t,151.176,
+hash,2026-11-20 18:02:08.814588+00,escritura_nodo_c,f,0.199,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:09.017442+00,lectura_local_a,t,0.386,
+hash,2026-11-20 18:02:09.019515+00,lectura_nodo_c,t,0.147,
+hash,2026-11-20 18:02:09.020911+00,lectura_global,t,145.141,
+hash,2026-11-20 18:02:09.167481+00,escritura_nodo_c,f,0.221,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:09.370056+00,lectura_local_a,t,0.315,
+hash,2026-11-20 18:02:09.372882+00,lectura_nodo_c,t,0.297,
+hash,2026-11-20 18:02:09.374708+00,lectura_global,t,145.93,
+hash,2026-11-20 18:02:09.521796+00,escritura_nodo_c,f,0.199,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:09.724455+00,lectura_local_a,t,0.366,
+hash,2026-11-20 18:02:09.726895+00,lectura_nodo_c,t,0.21,
+hash,2026-11-20 18:02:09.728307+00,lectura_global,t,145.546,
+hash,2026-11-20 18:02:09.875895+00,escritura_nodo_c,f,0.639,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:10.080041+00,lectura_local_a,t,0.339,
+hash,2026-11-20 18:02:10.083398+00,lectura_nodo_c,t,0.193,
+hash,2026-11-20 18:02:10.08511+00,lectura_global,t,144.616,
+hash,2026-11-20 18:02:10.231801+00,escritura_nodo_c,f,0.192,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:10.43478+00,lectura_local_a,t,0.416,
+hash,2026-11-20 18:02:10.437792+00,lectura_nodo_c,t,0.288,
+hash,2026-11-20 18:02:10.439614+00,lectura_global,t,146.408,
+hash,2026-11-20 18:02:10.590287+00,escritura_nodo_c,f,0.247,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:10.793401+00,lectura_local_a,t,0.26,
+hash,2026-11-20 18:02:10.795627+00,lectura_nodo_c,t,0.243,
+hash,2026-11-20 18:02:10.797165+00,lectura_global,t,145.053,
+hash,2026-11-20 18:02:10.944543+00,escritura_nodo_c,f,0.297,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:11.148066+00,lectura_local_a,t,0.31,
+hash,2026-11-20 18:02:11.149828+00,lectura_nodo_c,t,0.218,
+hash,2026-11-20 18:02:11.151+00,lectura_global,t,144.777,
+hash,2026-11-20 18:02:11.297254+00,escritura_nodo_c,f,0.19,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:11.50138+00,lectura_local_a,t,1.592,
+hash,2026-11-20 18:02:11.510841+00,lectura_nodo_c,t,1.724,
+hash,2026-11-20 18:02:11.518212+00,lectura_global,t,164.207,
+hash,2026-11-20 18:02:11.692706+00,escritura_nodo_c,f,1.077,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:11.900985+00,lectura_local_a,t,1.424,
+hash,2026-11-20 18:02:11.916177+00,lectura_nodo_c,t,1.182,
+hash,2026-11-20 18:02:11.939167+00,lectura_global,t,185.795,
+hash,2026-11-20 18:02:12.134825+00,escritura_nodo_c,f,1.24,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:12.342836+00,lectura_local_a,t,0.369,
+hash,2026-11-20 18:02:12.344577+00,lectura_nodo_c,t,0.172,
+hash,2026-11-20 18:02:12.345639+00,lectura_global,t,144.735,
+hash,2026-11-20 18:02:12.49241+00,escritura_nodo_c,f,0.306,la tabla hash.pedidos_c es una replica de solo lectura
+hash,2026-11-20 18:02:12.694616+00,lectura_local_a,t,0.254,
+hash,2026-11-20 18:02:12.700202+00,lectura_nodo_c,t,0.231,
+hash,2026-11-20 18:02:12.708726+00,lectura_global,t,146.844,
+hash,2026-11-20 18:02:12.857483+00,escritura_nodo_c,t,727.082,
+hash,2026-11-20 18:02:13.787917+00,lectura_local_a,t,0.245,
+hash,2026-11-20 18:02:13.790771+00,lectura_nodo_c,t,290.253,
+hash,2026-11-20 18:02:14.084728+00,lectura_global,t,439.04,
+hash,2026-11-20 18:02:14.840554+00,escritura_nodo_c,t,300.632,
+hash,2026-11-20 18:02:15.343928+00,lectura_local_a,t,0.222,
+hash,2026-11-20 18:02:15.345751+00,lectura_nodo_c,t,285.185,
+hash,2026-11-20 18:02:15.634256+00,lectura_global,t,435.354,
+hash,2026-11-20 18:02:16.071998+00,escritura_nodo_c,t,289.593,
+hash,2026-11-20 18:02:16.566679+00,lectura_local_a,t,0.297,
+hash,2026-11-20 18:02:16.569266+00,lectura_nodo_c,t,289,
+hash,2026-11-20 18:02:16.860777+00,lectura_global,t,435.517,
+hash,2026-11-20 18:02:17.299847+00,escritura_nodo_c,t,287.828,
+hash,2026-11-20 18:02:17.79105+00,lectura_local_a,t,0.262,
+hash,2026-11-20 18:02:17.793173+00,lectura_nodo_c,t,284.958,
+hash,2026-11-20 18:02:18.080899+00,lectura_global,t,436.334,
+hash,2026-11-20 18:02:18.519715+00,escritura_nodo_c,t,289.964,
+hash,2026-11-20 18:02:19.013453+00,lectura_local_a,t,0.405,
+hash,2026-11-20 18:02:19.04048+00,lectura_nodo_c,t,288.899,
+hash,2026-11-20 18:02:19.354762+00,lectura_global,t,437.757,
+hash,2026-11-20 18:02:19.834742+00,escritura_nodo_c,t,326.411,
+hash,2026-11-20 18:02:20.387522+00,lectura_local_a,t,0.371,
+hash,2026-11-20 18:02:20.428203+00,lectura_nodo_c,t,287.845,
+hash,2026-11-20 18:02:20.750822+00,lectura_global,t,434.244,
+hash,2026-11-20 18:02:21.211355+00,escritura_nodo_c,t,311.659,
+hash,2026-11-20 18:02:21.748318+00,lectura_local_a,t,0.425,
+hash,2026-11-20 18:02:21.774114+00,lectura_nodo_c,t,289.339,
+hash,2026-11-20 18:02:22.091011+00,lectura_global,t,434.818,
+hash,2026-11-20 18:02:22.55187+00,escritura_nodo_c,t,321.937,
+hash,2026-11-20 18:02:23.098998+00,lectura_local_a,t,0.553,
+hash,2026-11-20 18:02:23.131532+00,lectura_nodo_c,t,286.893,
+hash,2026-11-20 18:02:23.440356+00,lectura_global,t,435.507,
+hash,2026-11-20 18:02:23.892611+00,escritura_nodo_c,t,335.741,
+hash,2026-11-20 18:02:24.466701+00,lectura_local_a,t,0.261,
+hash,2026-11-20 18:02:24.490385+00,lectura_nodo_c,t,290.401,
+hash,2026-11-20 18:02:24.819028+00,lectura_global,t,432.735,
+hash,2026-11-20 18:02:25.28476+00,escritura_nodo_c,t,311.033,
+hash,2026-11-20 18:02:25.832445+00,lectura_local_a,t,0.419,
+hash,2026-11-20 18:02:25.835581+00,lectura_nodo_c,t,287.873,
+hash,2026-11-20 18:02:26.124689+00,lectura_global,t,434.274,
+hash,2026-11-20 18:02:26.562574+00,escritura_nodo_c,t,287.949,
+hash,2026-11-20 18:02:27.053662+00,lectura_local_a,t,0.245,
+hash,2026-11-20 18:02:27.055483+00,lectura_nodo_c,t,285.049,
+hash,2026-11-20 18:02:27.342879+00,lectura_global,t,434.354,
+hash,2026-11-20 18:02:27.7785+00,escritura_nodo_c,t,290.328,
+hash,2026-11-20 18:02:28.272662+00,lectura_local_a,t,0.375,
+hash,2026-11-20 18:02:28.275758+00,lectura_nodo_c,t,288.244,
+hash,2026-11-20 18:02:28.56639+00,lectura_global,t,435.503,
+hash,2026-11-20 18:02:29.004851+00,escritura_nodo_c,t,328.384,
+hash,2026-11-20 18:02:29.54004+00,lectura_local_a,t,0.392,
+hash,2026-11-20 18:02:29.543528+00,lectura_nodo_c,t,286.556,
+hash,2026-11-20 18:02:29.833009+00,lectura_global,t,434.877,
+hash,2026-11-20 18:02:30.277527+00,escritura_nodo_c,t,290.704,
+hash,2026-11-20 18:02:30.772835+00,lectura_local_a,t,0.429,
+hash,2026-11-20 18:02:30.778473+00,lectura_nodo_c,t,287.193,
+hash,2026-11-20 18:02:31.068204+00,lectura_global,t,434.601,
+hash,2026-11-20 18:02:31.504486+00,escritura_nodo_c,t,291.471,
+hash,2026-11-20 18:02:31.999429+00,lectura_local_a,t,0.631,
+hash,2026-11-20 18:02:32.002092+00,lectura_nodo_c,t,286.559,
+hash,2026-11-20 18:02:32.290459+00,lectura_global,t,434.738,
+hash,2026-11-20 18:02:32.726533+00,escritura_nodo_c,t,287.793,
+hash,2026-11-20 18:02:33.217583+00,lectura_local_a,t,0.249,
+hash,2026-11-20 18:02:33.220101+00,lectura_nodo_c,t,287.75,
+hash,2026-11-20 18:02:33.510874+00,lectura_global,t,438.052,
+hash,2026-11-20 18:02:33.950692+00,escritura_nodo_c,t,285.79,
+hash,2026-11-20 18:02:34.438842+00,lectura_local_a,t,0.237,
+hash,2026-11-20 18:02:34.440441+00,lectura_nodo_c,t,284.159,
+hash,2026-11-20 18:02:34.725959+00,lectura_global,t,428.132,
+hash,2026-11-20 18:02:35.15552+00,escritura_nodo_c,t,289.752,
+hash,2026-11-20 18:02:35.652265+00,lectura_local_a,t,0.238,
+hash,2026-11-20 18:02:35.653496+00,lectura_nodo_c,t,284.386,
+hash,2026-11-20 18:02:35.939579+00,lectura_global,t,430.532,
+hash,2026-11-20 18:02:36.371261+00,escritura_nodo_c,t,297.647,
+hash,2026-11-20 18:02:36.871581+00,lectura_local_a,t,0.291,
+hash,2026-11-20 18:02:36.873234+00,lectura_nodo_c,t,294.196,
+hash,2026-11-20 18:02:37.168631+00,lectura_global,t,430.347,
+hash,2026-11-20 18:02:37.601365+00,escritura_nodo_c,t,287.162,
+hash,2026-11-20 18:02:38.091495+00,lectura_local_a,t,0.24,
+hash,2026-11-20 18:02:38.093349+00,lectura_nodo_c,t,286.273,
+hash,2026-11-20 18:02:38.381595+00,lectura_global,t,430.462,
+hash,2026-11-20 18:02:38.813743+00,escritura_nodo_c,t,289.865,
+hash,2026-11-20 18:02:39.307371+00,lectura_local_a,t,0.24,
+hash,2026-11-20 18:02:39.316649+00,lectura_nodo_c,t,285.157,
+hash,2026-11-20 18:02:39.604258+00,lectura_global,t,431.815,
+hash,2026-11-20 18:02:40.046219+00,escritura_nodo_c,t,294.869,
+hash,2026-11-20 18:02:40.544596+00,lectura_local_a,t,0.308,
+hash,2026-11-20 18:02:40.549697+00,lectura_nodo_c,t,287.399,
+hash,2026-11-20 18:02:40.839689+00,lectura_global,t,431.399,
+hash,2026-11-20 18:02:41.273284+00,escritura_nodo_c,t,289.298,
+hash,2026-11-20 18:02:41.766672+00,lectura_local_a,t,0.37,
+hash,2026-11-20 18:02:41.76911+00,lectura_nodo_c,t,285.417,
+hash,2026-11-20 18:02:42.05601+00,lectura_global,t,433.021,
+hash,2026-11-20 18:02:42.493702+00,escritura_nodo_c,t,291.852,
+hash,2026-11-20 18:02:42.988387+00,lectura_local_a,t,0.531,
+hash,2026-11-20 18:02:42.991605+00,lectura_nodo_c,t,293.733,
+hash,2026-11-20 18:02:43.287727+00,lectura_global,t,435.814,
+hash,2026-11-20 18:02:43.731727+00,escritura_nodo_c,t,289.927,
+hash,2026-11-20 18:02:44.225526+00,lectura_local_a,t,0.372,
+hash,2026-11-20 18:02:44.227719+00,lectura_nodo_c,t,285.673,
+hash,2026-11-20 18:02:44.515186+00,lectura_global,t,430.094,
+hash,2026-11-20 18:02:44.946567+00,escritura_nodo_c,t,288.145,
+hash,2026-11-20 18:02:45.437538+00,lectura_local_a,t,0.344,
+hash,2026-11-20 18:02:45.439578+00,lectura_nodo_c,t,284.383,
+hash,2026-11-20 18:02:45.758366+00,lectura_global,t,433.912,
+hash,2026-11-20 18:02:46.195492+00,escritura_nodo_c,t,293.734,
