@@ -9,6 +9,19 @@ services:
     environment:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: bd2
+    command:
+      - postgres
+      - -c
+      - shared_buffers=3GB
+      - -c
+      - max_wal_size=8GB
+      - -c
+      - checkpoint_timeout=30min
+      - -c
+      - maintenance_work_mem=512MB
+      - -c
+      - autovacuum=off
+    shm_size: 256mb
     ports:
       - "5432:5432"
     volumes:
@@ -17,11 +30,21 @@ services:
       - pgdata:/var/lib/postgresql
       - ./tests:/tests:ro
       - ./sql/demo:/demo:ro
+      - ./benchmarks:/benchmarks:ro
+      - benchdata:/benchdata
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -d bd2"]
       interval: 3s
       timeout: 3s
       retries: 20
 
+  tools:
+    build: ./benchmarks/tools
+    profiles: ["tools"]
+    volumes:
+      - .:/w
+      - benchdata:/benchdata
+
 volumes:
   pgdata:
+  benchdata:
