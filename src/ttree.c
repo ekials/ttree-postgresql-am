@@ -11,6 +11,7 @@
 #include "funcapi.h"
 #include "miscadmin.h"
 #include "nodes/execnodes.h"
+#include "pgstat.h"
 #include "storage/bufmgr.h"
 #include "storage/itemptr.h"
 #include "utils/builtins.h"
@@ -510,6 +511,8 @@ ttbulkdelete(IndexVacuumInfo *info, IndexBulkDeleteResult *stats,
 
 	if (stats == NULL)
 		stats = (IndexBulkDeleteResult *) palloc0(sizeof(IndexBulkDeleteResult));
+	/* cada pasada recorre el indice completo: el conteo de vivas no se acumula entre pasadas */
+	stats->num_index_tuples = 0;
 
 	mb = tt_meta_lock(idx, BUFFER_LOCK_EXCLUSIVE, &m);
 	nblocks = RelationGetNumberOfBlocks(idx);
@@ -684,6 +687,10 @@ tt_scan_prepare(IndexScanDesc scan, TtScanState *st)
 		return;
 	}
 
+	pgstat_count_index_scan(st->index);
+	if (scan->instrument)
+		scan->instrument->nsearches++;
+
 	mb = tt_meta_lock(st->index, BUFFER_LOCK_SHARE, &m);
 	tt_range_rec(st->index, m.root, (int32) lo, (int32) hi,
 				 tt_scan_emit, st);
@@ -804,7 +811,8 @@ tthandler(PG_FUNCTION_ARGS)
 	amroutine->amstrategies = 5;		
 	amroutine->amsupport = 1;			
 	amroutine->amoptsprocnum = 0;
-	amroutine->amoptionalkey = true;
+	/* los NULL no se indexan: el planner no debe usar el indice sin condicion sobre la clave */
+	amroutine->amoptionalkey = false;
 	amroutine->amkeytype = InvalidOid;
 
 	amroutine->ambuild = ttbuild;
