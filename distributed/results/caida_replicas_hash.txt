@@ -1,20 +1,20 @@
 consistencia de replicas tras la recuperacion (hash):
   hash.clientes_a primario(nodo_a)=100375 replica(nodo_b)=100375 OK
-  hash.pedidos_a primario(nodo_a)=334800 replica(nodo_b)=334800 OK
-  hash.detalle_a primario(nodo_a)=669316 replica(nodo_b)=669316 OK
+  hash.pedidos_a primario(nodo_a)=335759 replica(nodo_b)=335759 OK
+  hash.detalle_a primario(nodo_a)=670191 replica(nodo_b)=670191 OK
   hash.clientes_b primario(nodo_b)=99822 replica(nodo_c)=99822 OK
-  hash.pedidos_b primario(nodo_b)=332827 replica(nodo_c)=332827 OK
-  hash.detalle_b primario(nodo_b)=666530 replica(nodo_c)=666530 OK
+  hash.pedidos_b primario(nodo_b)=333541 replica(nodo_c)=333541 OK
+  hash.detalle_b primario(nodo_b)=667244 replica(nodo_c)=667244 OK
   hash.clientes_c primario(nodo_c)=99803 replica(nodo_a)=99803 OK
-  hash.pedidos_c primario(nodo_c)=332408 replica(nodo_a)=332408 OK
-  hash.detalle_c primario(nodo_c)=664154 replica(nodo_a)=664154 OK
+  hash.pedidos_c primario(nodo_c)=333318 replica(nodo_a)=333318 OK
+  hash.detalle_c primario(nodo_c)=664940 replica(nodo_a)=664940 OK
   suscripciones en nodo_a:
-    sub_frag_c pid=4644 recibido=0/33C639D0
+    sub_frag_c pid=19744 recibido=0/3E9FDB58
   suscripciones en nodo_b:
-    sub_ref_b pid=145 recibido=0/649CBA20
-    sub_frag_a pid=154 recibido=0/649CBA20
+    sub_ref_b pid=145 recibido=0/74E83768
+    sub_frag_a pid=154 recibido=0/74E83768
     sub_frag_a pid=192 recibido=-
     sub_ref_b pid=193 recibido=-
   suscripciones en nodo_c:
-    sub_ref_c pid=36 recibido=0/649CBA20
-    sub_frag_b pid=37 recibido=0/33D2BAD8
+    sub_ref_c pid=36 recibido=0/74E83768
+    sub_frag_b pid=37 recibido=0/43504CE0

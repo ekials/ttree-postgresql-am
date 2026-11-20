@@ -1,20 +1,20 @@
 consistencia de replicas tras la recuperacion (rango):
   rango.clientes_a primario(nodo_a)=100000 replica(nodo_b)=100000 OK
-  rango.pedidos_a primario(nodo_a)=334260 replica(nodo_b)=334260 OK
-  rango.detalle_a primario(nodo_a)=667720 replica(nodo_b)=667720 OK
+  rango.pedidos_a primario(nodo_a)=351667 replica(nodo_b)=351667 OK
+  rango.detalle_a primario(nodo_a)=685043 replica(nodo_b)=685043 OK
   rango.clientes_b primario(nodo_b)=100000 replica(nodo_c)=100000 OK
-  rango.pedidos_b primario(nodo_b)=331767 replica(nodo_c)=331767 OK
-  rango.detalle_b primario(nodo_b)=663772 replica(nodo_c)=663772 OK
+  rango.pedidos_b primario(nodo_b)=332628 replica(nodo_c)=332628 OK
+  rango.detalle_b primario(nodo_b)=664633 replica(nodo_c)=664633 OK
   rango.clientes_c primario(nodo_c)=100000 replica(nodo_a)=100000 OK
-  rango.pedidos_c primario(nodo_c)=334035 replica(nodo_a)=334035 OK
-  rango.detalle_c primario(nodo_c)=668508 replica(nodo_a)=668508 OK
+  rango.pedidos_c primario(nodo_c)=335429 replica(nodo_a)=335429 OK
+  rango.detalle_c primario(nodo_c)=669772 replica(nodo_a)=669772 OK
   suscripciones en nodo_a:
-    sub_frag_c pid=4115 recibido=0/33C585B0
+    sub_frag_c pid=19404 recibido=0/3E9750A8
   suscripciones en nodo_b:
-    sub_ref_b pid=145 recibido=0/649349A8
-    sub_frag_a pid=154 recibido=0/649349A8
+    sub_ref_b pid=145 recibido=0/74D4BA70
+    sub_frag_a pid=154 recibido=0/74D4BA70
     sub_frag_a pid=192 recibido=-
     sub_ref_b pid=193 recibido=-
   suscripciones en nodo_c:
-    sub_ref_c pid=36 recibido=0/649349A8
-    sub_frag_b pid=37 recibido=0/33D2A0B0
+    sub_ref_c pid=36 recibido=0/74D4BAA8
+    sub_frag_b pid=37 recibido=0/43500C18

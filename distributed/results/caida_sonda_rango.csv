@@ -1,853 +1,845 @@
 estrategia,instante,consulta,ok,ms,error
-rango,2026-11-20 17:58:27.263447+00,lectura_local_a,t,0.939,
-rango,2026-11-20 17:58:27.266417+00,lectura_nodo_c,t,288.935,
-rango,2026-11-20 17:58:27.55654+00,lectura_global,t,437.111,
-rango,2026-11-20 17:58:27.995869+00,escritura_nodo_c,t,292.22,
-rango,2026-11-20 17:58:28.491937+00,lectura_local_a,t,0.236,
-rango,2026-11-20 17:58:28.495338+00,lectura_nodo_c,t,287.272,
-rango,2026-11-20 17:58:28.784856+00,lectura_global,t,434.244,
-rango,2026-11-20 17:58:29.225655+00,escritura_nodo_c,t,330.196,
-rango,2026-11-20 17:58:29.759031+00,lectura_local_a,t,0.215,
-rango,2026-11-20 17:58:29.760886+00,lectura_nodo_c,t,284.052,
-rango,2026-11-20 17:58:30.04605+00,lectura_global,t,433.667,
-rango,2026-11-20 17:58:30.482633+00,escritura_nodo_c,t,291.408,
-rango,2026-11-20 17:58:30.977108+00,lectura_local_a,t,0.311,
-rango,2026-11-20 17:58:30.98636+00,lectura_nodo_c,t,287.726,
-rango,2026-11-20 17:58:31.275711+00,lectura_global,t,434.836,
-rango,2026-11-20 17:58:31.712301+00,escritura_nodo_c,t,288.865,
-rango,2026-11-20 17:58:32.204861+00,lectura_local_a,t,0.353,
-rango,2026-11-20 17:58:32.207499+00,lectura_nodo_c,t,287.066,
-rango,2026-11-20 17:58:32.495868+00,lectura_global,t,433.226,
-rango,2026-11-20 17:58:32.930979+00,escritura_nodo_c,t,290.015,
-rango,2026-11-20 17:58:33.42421+00,lectura_local_a,t,0.366,
-rango,2026-11-20 17:58:33.427236+00,lectura_nodo_c,t,287.115,
-rango,2026-11-20 17:58:33.716174+00,lectura_global,t,435.454,
-rango,2026-11-20 17:58:34.153841+00,escritura_nodo_c,t,289.315,
-rango,2026-11-20 17:58:34.646438+00,lectura_local_a,t,0.358,
-rango,2026-11-20 17:58:34.649082+00,lectura_nodo_c,t,287.996,
-rango,2026-11-20 17:58:34.938888+00,lectura_global,t,430.676,
-rango,2026-11-20 17:58:35.371374+00,escritura_nodo_c,t,287.349,
-rango,2026-11-20 17:58:35.86202+00,lectura_local_a,t,0.555,
-rango,2026-11-20 17:58:35.863871+00,lectura_nodo_c,f,3028.079,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:38.894337+00,lectura_global,f,118.695,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:39.015606+00,escritura_nodo_c,f,21.162,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:39.240727+00,lectura_local_a,t,0.355,
-rango,2026-11-20 17:58:39.24319+00,lectura_nodo_c,f,27.611,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:39.272944+00,lectura_global,f,109.684,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:39.384839+00,escritura_nodo_c,f,13.067,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:39.602196+00,lectura_local_a,t,0.418,
-rango,2026-11-20 17:58:39.605146+00,lectura_nodo_c,f,48.026,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:39.655264+00,lectura_global,f,100.768,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:39.758056+00,escritura_nodo_c,f,18.712,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:39.980391+00,lectura_local_a,t,0.631,
-rango,2026-11-20 17:58:39.983391+00,lectura_nodo_c,f,39.934,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:40.025819+00,lectura_global,f,110.313,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:40.138152+00,escritura_nodo_c,f,33.532,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:40.374923+00,lectura_local_a,t,0.258,
-rango,2026-11-20 17:58:40.377573+00,lectura_nodo_c,f,19.999,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:40.399576+00,lectura_global,f,103.48,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:40.505515+00,escritura_nodo_c,f,13.52,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:40.72237+00,lectura_local_a,t,0.31,
-rango,2026-11-20 17:58:40.724075+00,lectura_nodo_c,f,51.402,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:40.778112+00,lectura_global,f,95.285,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:40.875458+00,escritura_nodo_c,f,34.883,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:41.166807+00,lectura_local_a,t,0.298,
-rango,2026-11-20 17:58:41.168331+00,lectura_nodo_c,f,15.345,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:41.18514+00,lectura_global,f,128.426,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:41.316238+00,escritura_nodo_c,f,81.17,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:41.600976+00,lectura_local_a,t,0.26,
-rango,2026-11-20 17:58:41.603117+00,lectura_nodo_c,f,70.496,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:41.675645+00,lectura_global,f,149.502,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:41.826633+00,escritura_nodo_c,f,19.454,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:42.049052+00,lectura_local_a,t,0.455,
-rango,2026-11-20 17:58:42.051375+00,lectura_nodo_c,f,23.197,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:42.076195+00,lectura_global,f,111.372,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:42.189804+00,escritura_nodo_c,f,14.827,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:42.408113+00,lectura_local_a,t,0.469,
-rango,2026-11-20 17:58:42.410347+00,lectura_nodo_c,f,25.961,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:42.438397+00,lectura_global,f,95.413,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:42.535456+00,escritura_nodo_c,f,16.007,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:42.755439+00,lectura_local_a,t,0.402,
-rango,2026-11-20 17:58:42.757932+00,lectura_nodo_c,f,45.429,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:42.805229+00,lectura_global,f,127.395,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:42.93607+00,escritura_nodo_c,f,33.741,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:43.174388+00,lectura_local_a,t,0.386,
-rango,2026-11-20 17:58:43.176697+00,lectura_nodo_c,f,12.816,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:43.191856+00,lectura_global,f,97.606,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:43.291339+00,escritura_nodo_c,f,12.814,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:43.508238+00,lectura_local_a,t,0.283,
-rango,2026-11-20 17:58:43.510443+00,lectura_nodo_c,f,15.709,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:43.527163+00,lectura_global,f,120.274,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:43.649036+00,escritura_nodo_c,f,13.706,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:43.867487+00,lectura_local_a,t,0.565,
-rango,2026-11-20 17:58:43.870895+00,lectura_nodo_c,f,49.488,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:43.92317+00,lectura_global,f,109.88,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:44.036494+00,escritura_nodo_c,f,30.31,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:44.27016+00,lectura_local_a,t,0.258,
-rango,2026-11-20 17:58:44.272539+00,lectura_nodo_c,f,22.22,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:44.296635+00,lectura_global,f,112.275,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:44.410453+00,escritura_nodo_c,f,19.198,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:44.632677+00,lectura_local_a,t,0.257,
-rango,2026-11-20 17:58:44.63462+00,lectura_nodo_c,f,38.402,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:44.676073+00,lectura_global,f,101.333,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:44.779517+00,escritura_nodo_c,f,16.065,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:45.004493+00,lectura_local_a,t,0.392,
-rango,2026-11-20 17:58:45.007843+00,lectura_nodo_c,f,16.238,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:45.02604+00,lectura_global,f,95.736,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:45.124511+00,escritura_nodo_c,f,13.187,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:45.341106+00,lectura_local_a,t,0.391,
-rango,2026-11-20 17:58:45.34449+00,lectura_nodo_c,f,48.66,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:45.394688+00,lectura_global,f,97.292,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:45.495138+00,escritura_nodo_c,f,14.747,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:45.713417+00,lectura_local_a,t,0.806,
-rango,2026-11-20 17:58:45.723991+00,lectura_nodo_c,f,20.438,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:45.746216+00,lectura_global,f,97.103,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:45.845757+00,escritura_nodo_c,f,122.725,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:46.173567+00,lectura_local_a,t,0.408,
-rango,2026-11-20 17:58:46.176505+00,lectura_nodo_c,f,24.773,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:46.20356+00,lectura_global,f,95.534,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:46.302147+00,escritura_nodo_c,f,15.6,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:46.521083+00,lectura_local_a,t,0.252,
-rango,2026-11-20 17:58:46.523201+00,lectura_nodo_c,f,70.408,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:46.596526+00,lectura_global,f,247.391,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:46.84654+00,escritura_nodo_c,f,66.167,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:47.116064+00,lectura_local_a,t,0.333,
-rango,2026-11-20 17:58:47.119619+00,lectura_nodo_c,f,13.221,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:47.13497+00,lectura_global,f,96.965,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:47.2338+00,escritura_nodo_c,f,17.231,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:47.454835+00,lectura_local_a,t,0.545,
-rango,2026-11-20 17:58:47.457651+00,lectura_nodo_c,f,29.483,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:47.488359+00,lectura_global,f,106.426,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:47.597024+00,escritura_nodo_c,f,10.666,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:47.811992+00,lectura_local_a,t,0.308,
-rango,2026-11-20 17:58:47.813691+00,lectura_nodo_c,f,46.3,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:47.863499+00,lectura_global,f,138.206,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:48.003804+00,escritura_nodo_c,f,48.24,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:48.254589+00,lectura_local_a,t,0.425,
-rango,2026-11-20 17:58:48.258059+00,lectura_nodo_c,f,73.444,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:48.333881+00,lectura_global,f,97.775,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:48.434537+00,escritura_nodo_c,f,21.015,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:48.658905+00,lectura_local_a,t,0.501,
-rango,2026-11-20 17:58:48.662264+00,lectura_nodo_c,f,27.889,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:48.693011+00,lectura_global,f,102.104,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:48.797411+00,escritura_nodo_c,f,15.226,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:49.016805+00,lectura_local_a,t,0.497,
-rango,2026-11-20 17:58:49.019547+00,lectura_nodo_c,f,38.095,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:49.060121+00,lectura_global,f,109.062,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:49.171584+00,escritura_nodo_c,f,91.98,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:49.467132+00,lectura_local_a,t,0.332,
-rango,2026-11-20 17:58:49.479417+00,lectura_nodo_c,f,19.734,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:49.501076+00,lectura_global,f,96.645,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:49.599627+00,escritura_nodo_c,f,15.996,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:49.819121+00,lectura_local_a,t,0.456,
-rango,2026-11-20 17:58:49.822049+00,lectura_nodo_c,f,17.903,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:49.842525+00,lectura_global,f,96.997,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:49.942237+00,escritura_nodo_c,f,11.989,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:50.15964+00,lectura_local_a,t,0.438,
-rango,2026-11-20 17:58:50.170682+00,lectura_nodo_c,f,47.055,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:50.220658+00,lectura_global,f,146.306,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:50.368932+00,escritura_nodo_c,f,48.89,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:50.621563+00,lectura_local_a,t,0.441,
-rango,2026-11-20 17:58:50.624452+00,lectura_nodo_c,f,23.452,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:50.649821+00,lectura_global,f,177.281,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:50.829544+00,escritura_nodo_c,f,59.689,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:51.092218+00,lectura_local_a,t,0.285,
-rango,2026-11-20 17:58:51.095007+00,lectura_nodo_c,f,10.44,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:51.107395+00,lectura_global,f,99.759,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:51.209887+00,escritura_nodo_c,f,13.599,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:51.426895+00,lectura_local_a,t,0.321,
-rango,2026-11-20 17:58:51.431336+00,lectura_nodo_c,f,19.688,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:51.453151+00,lectura_global,f,101.079,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:51.558931+00,escritura_nodo_c,f,16.86,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:51.779433+00,lectura_local_a,t,0.292,
-rango,2026-11-20 17:58:51.784774+00,lectura_nodo_c,f,29.603,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:51.817438+00,lectura_global,f,151.021,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:51.970571+00,escritura_nodo_c,f,46.018,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:52.221471+00,lectura_local_a,t,0.312,
-rango,2026-11-20 17:58:52.231692+00,lectura_nodo_c,f,13.1,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:52.247253+00,lectura_global,f,96.398,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:52.346847+00,escritura_nodo_c,f,34.533,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:52.586114+00,lectura_local_a,t,0.269,
-rango,2026-11-20 17:58:52.588428+00,lectura_nodo_c,f,19.513,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:52.610739+00,lectura_global,f,97.241,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:52.711617+00,escritura_nodo_c,f,87.161,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:53.001961+00,lectura_local_a,t,0.536,
-rango,2026-11-20 17:58:53.004552+00,lectura_nodo_c,f,48.872,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:53.055773+00,lectura_global,f,122.058,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:53.1886+00,escritura_nodo_c,f,96.316,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:53.489427+00,lectura_local_a,t,0.406,
-rango,2026-11-20 17:58:53.492675+00,lectura_nodo_c,f,38.059,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:53.533194+00,lectura_global,f,107.222,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:53.642921+00,escritura_nodo_c,f,15.799,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:53.862468+00,lectura_local_a,t,0.596,
-rango,2026-11-20 17:58:53.866885+00,lectura_nodo_c,f,33.383,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:53.903946+00,lectura_global,f,97.025,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:54.00353+00,escritura_nodo_c,f,30.866,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:54.237521+00,lectura_local_a,t,0.379,
-rango,2026-11-20 17:58:54.239619+00,lectura_nodo_c,f,35.625,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:54.277833+00,lectura_global,f,108.167,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:54.389063+00,escritura_nodo_c,f,30.811,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:54.623924+00,lectura_local_a,t,0.394,
-rango,2026-11-20 17:58:54.626847+00,lectura_nodo_c,f,37.4,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:54.667201+00,lectura_global,f,97.574,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:54.766352+00,escritura_nodo_c,f,18.168,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:54.988496+00,lectura_local_a,t,0.43,
-rango,2026-11-20 17:58:54.991115+00,lectura_nodo_c,f,41.528,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:55.03437+00,lectura_global,f,94.577,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:55.130531+00,escritura_nodo_c,f,10.942,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:55.344805+00,lectura_local_a,t,0.303,
-rango,2026-11-20 17:58:55.346224+00,lectura_nodo_c,f,23.397,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:55.371593+00,lectura_global,f,107.284,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:55.480548+00,escritura_nodo_c,f,17.494,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:55.701007+00,lectura_local_a,t,0.258,
-rango,2026-11-20 17:58:55.706159+00,lectura_nodo_c,f,23.115,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:55.730894+00,lectura_global,f,108.647,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:55.841189+00,escritura_nodo_c,f,19.77,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:56.064154+00,lectura_local_a,t,0.264,
-rango,2026-11-20 17:58:56.066129+00,lectura_nodo_c,f,12.132,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:56.080086+00,lectura_global,f,95.797,"could not connect to server ""nodo_c"""
-rango,2026-11-20 17:58:56.178061+00,escritura_nodo_c,f,78.804,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:58:56.459941+00,lectura_local_a,t,0.31,
-rango,2026-11-20 17:58:56.463431+00,lectura_nodo_c,t,0.337,
-rango,2026-11-20 17:58:56.465279+00,lectura_global,t,148.995,
-rango,2026-11-20 17:58:56.624648+00,escritura_nodo_c,f,0.289,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:58:56.828739+00,lectura_local_a,t,0.26,
-rango,2026-11-20 17:58:56.830916+00,lectura_nodo_c,t,0.188,
-rango,2026-11-20 17:58:56.832294+00,lectura_global,t,148.386,
-rango,2026-11-20 17:58:56.986049+00,escritura_nodo_c,f,0.247,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:58:57.18974+00,lectura_local_a,t,0.563,
-rango,2026-11-20 17:58:57.198728+00,lectura_nodo_c,t,0.236,
-rango,2026-11-20 17:58:57.200719+00,lectura_global,t,148.855,
-rango,2026-11-20 17:58:57.351608+00,escritura_nodo_c,f,0.317,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:58:57.563264+00,lectura_local_a,t,0.292,
-rango,2026-11-20 17:58:57.565611+00,lectura_nodo_c,t,0.194,
-rango,2026-11-20 17:58:57.567168+00,lectura_global,t,144.281,
-rango,2026-11-20 17:58:57.71274+00,escritura_nodo_c,f,0.201,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:58:57.915734+00,lectura_local_a,t,0.261,
-rango,2026-11-20 17:58:57.917593+00,lectura_nodo_c,t,0.158,
-rango,2026-11-20 17:58:57.920846+00,lectura_global,t,146.607,
-rango,2026-11-20 17:58:58.069384+00,escritura_nodo_c,f,0.196,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:58:58.272367+00,lectura_local_a,t,0.655,
-rango,2026-11-20 17:58:58.27553+00,lectura_nodo_c,t,0.269,
-rango,2026-11-20 17:58:58.27722+00,lectura_global,t,147.205,
-rango,2026-11-20 17:58:58.426405+00,escritura_nodo_c,f,0.225,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:58:58.629445+00,lectura_local_a,t,0.365,
-rango,2026-11-20 17:58:58.632053+00,lectura_nodo_c,t,0.187,
-rango,2026-11-20 17:58:58.633764+00,lectura_global,t,148.499,
-rango,2026-11-20 17:58:58.785122+00,escritura_nodo_c,f,0.244,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:58:58.987556+00,lectura_local_a,t,0.534,
-rango,2026-11-20 17:58:58.989642+00,lectura_nodo_c,t,0.392,
-rango,2026-11-20 17:58:58.990712+00,lectura_global,t,144.852,
-rango,2026-11-20 17:58:59.136569+00,escritura_nodo_c,f,0.19,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:58:59.33908+00,lectura_local_a,t,0.292,
-rango,2026-11-20 17:58:59.340227+00,lectura_nodo_c,t,0.151,
-rango,2026-11-20 17:58:59.341253+00,lectura_global,t,146.571,
-rango,2026-11-20 17:58:59.489755+00,escritura_nodo_c,f,0.214,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:58:59.69277+00,lectura_local_a,t,0.313,
-rango,2026-11-20 17:58:59.694619+00,lectura_nodo_c,t,0.201,
-rango,2026-11-20 17:58:59.696155+00,lectura_global,t,145.444,
-rango,2026-11-20 17:58:59.843472+00,escritura_nodo_c,f,0.192,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:00.045308+00,lectura_local_a,t,0.256,
-rango,2026-11-20 17:59:00.049437+00,lectura_nodo_c,t,0.199,
-rango,2026-11-20 17:59:00.052451+00,lectura_global,t,145.164,
-rango,2026-11-20 17:59:00.224924+00,escritura_nodo_c,f,0.251,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:00.465774+00,lectura_local_a,t,2.078,
-rango,2026-11-20 17:59:00.475231+00,lectura_nodo_c,t,1.322,
-rango,2026-11-20 17:59:00.482737+00,lectura_global,t,161.113,
-rango,2026-11-20 17:59:00.649979+00,escritura_nodo_c,f,1.098,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:00.856972+00,lectura_local_a,t,1.49,
-rango,2026-11-20 17:59:00.875917+00,lectura_nodo_c,t,1.291,
-rango,2026-11-20 17:59:00.893804+00,lectura_global,t,173.637,
-rango,2026-11-20 17:59:01.077906+00,escritura_nodo_c,f,1.188,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:01.283889+00,lectura_local_a,t,0.337,
-rango,2026-11-20 17:59:01.28623+00,lectura_nodo_c,t,0.205,
-rango,2026-11-20 17:59:01.287419+00,lectura_global,t,146.416,
-rango,2026-11-20 17:59:01.435722+00,escritura_nodo_c,f,0.244,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:01.63832+00,lectura_local_a,t,0.42,
-rango,2026-11-20 17:59:01.640278+00,lectura_nodo_c,t,0.274,
-rango,2026-11-20 17:59:01.641418+00,lectura_global,t,145.704,
-rango,2026-11-20 17:59:01.788525+00,escritura_nodo_c,f,0.279,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:01.991097+00,lectura_local_a,t,0.314,
-rango,2026-11-20 17:59:01.993052+00,lectura_nodo_c,t,0.212,
-rango,2026-11-20 17:59:01.994308+00,lectura_global,t,146.328,
-rango,2026-11-20 17:59:02.143224+00,escritura_nodo_c,f,0.224,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:02.346085+00,lectura_local_a,t,0.258,
-rango,2026-11-20 17:59:02.347241+00,lectura_nodo_c,t,0.207,
-rango,2026-11-20 17:59:02.348237+00,lectura_global,t,144.531,
-rango,2026-11-20 17:59:02.494598+00,escritura_nodo_c,f,0.241,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:02.697572+00,lectura_local_a,t,0.389,
-rango,2026-11-20 17:59:02.701645+00,lectura_nodo_c,t,0.344,
-rango,2026-11-20 17:59:02.703862+00,lectura_global,t,147.641,
-rango,2026-11-20 17:59:02.853477+00,escritura_nodo_c,f,0.566,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:03.056597+00,lectura_local_a,t,0.339,
-rango,2026-11-20 17:59:03.058894+00,lectura_nodo_c,t,0.193,
-rango,2026-11-20 17:59:03.060493+00,lectura_global,t,148.495,
-rango,2026-11-20 17:59:03.210765+00,escritura_nodo_c,f,0.207,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:03.413452+00,lectura_local_a,t,0.343,
-rango,2026-11-20 17:59:03.415829+00,lectura_nodo_c,t,0.442,
-rango,2026-11-20 17:59:03.41802+00,lectura_global,t,148.642,
-rango,2026-11-20 17:59:03.568832+00,escritura_nodo_c,f,0.244,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:03.772994+00,lectura_local_a,t,0.398,
-rango,2026-11-20 17:59:03.775524+00,lectura_nodo_c,t,0.193,
-rango,2026-11-20 17:59:03.777631+00,lectura_global,t,147.297,
-rango,2026-11-20 17:59:03.926974+00,escritura_nodo_c,f,0.23,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:04.130099+00,lectura_local_a,t,0.326,
-rango,2026-11-20 17:59:04.132722+00,lectura_nodo_c,t,0.467,
-rango,2026-11-20 17:59:04.135414+00,lectura_global,t,146.429,
-rango,2026-11-20 17:59:04.284242+00,escritura_nodo_c,f,0.239,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:04.487772+00,lectura_local_a,t,0.425,
-rango,2026-11-20 17:59:04.491338+00,lectura_nodo_c,t,0.306,
-rango,2026-11-20 17:59:04.493144+00,lectura_global,t,148.763,
-rango,2026-11-20 17:59:04.643553+00,escritura_nodo_c,f,0.242,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:04.84676+00,lectura_local_a,t,0.267,
-rango,2026-11-20 17:59:04.849219+00,lectura_nodo_c,t,0.306,
-rango,2026-11-20 17:59:04.850975+00,lectura_global,t,148.226,
-rango,2026-11-20 17:59:05.001846+00,escritura_nodo_c,f,0.256,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:05.205307+00,lectura_local_a,t,0.26,
-rango,2026-11-20 17:59:05.226044+00,lectura_nodo_c,t,0.248,
-rango,2026-11-20 17:59:05.237342+00,lectura_global,t,148.011,
-rango,2026-11-20 17:59:05.388704+00,escritura_nodo_c,f,0.448,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:05.592371+00,lectura_local_a,t,0.274,
-rango,2026-11-20 17:59:05.594484+00,lectura_nodo_c,t,0.205,
-rango,2026-11-20 17:59:05.596168+00,lectura_global,t,147.568,
-rango,2026-11-20 17:59:05.745854+00,escritura_nodo_c,f,0.205,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:05.948824+00,lectura_local_a,t,0.263,
-rango,2026-11-20 17:59:05.951113+00,lectura_nodo_c,t,0.202,
-rango,2026-11-20 17:59:05.952489+00,lectura_global,t,147.815,
-rango,2026-11-20 17:59:06.102691+00,escritura_nodo_c,f,0.334,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:06.306526+00,lectura_local_a,t,0.403,
-rango,2026-11-20 17:59:06.308718+00,lectura_nodo_c,t,0.177,
-rango,2026-11-20 17:59:06.310237+00,lectura_global,t,147.367,
-rango,2026-11-20 17:59:06.459673+00,escritura_nodo_c,f,0.203,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:06.665068+00,lectura_local_a,t,0.399,
-rango,2026-11-20 17:59:06.667261+00,lectura_nodo_c,t,0.41,
-rango,2026-11-20 17:59:06.67238+00,lectura_global,t,146.097,
-rango,2026-11-20 17:59:06.820236+00,escritura_nodo_c,f,0.236,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:07.023603+00,lectura_local_a,t,0.507,
-rango,2026-11-20 17:59:07.026402+00,lectura_nodo_c,t,0.251,
-rango,2026-11-20 17:59:07.027986+00,lectura_global,t,146.996,
-rango,2026-11-20 17:59:07.177258+00,escritura_nodo_c,f,0.205,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:07.3801+00,lectura_local_a,t,0.546,
-rango,2026-11-20 17:59:07.382627+00,lectura_nodo_c,t,0.198,
-rango,2026-11-20 17:59:07.384184+00,lectura_global,t,145.186,
-rango,2026-11-20 17:59:07.531526+00,escritura_nodo_c,f,0.233,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:07.734258+00,lectura_local_a,t,0.253,
-rango,2026-11-20 17:59:07.735879+00,lectura_nodo_c,t,0.147,
-rango,2026-11-20 17:59:07.736736+00,lectura_global,t,148.161,
-rango,2026-11-20 17:59:07.887047+00,escritura_nodo_c,f,0.188,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:08.090916+00,lectura_local_a,t,0.629,
-rango,2026-11-20 17:59:08.105651+00,lectura_nodo_c,t,0.245,
-rango,2026-11-20 17:59:08.106981+00,lectura_global,t,145.139,
-rango,2026-11-20 17:59:08.254362+00,escritura_nodo_c,f,0.258,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:08.45808+00,lectura_local_a,t,0.285,
-rango,2026-11-20 17:59:08.460499+00,lectura_nodo_c,t,0.233,
-rango,2026-11-20 17:59:08.462456+00,lectura_global,t,148.929,
-rango,2026-11-20 17:59:08.613627+00,escritura_nodo_c,f,0.31,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:08.815759+00,lectura_local_a,t,0.261,
-rango,2026-11-20 17:59:08.817764+00,lectura_nodo_c,t,0.179,
-rango,2026-11-20 17:59:08.818775+00,lectura_global,t,145.475,
-rango,2026-11-20 17:59:08.965986+00,escritura_nodo_c,f,0.336,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:09.16896+00,lectura_local_a,t,0.423,
-rango,2026-11-20 17:59:09.171657+00,lectura_nodo_c,t,0.234,
-rango,2026-11-20 17:59:09.173249+00,lectura_global,t,147.315,
-rango,2026-11-20 17:59:09.322191+00,escritura_nodo_c,f,0.227,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:09.524926+00,lectura_local_a,t,0.249,
-rango,2026-11-20 17:59:09.526407+00,lectura_nodo_c,t,0.157,
-rango,2026-11-20 17:59:09.527773+00,lectura_global,t,145.882,
-rango,2026-11-20 17:59:09.675378+00,escritura_nodo_c,f,0.222,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:09.878341+00,lectura_local_a,t,0.407,
-rango,2026-11-20 17:59:09.882179+00,lectura_nodo_c,t,0.246,
-rango,2026-11-20 17:59:09.884402+00,lectura_global,t,146.739,
-rango,2026-11-20 17:59:10.034087+00,escritura_nodo_c,f,0.222,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:10.237064+00,lectura_local_a,t,0.576,
-rango,2026-11-20 17:59:10.240379+00,lectura_nodo_c,t,0.428,
-rango,2026-11-20 17:59:10.242433+00,lectura_global,t,147.195,
-rango,2026-11-20 17:59:10.392643+00,escritura_nodo_c,f,0.26,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:10.596643+00,lectura_local_a,t,0.259,
-rango,2026-11-20 17:59:10.598883+00,lectura_nodo_c,t,0.258,
-rango,2026-11-20 17:59:10.600422+00,lectura_global,t,146.664,
-rango,2026-11-20 17:59:10.750444+00,escritura_nodo_c,f,0.258,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:10.954424+00,lectura_local_a,t,0.496,
-rango,2026-11-20 17:59:10.957421+00,lectura_nodo_c,t,0.194,
-rango,2026-11-20 17:59:10.958766+00,lectura_global,t,146.317,
-rango,2026-11-20 17:59:11.107249+00,escritura_nodo_c,f,0.239,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:11.31169+00,lectura_local_a,t,0.432,
-rango,2026-11-20 17:59:11.315427+00,lectura_nodo_c,t,0.321,
-rango,2026-11-20 17:59:11.317309+00,lectura_global,t,146.135,
-rango,2026-11-20 17:59:11.465694+00,escritura_nodo_c,f,0.358,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:11.668649+00,lectura_local_a,t,0.336,
-rango,2026-11-20 17:59:11.67029+00,lectura_nodo_c,t,0.463,
-rango,2026-11-20 17:59:11.672318+00,lectura_global,t,146.655,
-rango,2026-11-20 17:59:11.821587+00,escritura_nodo_c,f,0.247,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:12.025096+00,lectura_local_a,t,0.277,
-rango,2026-11-20 17:59:12.026742+00,lectura_nodo_c,t,0.228,
-rango,2026-11-20 17:59:12.0292+00,lectura_global,t,146.721,
-rango,2026-11-20 17:59:12.178967+00,escritura_nodo_c,f,0.239,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:12.383041+00,lectura_local_a,t,0.495,
-rango,2026-11-20 17:59:12.387064+00,lectura_nodo_c,t,0.271,
-rango,2026-11-20 17:59:12.389367+00,lectura_global,t,147.247,
-rango,2026-11-20 17:59:12.538937+00,escritura_nodo_c,f,0.26,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:12.742051+00,lectura_local_a,t,0.257,
-rango,2026-11-20 17:59:12.752076+00,lectura_nodo_c,t,0.176,
-rango,2026-11-20 17:59:12.754583+00,lectura_global,t,146.475,
-rango,2026-11-20 17:59:12.902923+00,escritura_nodo_c,f,0.26,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:13.10629+00,lectura_local_a,t,0.454,
-rango,2026-11-20 17:59:13.109532+00,lectura_nodo_c,t,0.272,
-rango,2026-11-20 17:59:13.111577+00,lectura_global,t,148.059,
-rango,2026-11-20 17:59:13.261618+00,escritura_nodo_c,f,0.199,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:13.464261+00,lectura_local_a,t,0.423,
-rango,2026-11-20 17:59:13.467076+00,lectura_nodo_c,t,0.29,
-rango,2026-11-20 17:59:13.469012+00,lectura_global,t,146.917,
-rango,2026-11-20 17:59:13.617843+00,escritura_nodo_c,f,0.197,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:13.821055+00,lectura_local_a,t,0.417,
-rango,2026-11-20 17:59:13.823968+00,lectura_nodo_c,t,0.198,
-rango,2026-11-20 17:59:13.82675+00,lectura_global,t,147.091,
-rango,2026-11-20 17:59:13.976661+00,escritura_nodo_c,f,0.25,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:14.18058+00,lectura_local_a,t,0.596,
-rango,2026-11-20 17:59:14.182938+00,lectura_nodo_c,t,0.147,
-rango,2026-11-20 17:59:14.185601+00,lectura_global,t,146.745,
-rango,2026-11-20 17:59:14.334958+00,escritura_nodo_c,f,0.22,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:14.538262+00,lectura_local_a,t,0.687,
-rango,2026-11-20 17:59:14.540766+00,lectura_nodo_c,t,0.213,
-rango,2026-11-20 17:59:14.542032+00,lectura_global,t,146.807,
-rango,2026-11-20 17:59:14.691172+00,escritura_nodo_c,f,0.573,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:14.894645+00,lectura_local_a,t,0.491,
-rango,2026-11-20 17:59:14.89891+00,lectura_nodo_c,t,0.269,
-rango,2026-11-20 17:59:14.901262+00,lectura_global,t,147.918,
-rango,2026-11-20 17:59:15.052905+00,escritura_nodo_c,f,0.254,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:15.256249+00,lectura_local_a,t,0.278,
-rango,2026-11-20 17:59:15.258616+00,lectura_nodo_c,t,0.207,
-rango,2026-11-20 17:59:15.261108+00,lectura_global,t,147.151,
-rango,2026-11-20 17:59:15.413627+00,escritura_nodo_c,f,0.214,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:15.617178+00,lectura_local_a,t,0.576,
-rango,2026-11-20 17:59:15.620901+00,lectura_nodo_c,t,0.379,
-rango,2026-11-20 17:59:15.623247+00,lectura_global,t,145.272,
-rango,2026-11-20 17:59:15.770755+00,escritura_nodo_c,f,0.509,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:15.975871+00,lectura_local_a,t,0.475,
-rango,2026-11-20 17:59:15.979265+00,lectura_nodo_c,t,0.384,
-rango,2026-11-20 17:59:15.981485+00,lectura_global,t,148.907,
-rango,2026-11-20 17:59:16.133193+00,escritura_nodo_c,f,0.554,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:16.337055+00,lectura_local_a,t,0.571,
-rango,2026-11-20 17:59:16.340193+00,lectura_nodo_c,t,0.323,
-rango,2026-11-20 17:59:16.341662+00,lectura_global,t,148.339,
-rango,2026-11-20 17:59:16.500218+00,escritura_nodo_c,f,0.471,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:16.704152+00,lectura_local_a,t,0.558,
-rango,2026-11-20 17:59:16.707041+00,lectura_nodo_c,t,0.222,
-rango,2026-11-20 17:59:16.709554+00,lectura_global,t,148.283,
-rango,2026-11-20 17:59:16.860651+00,escritura_nodo_c,f,0.223,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:17.063674+00,lectura_local_a,t,0.349,
-rango,2026-11-20 17:59:17.067465+00,lectura_nodo_c,t,0.281,
-rango,2026-11-20 17:59:17.069329+00,lectura_global,t,148.643,
-rango,2026-11-20 17:59:17.220683+00,escritura_nodo_c,f,0.236,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:17.423819+00,lectura_local_a,t,0.38,
-rango,2026-11-20 17:59:17.42722+00,lectura_nodo_c,t,0.278,
-rango,2026-11-20 17:59:17.428777+00,lectura_global,t,145.967,
-rango,2026-11-20 17:59:17.576471+00,escritura_nodo_c,f,0.187,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:17.779417+00,lectura_local_a,t,0.382,
-rango,2026-11-20 17:59:17.782966+00,lectura_nodo_c,t,0.246,
-rango,2026-11-20 17:59:17.785653+00,lectura_global,t,148.955,
-rango,2026-11-20 17:59:17.938277+00,escritura_nodo_c,f,0.247,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:18.142109+00,lectura_local_a,t,0.413,
-rango,2026-11-20 17:59:18.145243+00,lectura_nodo_c,t,0.335,
-rango,2026-11-20 17:59:18.147547+00,lectura_global,t,146.987,
-rango,2026-11-20 17:59:18.29711+00,escritura_nodo_c,f,0.206,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:18.502273+00,lectura_local_a,t,0.257,
-rango,2026-11-20 17:59:18.505084+00,lectura_nodo_c,t,0.227,
-rango,2026-11-20 17:59:18.512188+00,lectura_global,t,145.431,
-rango,2026-11-20 17:59:18.660101+00,escritura_nodo_c,f,0.315,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:18.863679+00,lectura_local_a,t,0.538,
-rango,2026-11-20 17:59:18.866635+00,lectura_nodo_c,t,0.282,
-rango,2026-11-20 17:59:18.869221+00,lectura_global,t,147.16,
-rango,2026-11-20 17:59:19.019861+00,escritura_nodo_c,f,0.34,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:19.223156+00,lectura_local_a,t,0.473,
-rango,2026-11-20 17:59:19.225502+00,lectura_nodo_c,t,0.208,
-rango,2026-11-20 17:59:19.227058+00,lectura_global,t,147.967,
-rango,2026-11-20 17:59:19.377553+00,escritura_nodo_c,f,0.296,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:19.580969+00,lectura_local_a,t,0.265,
-rango,2026-11-20 17:59:19.586687+00,lectura_nodo_c,t,0.77,
-rango,2026-11-20 17:59:19.589257+00,lectura_global,t,146.818,
-rango,2026-11-20 17:59:19.738017+00,escritura_nodo_c,f,0.196,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:19.941076+00,lectura_local_a,t,0.374,
-rango,2026-11-20 17:59:19.943578+00,lectura_nodo_c,t,0.203,
-rango,2026-11-20 17:59:19.945398+00,lectura_global,t,145.676,
-rango,2026-11-20 17:59:20.092572+00,escritura_nodo_c,f,0.218,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:20.295526+00,lectura_local_a,t,0.304,
-rango,2026-11-20 17:59:20.299611+00,lectura_nodo_c,t,0.768,
-rango,2026-11-20 17:59:20.302474+00,lectura_global,t,145.563,
-rango,2026-11-20 17:59:20.449929+00,escritura_nodo_c,f,0.24,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:20.652539+00,lectura_local_a,t,0.707,
-rango,2026-11-20 17:59:20.655153+00,lectura_nodo_c,t,0.273,
-rango,2026-11-20 17:59:20.656438+00,lectura_global,t,144.397,
-rango,2026-11-20 17:59:20.803013+00,escritura_nodo_c,f,0.229,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:21.006587+00,lectura_local_a,t,0.398,
-rango,2026-11-20 17:59:21.010439+00,lectura_nodo_c,t,0.283,
-rango,2026-11-20 17:59:21.012455+00,lectura_global,t,144.616,
-rango,2026-11-20 17:59:21.15814+00,escritura_nodo_c,f,0.293,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:21.360641+00,lectura_local_a,t,0.43,
-rango,2026-11-20 17:59:21.362256+00,lectura_nodo_c,t,0.317,
-rango,2026-11-20 17:59:21.363416+00,lectura_global,t,144.694,
-rango,2026-11-20 17:59:21.510117+00,escritura_nodo_c,f,0.305,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:21.714073+00,lectura_local_a,t,0.444,
-rango,2026-11-20 17:59:21.71758+00,lectura_nodo_c,t,0.295,
-rango,2026-11-20 17:59:21.719727+00,lectura_global,t,146.525,
-rango,2026-11-20 17:59:21.869691+00,escritura_nodo_c,f,0.33,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:22.07281+00,lectura_local_a,t,0.389,
-rango,2026-11-20 17:59:22.07517+00,lectura_nodo_c,t,0.164,
-rango,2026-11-20 17:59:22.077211+00,lectura_global,t,147.775,
-rango,2026-11-20 17:59:22.227831+00,escritura_nodo_c,f,0.236,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:22.43159+00,lectura_local_a,t,0.308,
-rango,2026-11-20 17:59:22.434669+00,lectura_nodo_c,t,0.314,
-rango,2026-11-20 17:59:22.43666+00,lectura_global,t,148.616,
-rango,2026-11-20 17:59:22.622295+00,escritura_nodo_c,f,0.209,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:22.836608+00,lectura_local_a,t,0.284,
-rango,2026-11-20 17:59:22.839248+00,lectura_nodo_c,t,0.184,
-rango,2026-11-20 17:59:22.841636+00,lectura_global,t,147.931,
-rango,2026-11-20 17:59:22.992683+00,escritura_nodo_c,f,0.223,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:23.19687+00,lectura_local_a,t,0.478,
-rango,2026-11-20 17:59:23.200819+00,lectura_nodo_c,t,0.307,
-rango,2026-11-20 17:59:23.204004+00,lectura_global,t,147.92,
-rango,2026-11-20 17:59:23.358635+00,escritura_nodo_c,f,0.233,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:23.562275+00,lectura_local_a,t,0.626,
-rango,2026-11-20 17:59:23.564302+00,lectura_nodo_c,t,0.156,
-rango,2026-11-20 17:59:23.565631+00,lectura_global,t,147.276,
-rango,2026-11-20 17:59:23.715502+00,escritura_nodo_c,f,0.222,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:23.919379+00,lectura_local_a,t,0.406,
-rango,2026-11-20 17:59:23.922347+00,lectura_nodo_c,t,0.601,
-rango,2026-11-20 17:59:23.92442+00,lectura_global,t,147.775,
-rango,2026-11-20 17:59:24.076348+00,escritura_nodo_c,f,0.37,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:24.278924+00,lectura_local_a,t,0.461,
-rango,2026-11-20 17:59:24.281283+00,lectura_nodo_c,t,0.327,
-rango,2026-11-20 17:59:24.282667+00,lectura_global,t,144.903,
-rango,2026-11-20 17:59:24.428779+00,escritura_nodo_c,f,0.382,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:24.630722+00,lectura_local_a,t,0.507,
-rango,2026-11-20 17:59:24.633742+00,lectura_nodo_c,t,0.268,
-rango,2026-11-20 17:59:24.635454+00,lectura_global,t,146.82,
-rango,2026-11-20 17:59:24.78482+00,escritura_nodo_c,f,0.247,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:24.988502+00,lectura_local_a,t,0.28,
-rango,2026-11-20 17:59:24.99015+00,lectura_nodo_c,t,0.27,
-rango,2026-11-20 17:59:24.991853+00,lectura_global,t,146.34,
-rango,2026-11-20 17:59:25.139768+00,escritura_nodo_c,f,0.192,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:25.34228+00,lectura_local_a,t,0.418,
-rango,2026-11-20 17:59:25.34449+00,lectura_nodo_c,t,0.236,
-rango,2026-11-20 17:59:25.346039+00,lectura_global,t,95.246,
-rango,2026-11-20 17:59:25.44368+00,escritura_nodo_c,f,0.255,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:25.647616+00,lectura_local_a,t,0.458,
-rango,2026-11-20 17:59:25.649854+00,lectura_nodo_c,t,0.166,
-rango,2026-11-20 17:59:25.650971+00,lectura_global,t,75.878,
-rango,2026-11-20 17:59:25.72956+00,escritura_nodo_c,f,0.325,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:25.931401+00,lectura_local_a,t,0.257,
-rango,2026-11-20 17:59:25.933263+00,lectura_nodo_c,t,0.282,
-rango,2026-11-20 17:59:25.93454+00,lectura_global,t,73.725,
-rango,2026-11-20 17:59:26.010437+00,escritura_nodo_c,f,0.274,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:26.21478+00,lectura_local_a,t,0.387,
-rango,2026-11-20 17:59:26.217771+00,lectura_nodo_c,t,0.365,
-rango,2026-11-20 17:59:26.219594+00,lectura_global,t,74.464,
-rango,2026-11-20 17:59:26.295429+00,escritura_nodo_c,f,0.262,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:26.498305+00,lectura_local_a,t,0.31,
-rango,2026-11-20 17:59:26.500408+00,lectura_nodo_c,t,0.22,
-rango,2026-11-20 17:59:26.501595+00,lectura_global,t,73.945,
-rango,2026-11-20 17:59:26.577749+00,escritura_nodo_c,f,0.273,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:26.781059+00,lectura_local_a,t,0.452,
-rango,2026-11-20 17:59:26.783485+00,lectura_nodo_c,t,0.204,
-rango,2026-11-20 17:59:26.784745+00,lectura_global,t,76.032,
-rango,2026-11-20 17:59:26.863334+00,escritura_nodo_c,f,0.303,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:27.066388+00,lectura_local_a,t,0.315,
-rango,2026-11-20 17:59:27.068682+00,lectura_nodo_c,t,0.208,
-rango,2026-11-20 17:59:27.070473+00,lectura_global,t,73.814,
-rango,2026-11-20 17:59:27.146503+00,escritura_nodo_c,f,0.237,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:27.349365+00,lectura_local_a,t,0.413,
-rango,2026-11-20 17:59:27.351839+00,lectura_nodo_c,t,0.239,
-rango,2026-11-20 17:59:27.353533+00,lectura_global,t,75.545,
-rango,2026-11-20 17:59:27.431462+00,escritura_nodo_c,f,0.252,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:27.633839+00,lectura_local_a,t,0.412,
-rango,2026-11-20 17:59:27.63593+00,lectura_nodo_c,t,0.251,
-rango,2026-11-20 17:59:27.637904+00,lectura_global,t,75.408,
-rango,2026-11-20 17:59:27.715657+00,escritura_nodo_c,f,0.22,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:27.919193+00,lectura_local_a,t,0.306,
-rango,2026-11-20 17:59:27.9208+00,lectura_nodo_c,t,0.187,
-rango,2026-11-20 17:59:27.921966+00,lectura_global,t,73.481,
-rango,2026-11-20 17:59:27.997011+00,escritura_nodo_c,f,0.209,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:28.199482+00,lectura_local_a,t,0.379,
-rango,2026-11-20 17:59:28.201457+00,lectura_nodo_c,t,0.195,
-rango,2026-11-20 17:59:28.202911+00,lectura_global,t,74.601,
-rango,2026-11-20 17:59:28.280434+00,escritura_nodo_c,f,0.238,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:28.482841+00,lectura_local_a,t,0.292,
-rango,2026-11-20 17:59:28.484636+00,lectura_nodo_c,t,0.187,
-rango,2026-11-20 17:59:28.486127+00,lectura_global,t,74.368,
-rango,2026-11-20 17:59:28.562512+00,escritura_nodo_c,f,0.246,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:28.765163+00,lectura_local_a,t,0.259,
-rango,2026-11-20 17:59:28.766481+00,lectura_nodo_c,t,0.648,
-rango,2026-11-20 17:59:28.768485+00,lectura_global,t,124.808,
-rango,2026-11-20 17:59:28.895665+00,escritura_nodo_c,f,0.26,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:29.099168+00,lectura_local_a,t,0.495,
-rango,2026-11-20 17:59:29.101776+00,lectura_nodo_c,t,0.238,
-rango,2026-11-20 17:59:29.104043+00,lectura_global,t,145.853,
-rango,2026-11-20 17:59:29.251389+00,escritura_nodo_c,f,0.216,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:29.454387+00,lectura_local_a,t,0.405,
-rango,2026-11-20 17:59:29.456785+00,lectura_nodo_c,t,0.24,
-rango,2026-11-20 17:59:29.457836+00,lectura_global,t,145.408,
-rango,2026-11-20 17:59:29.60468+00,escritura_nodo_c,f,0.203,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:29.807406+00,lectura_local_a,t,0.279,
-rango,2026-11-20 17:59:29.809494+00,lectura_nodo_c,t,0.211,
-rango,2026-11-20 17:59:29.810703+00,lectura_global,t,145.434,
-rango,2026-11-20 17:59:29.957145+00,escritura_nodo_c,f,0.191,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:30.159536+00,lectura_local_a,t,0.257,
-rango,2026-11-20 17:59:30.160994+00,lectura_nodo_c,t,0.191,
-rango,2026-11-20 17:59:30.162019+00,lectura_global,t,145.175,
-rango,2026-11-20 17:59:30.309325+00,escritura_nodo_c,f,0.289,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:30.512129+00,lectura_local_a,t,0.381,
-rango,2026-11-20 17:59:30.514323+00,lectura_nodo_c,t,0.187,
-rango,2026-11-20 17:59:30.515522+00,lectura_global,t,144.034,
-rango,2026-11-20 17:59:30.661237+00,escritura_nodo_c,f,0.234,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:30.863153+00,lectura_local_a,t,0.463,
-rango,2026-11-20 17:59:30.865293+00,lectura_nodo_c,t,0.38,
-rango,2026-11-20 17:59:30.867239+00,lectura_global,t,145.044,
-rango,2026-11-20 17:59:31.013795+00,escritura_nodo_c,f,0.21,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:31.22018+00,lectura_local_a,t,1.258,
-rango,2026-11-20 17:59:31.222943+00,lectura_nodo_c,t,0.31,
-rango,2026-11-20 17:59:31.225375+00,lectura_global,t,143.733,
-rango,2026-11-20 17:59:31.370715+00,escritura_nodo_c,f,0.218,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:31.573232+00,lectura_local_a,t,0.261,
-rango,2026-11-20 17:59:31.575746+00,lectura_nodo_c,t,0.3,
-rango,2026-11-20 17:59:31.577235+00,lectura_global,t,144.025,
-rango,2026-11-20 17:59:31.723045+00,escritura_nodo_c,f,0.296,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:31.925672+00,lectura_local_a,t,0.307,
-rango,2026-11-20 17:59:31.927568+00,lectura_nodo_c,t,0.225,
-rango,2026-11-20 17:59:31.928753+00,lectura_global,t,73.587,
-rango,2026-11-20 17:59:32.003926+00,escritura_nodo_c,f,0.203,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:32.206288+00,lectura_local_a,t,0.265,
-rango,2026-11-20 17:59:32.208087+00,lectura_nodo_c,t,0.204,
-rango,2026-11-20 17:59:32.209096+00,lectura_global,t,73.459,
-rango,2026-11-20 17:59:32.283598+00,escritura_nodo_c,f,0.208,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:32.486258+00,lectura_local_a,t,0.258,
-rango,2026-11-20 17:59:32.490446+00,lectura_nodo_c,t,0.234,
-rango,2026-11-20 17:59:32.493362+00,lectura_global,t,73.127,
-rango,2026-11-20 17:59:32.57052+00,escritura_nodo_c,f,0.211,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:32.77327+00,lectura_local_a,t,0.279,
-rango,2026-11-20 17:59:32.775186+00,lectura_nodo_c,t,0.371,
-rango,2026-11-20 17:59:32.776648+00,lectura_global,t,73.949,
-rango,2026-11-20 17:59:32.851767+00,escritura_nodo_c,f,0.196,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:33.053238+00,lectura_local_a,t,0.259,
-rango,2026-11-20 17:59:33.054753+00,lectura_nodo_c,t,0.19,
-rango,2026-11-20 17:59:33.055821+00,lectura_global,t,73.721,
-rango,2026-11-20 17:59:33.132704+00,escritura_nodo_c,f,0.212,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:33.335314+00,lectura_local_a,t,0.261,
-rango,2026-11-20 17:59:33.337028+00,lectura_nodo_c,t,0.171,
-rango,2026-11-20 17:59:33.338699+00,lectura_global,t,73.856,
-rango,2026-11-20 17:59:33.414201+00,escritura_nodo_c,f,0.179,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:33.616587+00,lectura_local_a,t,0.262,
-rango,2026-11-20 17:59:33.618895+00,lectura_nodo_c,t,0.669,
-rango,2026-11-20 17:59:33.620566+00,lectura_global,t,73.566,
-rango,2026-11-20 17:59:33.695882+00,escritura_nodo_c,f,0.321,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:33.898576+00,lectura_local_a,t,0.275,
-rango,2026-11-20 17:59:33.902124+00,lectura_nodo_c,t,0.24,
-rango,2026-11-20 17:59:33.903669+00,lectura_global,t,75.05,
-rango,2026-11-20 17:59:33.980076+00,escritura_nodo_c,f,0.208,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:34.182931+00,lectura_local_a,t,0.259,
-rango,2026-11-20 17:59:34.184952+00,lectura_nodo_c,t,0.303,
-rango,2026-11-20 17:59:34.186836+00,lectura_global,t,146.051,
-rango,2026-11-20 17:59:34.334341+00,escritura_nodo_c,f,0.207,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:34.536973+00,lectura_local_a,t,0.455,
-rango,2026-11-20 17:59:34.539437+00,lectura_nodo_c,t,0.303,
-rango,2026-11-20 17:59:34.540973+00,lectura_global,t,145.316,
-rango,2026-11-20 17:59:34.687738+00,escritura_nodo_c,f,0.285,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:34.890625+00,lectura_local_a,t,0.251,
-rango,2026-11-20 17:59:34.892084+00,lectura_nodo_c,t,0.194,
-rango,2026-11-20 17:59:34.893237+00,lectura_global,t,145.388,
-rango,2026-11-20 17:59:35.040325+00,escritura_nodo_c,f,0.256,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:35.243096+00,lectura_local_a,t,0.51,
-rango,2026-11-20 17:59:35.245858+00,lectura_nodo_c,t,0.225,
-rango,2026-11-20 17:59:35.2469+00,lectura_global,t,144.695,
-rango,2026-11-20 17:59:35.393672+00,escritura_nodo_c,f,0.244,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:35.596348+00,lectura_local_a,t,0.395,
-rango,2026-11-20 17:59:35.59876+00,lectura_nodo_c,t,0.754,
-rango,2026-11-20 17:59:35.600989+00,lectura_global,t,144.702,
-rango,2026-11-20 17:59:35.747656+00,escritura_nodo_c,f,0.232,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:35.950233+00,lectura_local_a,t,0.297,
-rango,2026-11-20 17:59:35.952497+00,lectura_nodo_c,t,0.311,
-rango,2026-11-20 17:59:35.954014+00,lectura_global,t,144.714,
-rango,2026-11-20 17:59:36.100512+00,escritura_nodo_c,f,0.207,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:36.302866+00,lectura_local_a,t,0.261,
-rango,2026-11-20 17:59:36.304802+00,lectura_nodo_c,t,0.218,
-rango,2026-11-20 17:59:36.306335+00,lectura_global,t,143.947,
-rango,2026-11-20 17:59:36.451877+00,escritura_nodo_c,f,0.281,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:36.654414+00,lectura_local_a,t,0.292,
-rango,2026-11-20 17:59:36.656065+00,lectura_nodo_c,t,0.192,
-rango,2026-11-20 17:59:36.659261+00,lectura_global,t,144.118,
-rango,2026-11-20 17:59:36.804612+00,escritura_nodo_c,f,0.203,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:37.007129+00,lectura_local_a,t,0.577,
-rango,2026-11-20 17:59:37.009473+00,lectura_nodo_c,t,0.213,
-rango,2026-11-20 17:59:37.010847+00,lectura_global,t,144.253,
-rango,2026-11-20 17:59:37.156836+00,escritura_nodo_c,f,0.2,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:37.359427+00,lectura_local_a,t,0.509,
-rango,2026-11-20 17:59:37.361565+00,lectura_nodo_c,t,0.221,
-rango,2026-11-20 17:59:37.362634+00,lectura_global,t,144.175,
-rango,2026-11-20 17:59:37.508082+00,escritura_nodo_c,f,0.242,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:37.710662+00,lectura_local_a,t,0.446,
-rango,2026-11-20 17:59:37.712771+00,lectura_nodo_c,t,0.248,
-rango,2026-11-20 17:59:37.713827+00,lectura_global,t,144.1,
-rango,2026-11-20 17:59:37.859906+00,escritura_nodo_c,f,0.22,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:38.062393+00,lectura_local_a,t,0.325,
-rango,2026-11-20 17:59:38.067444+00,lectura_nodo_c,t,0.654,
-rango,2026-11-20 17:59:38.070048+00,lectura_global,t,147.015,
-rango,2026-11-20 17:59:38.218877+00,escritura_nodo_c,f,0.196,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:38.42179+00,lectura_local_a,t,0.27,
-rango,2026-11-20 17:59:38.423294+00,lectura_nodo_c,t,0.173,
-rango,2026-11-20 17:59:38.424601+00,lectura_global,t,143.794,
-rango,2026-11-20 17:59:38.569431+00,escritura_nodo_c,f,0.191,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:38.771725+00,lectura_local_a,t,0.283,
-rango,2026-11-20 17:59:38.773043+00,lectura_nodo_c,t,0.166,
-rango,2026-11-20 17:59:38.773923+00,lectura_global,t,145.136,
-rango,2026-11-20 17:59:38.920946+00,escritura_nodo_c,f,0.197,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:39.122683+00,lectura_local_a,t,0.259,
-rango,2026-11-20 17:59:39.124235+00,lectura_nodo_c,t,0.18,
-rango,2026-11-20 17:59:39.12544+00,lectura_global,t,145.141,
-rango,2026-11-20 17:59:39.272446+00,escritura_nodo_c,f,0.203,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:39.474554+00,lectura_local_a,t,0.391,
-rango,2026-11-20 17:59:39.477178+00,lectura_nodo_c,t,0.27,
-rango,2026-11-20 17:59:39.479003+00,lectura_global,t,145.465,
-rango,2026-11-20 17:59:39.625802+00,escritura_nodo_c,f,0.203,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:39.827816+00,lectura_local_a,t,0.371,
-rango,2026-11-20 17:59:39.82931+00,lectura_nodo_c,t,0.151,
-rango,2026-11-20 17:59:39.830385+00,lectura_global,t,145.308,
-rango,2026-11-20 17:59:39.977058+00,escritura_nodo_c,f,0.232,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:40.17999+00,lectura_local_a,t,0.392,
-rango,2026-11-20 17:59:40.182503+00,lectura_nodo_c,t,0.221,
-rango,2026-11-20 17:59:40.184145+00,lectura_global,t,144.916,
-rango,2026-11-20 17:59:40.330515+00,escritura_nodo_c,f,0.196,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:40.53349+00,lectura_local_a,t,0.372,
-rango,2026-11-20 17:59:40.535546+00,lectura_nodo_c,t,0.193,
-rango,2026-11-20 17:59:40.53673+00,lectura_global,t,146.541,
-rango,2026-11-20 17:59:40.685079+00,escritura_nodo_c,f,0.313,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:40.888206+00,lectura_local_a,t,0.516,
-rango,2026-11-20 17:59:40.890844+00,lectura_nodo_c,t,0.29,
-rango,2026-11-20 17:59:40.892236+00,lectura_global,t,146.308,
-rango,2026-11-20 17:59:41.040135+00,escritura_nodo_c,f,0.297,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:41.243013+00,lectura_local_a,t,0.444,
-rango,2026-11-20 17:59:41.245229+00,lectura_nodo_c,t,0.211,
-rango,2026-11-20 17:59:41.24676+00,lectura_global,t,144.038,
-rango,2026-11-20 17:59:41.391717+00,escritura_nodo_c,f,0.199,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:41.594963+00,lectura_local_a,t,0.267,
-rango,2026-11-20 17:59:41.596647+00,lectura_nodo_c,t,0.177,
-rango,2026-11-20 17:59:41.598321+00,lectura_global,t,143.641,
-rango,2026-11-20 17:59:41.745445+00,escritura_nodo_c,f,0.24,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:41.948144+00,lectura_local_a,t,0.292,
-rango,2026-11-20 17:59:41.949979+00,lectura_nodo_c,t,0.182,
-rango,2026-11-20 17:59:41.951366+00,lectura_global,t,147.043,
-rango,2026-11-20 17:59:42.100616+00,escritura_nodo_c,f,0.198,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:42.304217+00,lectura_local_a,t,0.441,
-rango,2026-11-20 17:59:42.307358+00,lectura_nodo_c,t,0.225,
-rango,2026-11-20 17:59:42.309771+00,lectura_global,t,145.395,
-rango,2026-11-20 17:59:42.457041+00,escritura_nodo_c,f,1.333,la tabla rango.pedidos_c es una replica de solo lectura
-rango,2026-11-20 17:59:42.661059+00,lectura_local_a,t,0.388,
-rango,2026-11-20 17:59:42.663972+00,lectura_nodo_c,t,0.226,
-rango,2026-11-20 17:59:42.665786+00,lectura_global,t,145.831,
-rango,2026-11-20 17:59:42.813311+00,escritura_nodo_c,t,717.698,
-rango,2026-11-20 17:59:43.734504+00,lectura_local_a,t,0.391,
-rango,2026-11-20 17:59:43.737664+00,lectura_nodo_c,t,288.736,
-rango,2026-11-20 17:59:44.027807+00,lectura_global,t,435.355,
-rango,2026-11-20 17:59:44.465714+00,escritura_nodo_c,t,290.104,
-rango,2026-11-20 17:59:44.959916+00,lectura_local_a,t,0.389,
-rango,2026-11-20 17:59:44.962511+00,lectura_nodo_c,t,288.035,
-rango,2026-11-20 17:59:45.252713+00,lectura_global,t,433.97,
-rango,2026-11-20 17:59:45.688974+00,escritura_nodo_c,t,288.785,
-rango,2026-11-20 17:59:46.18118+00,lectura_local_a,t,0.33,
-rango,2026-11-20 17:59:46.183641+00,lectura_nodo_c,t,285.705,
-rango,2026-11-20 17:59:46.472351+00,lectura_global,t,452.123,
-rango,2026-11-20 17:59:46.927409+00,escritura_nodo_c,t,291.039,
-rango,2026-11-20 17:59:47.421808+00,lectura_local_a,t,0.594,
-rango,2026-11-20 17:59:47.424325+00,lectura_nodo_c,t,287.409,
-rango,2026-11-20 17:59:47.714218+00,lectura_global,t,434.473,
-rango,2026-11-20 17:59:48.151434+00,escritura_nodo_c,t,291.1,
-rango,2026-11-20 17:59:48.646886+00,lectura_local_a,t,0.36,
-rango,2026-11-20 17:59:48.649802+00,lectura_nodo_c,t,289.233,
-rango,2026-11-20 17:59:48.940627+00,lectura_global,t,436.24,
-rango,2026-11-20 17:59:49.379143+00,escritura_nodo_c,t,289.247,
-rango,2026-11-20 17:59:49.87196+00,lectura_local_a,t,0.306,
-rango,2026-11-20 17:59:49.875573+00,lectura_nodo_c,t,286.45,
-rango,2026-11-20 17:59:50.163727+00,lectura_global,t,432.838,
-rango,2026-11-20 17:59:50.599415+00,escritura_nodo_c,t,291.809,
-rango,2026-11-20 17:59:51.095033+00,lectura_local_a,t,0.326,
-rango,2026-11-20 17:59:51.097857+00,lectura_nodo_c,t,288.193,
-rango,2026-11-20 17:59:51.397267+00,lectura_global,t,453.578,
-rango,2026-11-20 17:59:51.85344+00,escritura_nodo_c,t,288.333,
-rango,2026-11-20 17:59:52.344886+00,lectura_local_a,t,0.396,
-rango,2026-11-20 17:59:52.347566+00,lectura_nodo_c,t,287.924,
-rango,2026-11-20 17:59:52.644941+00,lectura_global,t,438.212,
-rango,2026-11-20 17:59:53.086635+00,escritura_nodo_c,t,288.44,
-rango,2026-11-20 17:59:53.578276+00,lectura_local_a,t,0.254,
-rango,2026-11-20 17:59:53.580656+00,lectura_nodo_c,t,286.117,
-rango,2026-11-20 17:59:53.868509+00,lectura_global,t,432.229,
-rango,2026-11-20 17:59:54.302724+00,escritura_nodo_c,t,288.409,
-rango,2026-11-20 17:59:54.794328+00,lectura_local_a,t,0.245,
-rango,2026-11-20 17:59:54.796277+00,lectura_nodo_c,t,285.028,
-rango,2026-11-20 17:59:55.084919+00,lectura_global,t,434.343,
-rango,2026-11-20 17:59:55.522241+00,escritura_nodo_c,t,287.402,
-rango,2026-11-20 17:59:56.011911+00,lectura_local_a,t,0.252,
-rango,2026-11-20 17:59:56.01422+00,lectura_nodo_c,t,287.621,
-rango,2026-11-20 17:59:56.304442+00,lectura_global,t,434.621,
-rango,2026-11-20 17:59:56.742478+00,escritura_nodo_c,t,289.686,
-rango,2026-11-20 17:59:57.235239+00,lectura_local_a,t,0.573,
-rango,2026-11-20 17:59:57.238029+00,lectura_nodo_c,t,288.066,
-rango,2026-11-20 17:59:57.528405+00,lectura_global,t,432.763,
-rango,2026-11-20 17:59:57.963353+00,escritura_nodo_c,t,288.675,
-rango,2026-11-20 17:59:58.454963+00,lectura_local_a,t,0.49,
-rango,2026-11-20 17:59:58.457019+00,lectura_nodo_c,t,286.158,
-rango,2026-11-20 17:59:58.745411+00,lectura_global,t,437.292,
-rango,2026-11-20 17:59:59.185633+00,escritura_nodo_c,t,287.843,
-rango,2026-11-20 17:59:59.67792+00,lectura_local_a,t,0.376,
-rango,2026-11-20 17:59:59.68084+00,lectura_nodo_c,t,286.209,
-rango,2026-11-20 17:59:59.968813+00,lectura_global,t,433.917,
-rango,2026-11-20 18:00:00.406424+00,escritura_nodo_c,t,288.143,
-rango,2026-11-20 18:00:00.898946+00,lectura_local_a,t,0.48,
-rango,2026-11-20 18:00:00.90148+00,lectura_nodo_c,t,284.986,
-rango,2026-11-20 18:00:01.189294+00,lectura_global,t,434.078,
-rango,2026-11-20 18:00:01.625524+00,escritura_nodo_c,t,287.609,
-rango,2026-11-20 18:00:02.117089+00,lectura_local_a,t,0.375,
-rango,2026-11-20 18:00:02.119729+00,lectura_nodo_c,t,286.11,
-rango,2026-11-20 18:00:02.408078+00,lectura_global,t,432.728,
-rango,2026-11-20 18:00:02.843299+00,escritura_nodo_c,t,288.527,
-rango,2026-11-20 18:00:03.335956+00,lectura_local_a,t,0.364,
-rango,2026-11-20 18:00:03.338508+00,lectura_nodo_c,t,286.408,
-rango,2026-11-20 18:00:03.626632+00,lectura_global,t,433.252,
-rango,2026-11-20 18:00:04.062126+00,escritura_nodo_c,t,287.772,
-rango,2026-11-20 18:00:04.554149+00,lectura_local_a,t,0.367,
-rango,2026-11-20 18:00:04.556901+00,lectura_nodo_c,t,286.666,
-rango,2026-11-20 18:00:04.846261+00,lectura_global,t,431.362,
-rango,2026-11-20 18:00:05.279515+00,escritura_nodo_c,t,288.37,
-rango,2026-11-20 18:00:05.770347+00,lectura_local_a,t,0.451,
-rango,2026-11-20 18:00:05.772882+00,lectura_nodo_c,t,288.239,
-rango,2026-11-20 18:00:06.063612+00,lectura_global,t,440.479,
-rango,2026-11-20 18:00:06.512949+00,escritura_nodo_c,t,309.258,
-rango,2026-11-20 18:00:07.028917+00,lectura_local_a,t,1.191,
-rango,2026-11-20 18:00:07.045082+00,lectura_nodo_c,t,292.194,
-rango,2026-11-20 18:00:07.339381+00,lectura_global,t,435.705,
-rango,2026-11-20 18:00:07.778763+00,escritura_nodo_c,t,291.653,
-rango,2026-11-20 18:00:08.27352+00,lectura_local_a,t,0.266,
-rango,2026-11-20 18:00:08.27624+00,lectura_nodo_c,t,288.236,
-rango,2026-11-20 18:00:08.567181+00,lectura_global,t,434.241,
-rango,2026-11-20 18:00:09.003672+00,escritura_nodo_c,t,290.389,
-rango,2026-11-20 18:00:09.498187+00,lectura_local_a,t,0.36,
-rango,2026-11-20 18:00:09.50039+00,lectura_nodo_c,t,287.774,
-rango,2026-11-20 18:00:09.790076+00,lectura_global,t,434.395,
-rango,2026-11-20 18:00:10.226506+00,escritura_nodo_c,t,290.78,
-rango,2026-11-20 18:00:10.721993+00,lectura_local_a,t,0.41,
-rango,2026-11-20 18:00:10.724588+00,lectura_nodo_c,t,286.912,
-rango,2026-11-20 18:00:11.013484+00,lectura_global,t,432.965,
-rango,2026-11-20 18:00:11.448868+00,escritura_nodo_c,t,289.063,
-rango,2026-11-20 18:00:11.941623+00,lectura_local_a,t,0.249,
-rango,2026-11-20 18:00:11.944231+00,lectura_nodo_c,t,286.945,
-rango,2026-11-20 18:00:12.234066+00,lectura_global,t,435.859,
-rango,2026-11-20 18:00:12.674294+00,escritura_nodo_c,t,290.045,
-rango,2026-11-20 18:00:13.169684+00,lectura_local_a,t,0.379,
-rango,2026-11-20 18:00:13.172634+00,lectura_nodo_c,t,286.534,
-rango,2026-11-20 18:00:13.463669+00,lectura_global,t,434.38,
-rango,2026-11-20 18:00:13.900912+00,escritura_nodo_c,t,290.41,
-rango,2026-11-20 18:00:14.396293+00,lectura_local_a,t,0.354,
-rango,2026-11-20 18:00:14.398421+00,lectura_nodo_c,t,287.175,
-rango,2026-11-20 18:00:14.687797+00,lectura_global,t,433.608,
-rango,2026-11-20 18:00:15.123437+00,escritura_nodo_c,t,287.402,
-rango,2026-11-20 18:00:15.614714+00,lectura_local_a,t,0.382,
-rango,2026-11-20 18:00:15.618521+00,lectura_nodo_c,t,286.153,
-rango,2026-11-20 18:00:15.90662+00,lectura_global,t,432.105,
-rango,2026-11-20 18:00:16.340963+00,escritura_nodo_c,t,289.624,
+rango,2026-11-20 19:02:21.943897+00,lectura_local_a,t,0.927,
+rango,2026-11-20 19:02:21.946986+00,lectura_nodo_c,t,284.779,
+rango,2026-11-20 19:02:22.232975+00,lectura_global,t,431.219,
+rango,2026-11-20 19:02:22.665124+00,escritura_nodo_c,t,286.399,
+rango,2026-11-20 19:02:23.154932+00,lectura_local_a,t,0.206,
+rango,2026-11-20 19:02:23.156586+00,lectura_nodo_c,t,284.147,
+rango,2026-11-20 19:02:23.441792+00,lectura_global,t,427.8,
+rango,2026-11-20 19:02:23.871141+00,escritura_nodo_c,t,285.297,
+rango,2026-11-20 19:02:24.359863+00,lectura_local_a,t,0.317,
+rango,2026-11-20 19:02:24.361243+00,lectura_nodo_c,t,284.605,
+rango,2026-11-20 19:02:24.647317+00,lectura_global,t,427.635,
+rango,2026-11-20 19:02:25.076254+00,escritura_nodo_c,t,286.081,
+rango,2026-11-20 19:02:25.565709+00,lectura_local_a,t,0.201,
+rango,2026-11-20 19:02:25.566664+00,lectura_nodo_c,t,284.754,
+rango,2026-11-20 19:02:25.852846+00,lectura_global,t,428.275,
+rango,2026-11-20 19:02:26.282201+00,escritura_nodo_c,t,286.077,
+rango,2026-11-20 19:02:26.771224+00,lectura_local_a,t,0.277,
+rango,2026-11-20 19:02:26.772878+00,lectura_nodo_c,t,283.498,
+rango,2026-11-20 19:02:27.057377+00,lectura_global,t,427.668,
+rango,2026-11-20 19:02:27.486697+00,escritura_nodo_c,t,284.749,
+rango,2026-11-20 19:02:27.974644+00,lectura_local_a,t,0.364,
+rango,2026-11-20 19:02:27.977016+00,lectura_nodo_c,t,284.881,
+rango,2026-11-20 19:02:28.26426+00,lectura_global,t,426.946,
+rango,2026-11-20 19:02:28.692224+00,escritura_nodo_c,t,286.142,
+rango,2026-11-20 19:02:29.181012+00,lectura_local_a,t,0.268,
+rango,2026-11-20 19:02:29.182874+00,lectura_nodo_c,t,284.137,
+rango,2026-11-20 19:02:29.467918+00,lectura_global,t,428.404,
+rango,2026-11-20 19:02:29.897614+00,escritura_nodo_c,t,285.511,
+rango,2026-11-20 19:02:30.385306+00,lectura_local_a,t,0.238,
+rango,2026-11-20 19:02:30.386338+00,lectura_nodo_c,t,284.495,
+rango,2026-11-20 19:02:30.672427+00,lectura_global,t,429.606,
+rango,2026-11-20 19:02:31.102888+00,escritura_nodo_c,t,286.407,
+rango,2026-11-20 19:02:31.592472+00,lectura_local_a,t,0.515,
+rango,2026-11-20 19:02:31.59469+00,lectura_nodo_c,t,285.02,
+rango,2026-11-20 19:02:31.881467+00,lectura_global,t,428.5,
+rango,2026-11-20 19:02:32.31124+00,escritura_nodo_c,t,285.37,
+rango,2026-11-20 19:02:32.799019+00,lectura_local_a,t,0.217,
+rango,2026-11-20 19:02:32.800512+00,lectura_nodo_c,t,286.249,
+rango,2026-11-20 19:02:33.088393+00,lectura_global,t,427.916,
+rango,2026-11-20 19:02:33.517609+00,escritura_nodo_c,t,285.777,
+rango,2026-11-20 19:02:34.005711+00,lectura_local_a,t,0.357,
+rango,2026-11-20 19:02:34.007433+00,lectura_nodo_c,t,284.693,
+rango,2026-11-20 19:02:34.294027+00,lectura_global,t,427.083,
+rango,2026-11-20 19:02:34.721976+00,escritura_nodo_c,t,285.518,
+rango,2026-11-20 19:02:35.209805+00,lectura_local_a,t,0.361,
+rango,2026-11-20 19:02:35.211246+00,lectura_nodo_c,t,283.83,
+rango,2026-11-20 19:02:35.496082+00,lectura_global,t,427.113,
+rango,2026-11-20 19:02:35.924877+00,escritura_nodo_c,t,285.343,
+rango,2026-11-20 19:02:36.412882+00,lectura_local_a,t,0.231,
+rango,2026-11-20 19:02:36.413758+00,lectura_nodo_c,t,283.669,
+rango,2026-11-20 19:02:36.698231+00,lectura_global,t,427.512,
+rango,2026-11-20 19:02:37.127542+00,escritura_nodo_c,t,284.69,
+rango,2026-11-20 19:02:37.614385+00,lectura_local_a,t,0.222,
+rango,2026-11-20 19:02:37.6159+00,lectura_nodo_c,t,283.454,
+rango,2026-11-20 19:02:37.900559+00,lectura_global,t,427.672,
+rango,2026-11-20 19:02:38.329552+00,escritura_nodo_c,t,286.088,
+rango,2026-11-20 19:02:38.817725+00,lectura_local_a,t,0.269,
+rango,2026-11-20 19:02:38.818832+00,lectura_nodo_c,t,283.403,
+rango,2026-11-20 19:02:39.103208+00,lectura_global,t,426.985,
+rango,2026-11-20 19:02:39.5312+00,escritura_nodo_c,t,286.336,
+rango,2026-11-20 19:02:40.018662+00,lectura_local_a,t,0.265,
+rango,2026-11-20 19:02:40.01985+00,lectura_nodo_c,t,282.985,
+rango,2026-11-20 19:02:40.303683+00,lectura_global,f,148.607,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:40.453107+00,escritura_nodo_c,f,3014.488,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:43.669275+00,lectura_local_a,t,0.259,
+rango,2026-11-20 19:02:43.670398+00,lectura_nodo_c,f,99.92,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:43.771049+00,lectura_global,f,102.259,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:43.874312+00,escritura_nodo_c,f,93.937,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:44.17052+00,lectura_local_a,t,0.446,
+rango,2026-11-20 19:02:44.172119+00,lectura_nodo_c,f,23.73,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:44.196574+00,lectura_global,f,94.268,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:44.292181+00,escritura_nodo_c,f,36.673,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:44.530987+00,lectura_local_a,t,0.269,
+rango,2026-11-20 19:02:44.532149+00,lectura_nodo_c,f,15.764,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:44.548591+00,lectura_global,f,101.166,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:44.650563+00,escritura_nodo_c,f,61.386,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:44.912999+00,lectura_local_a,t,0.247,
+rango,2026-11-20 19:02:44.914098+00,lectura_nodo_c,f,24.065,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:44.939112+00,lectura_global,f,146.834,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:45.087167+00,escritura_nodo_c,f,102.846,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:45.392101+00,lectura_local_a,t,0.331,
+rango,2026-11-20 19:02:45.39317+00,lectura_nodo_c,f,44.743,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:45.439162+00,lectura_global,f,94.953,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:45.535008+00,escritura_nodo_c,f,74.622,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:45.811689+00,lectura_local_a,t,0.232,
+rango,2026-11-20 19:02:45.812763+00,lectura_nodo_c,f,52.11,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:45.865608+00,lectura_global,f,91.938,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:45.958563+00,escritura_nodo_c,f,33.083,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:46.193855+00,lectura_local_a,t,0.244,
+rango,2026-11-20 19:02:46.19772+00,lectura_nodo_c,f,28.906,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:46.228169+00,lectura_global,f,98.887,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:46.328589+00,escritura_nodo_c,f,22.97,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:46.554414+00,lectura_local_a,t,0.413,
+rango,2026-11-20 19:02:46.555985+00,lectura_nodo_c,f,33.527,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:46.590295+00,lectura_global,f,98.723,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:46.690379+00,escritura_nodo_c,f,15.306,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:46.90785+00,lectura_local_a,t,0.327,
+rango,2026-11-20 19:02:46.909066+00,lectura_nodo_c,f,11.167,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:46.920894+00,lectura_global,f,97.626,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:47.019545+00,escritura_nodo_c,f,10.6,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:47.232466+00,lectura_local_a,t,0.339,
+rango,2026-11-20 19:02:47.233963+00,lectura_nodo_c,f,50.47,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:47.285168+00,lectura_global,f,131.206,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:47.417933+00,escritura_nodo_c,f,77.728,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:47.698255+00,lectura_local_a,t,0.275,
+rango,2026-11-20 19:02:47.700076+00,lectura_nodo_c,f,128.295,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:47.829123+00,lectura_global,f,98.934,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:47.929569+00,escritura_nodo_c,f,15.721,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:48.148197+00,lectura_local_a,t,0.343,
+rango,2026-11-20 19:02:48.149606+00,lectura_nodo_c,f,93.076,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:48.244148+00,lectura_global,f,91.066,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:48.336455+00,escritura_nodo_c,f,62.531,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:48.601269+00,lectura_local_a,t,0.388,
+rango,2026-11-20 19:02:48.602978+00,lectura_nodo_c,f,8.894,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:48.613063+00,lectura_global,f,94.908,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:48.70966+00,escritura_nodo_c,f,62.351,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:49.047508+00,lectura_local_a,t,0.252,
+rango,2026-11-20 19:02:49.113571+00,lectura_nodo_c,f,16.433,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:49.158118+00,lectura_global,f,97.696,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:49.256866+00,escritura_nodo_c,f,55.819,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:49.515427+00,lectura_local_a,t,0.233,
+rango,2026-11-20 19:02:49.516704+00,lectura_nodo_c,f,15.281,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:49.532668+00,lectura_global,f,92.138,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:49.62572+00,escritura_nodo_c,f,17.431,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:49.845096+00,lectura_local_a,t,0.233,
+rango,2026-11-20 19:02:49.846112+00,lectura_nodo_c,f,60.611,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:49.9082+00,lectura_global,f,263.543,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:50.173517+00,escritura_nodo_c,f,63.534,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:50.440014+00,lectura_local_a,t,0.287,
+rango,2026-11-20 19:02:50.441818+00,lectura_nodo_c,f,24.666,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:50.467927+00,lectura_global,f,99.157,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:50.568756+00,escritura_nodo_c,f,18.832,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:50.789703+00,lectura_local_a,t,0.31,
+rango,2026-11-20 19:02:50.791193+00,lectura_nodo_c,f,29.379,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:50.821435+00,lectura_global,f,129.979,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:50.952331+00,escritura_nodo_c,f,26.221,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:51.181376+00,lectura_local_a,t,0.238,
+rango,2026-11-20 19:02:51.182609+00,lectura_nodo_c,f,76.365,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:51.259711+00,lectura_global,f,159.716,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:51.421169+00,escritura_nodo_c,f,19.554,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:51.64298+00,lectura_local_a,t,0.238,
+rango,2026-11-20 19:02:51.644742+00,lectura_nodo_c,f,47.23,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:51.692733+00,lectura_global,f,207,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:51.901214+00,escritura_nodo_c,f,15.364,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:52.118771+00,lectura_local_a,t,0.443,
+rango,2026-11-20 19:02:52.121015+00,lectura_nodo_c,f,22.389,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:52.144133+00,lectura_global,f,98.408,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:52.243385+00,escritura_nodo_c,f,10.935,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:52.457218+00,lectura_local_a,t,0.299,
+rango,2026-11-20 19:02:52.458457+00,lectura_nodo_c,f,12.224,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:52.471492+00,lectura_global,f,92.737,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:52.565052+00,escritura_nodo_c,f,37.855,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:52.805536+00,lectura_local_a,t,0.376,
+rango,2026-11-20 19:02:52.807575+00,lectura_nodo_c,f,21.366,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:52.830429+00,lectura_global,f,133.651,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:52.96579+00,escritura_nodo_c,f,23.26,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:53.191357+00,lectura_local_a,t,0.235,
+rango,2026-11-20 19:02:53.192308+00,lectura_nodo_c,f,60.327,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:53.25339+00,lectura_global,f,105.007,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:53.359693+00,escritura_nodo_c,f,13.466,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:53.576056+00,lectura_local_a,t,0.245,
+rango,2026-11-20 19:02:53.577166+00,lectura_nodo_c,f,20.744,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:53.599416+00,lectura_global,f,94.561,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:53.694784+00,escritura_nodo_c,f,19.408,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:53.916409+00,lectura_local_a,t,0.332,
+rango,2026-11-20 19:02:53.917756+00,lectura_nodo_c,f,16.322,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:53.93485+00,lectura_global,f,94.113,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:54.030644+00,escritura_nodo_c,f,24.208,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:54.257089+00,lectura_local_a,t,0.235,
+rango,2026-11-20 19:02:54.258645+00,lectura_nodo_c,f,55.84,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:54.315271+00,lectura_global,f,136.644,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:54.453286+00,escritura_nodo_c,f,20.914,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:54.676306+00,lectura_local_a,t,0.276,
+rango,2026-11-20 19:02:54.677512+00,lectura_nodo_c,f,14.165,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:54.692881+00,lectura_global,f,96.941,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:54.790897+00,escritura_nodo_c,f,30.312,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:55.02367+00,lectura_local_a,t,0.254,
+rango,2026-11-20 19:02:55.024816+00,lectura_nodo_c,f,149.781,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:55.17584+00,lectura_global,f,96.475,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:55.273217+00,escritura_nodo_c,f,79.725,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:55.555873+00,lectura_local_a,t,0.298,
+rango,2026-11-20 19:02:55.557745+00,lectura_nodo_c,f,25.501,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:55.584786+00,lectura_global,f,107.223,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:55.693268+00,escritura_nodo_c,f,61.459,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:55.957197+00,lectura_local_a,t,0.246,
+rango,2026-11-20 19:02:55.958548+00,lectura_nodo_c,f,32.634,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:55.992073+00,lectura_global,f,155.366,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:56.148559+00,escritura_nodo_c,f,18.923,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:56.369665+00,lectura_local_a,t,0.6,
+rango,2026-11-20 19:02:56.371969+00,lectura_nodo_c,f,14.278,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:56.388632+00,lectura_global,f,166.6,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:56.556615+00,escritura_nodo_c,f,86.569,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:56.845136+00,lectura_local_a,t,0.232,
+rango,2026-11-20 19:02:56.846332+00,lectura_nodo_c,f,29.865,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:56.877694+00,lectura_global,f,102.794,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:56.982164+00,escritura_nodo_c,f,19.69,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:57.204008+00,lectura_local_a,t,0.391,
+rango,2026-11-20 19:02:57.205848+00,lectura_nodo_c,f,20.271,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:57.226804+00,lectura_global,f,110.736,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:57.338744+00,escritura_nodo_c,f,19.986,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:57.559834+00,lectura_local_a,t,0.252,
+rango,2026-11-20 19:02:57.560924+00,lectura_nodo_c,f,161.519,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:57.723379+00,lectura_global,f,97.738,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:57.822501+00,escritura_nodo_c,f,20.281,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:58.045809+00,lectura_local_a,t,0.476,
+rango,2026-11-20 19:02:58.047959+00,lectura_nodo_c,f,34.574,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:58.084129+00,lectura_global,f,105.094,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:58.190798+00,escritura_nodo_c,f,41.013,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:58.433934+00,lectura_local_a,t,0.353,
+rango,2026-11-20 19:02:58.435649+00,lectura_nodo_c,f,119.885,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:58.556279+00,lectura_global,f,249.403,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:58.806416+00,escritura_nodo_c,f,20.219,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:59.028947+00,lectura_local_a,t,0.355,
+rango,2026-11-20 19:02:59.030391+00,lectura_nodo_c,f,33.36,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:59.064513+00,lectura_global,f,112.611,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:59.178073+00,escritura_nodo_c,f,34.063,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:59.414468+00,lectura_local_a,t,0.324,
+rango,2026-11-20 19:02:59.416168+00,lectura_nodo_c,f,69.005,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:59.486799+00,lectura_global,f,111.903,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:59.599475+00,escritura_nodo_c,f,27.374,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:59.828857+00,lectura_local_a,t,0.289,
+rango,2026-11-20 19:02:59.830018+00,lectura_nodo_c,f,17.093,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:59.847819+00,lectura_global,f,104.073,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:02:59.952925+00,escritura_nodo_c,f,61.351,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:03:00.216827+00,lectura_local_a,t,0.297,
+rango,2026-11-20 19:03:00.21836+00,lectura_nodo_c,f,29.981,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:03:00.24908+00,lectura_global,f,115.799,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:03:00.36637+00,escritura_nodo_c,f,23.206,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:03:00.591883+00,lectura_local_a,t,0.233,
+rango,2026-11-20 19:03:00.593385+00,lectura_nodo_c,f,13.432,"could not connect to server ""nodo_c"""
+rango,2026-11-20 19:03:00.607429+00,lectura_global,t,798.372,
+rango,2026-11-20 19:03:01.406729+00,escritura_nodo_c,f,1.246,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:01.60975+00,lectura_local_a,t,0.25,
+rango,2026-11-20 19:03:01.610919+00,lectura_nodo_c,t,0.831,
+rango,2026-11-20 19:03:01.612304+00,lectura_global,t,143.555,
+rango,2026-11-20 19:03:01.756691+00,escritura_nodo_c,f,0.167,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:01.958824+00,lectura_local_a,t,0.291,
+rango,2026-11-20 19:03:01.960794+00,lectura_nodo_c,t,0.134,
+rango,2026-11-20 19:03:01.961484+00,lectura_global,t,143.879,
+rango,2026-11-20 19:03:02.106144+00,escritura_nodo_c,f,0.164,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:02.30817+00,lectura_local_a,t,0.252,
+rango,2026-11-20 19:03:02.309186+00,lectura_nodo_c,t,0.123,
+rango,2026-11-20 19:03:02.309871+00,lectura_global,t,143.501,
+rango,2026-11-20 19:03:02.454376+00,escritura_nodo_c,f,0.173,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:02.656682+00,lectura_local_a,t,0.241,
+rango,2026-11-20 19:03:02.65841+00,lectura_nodo_c,t,0.142,
+rango,2026-11-20 19:03:02.659136+00,lectura_global,t,143.705,
+rango,2026-11-20 19:03:02.803911+00,escritura_nodo_c,f,0.218,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:03.00647+00,lectura_local_a,t,0.244,
+rango,2026-11-20 19:03:03.007553+00,lectura_nodo_c,t,0.135,
+rango,2026-11-20 19:03:03.008251+00,lectura_global,t,142.944,
+rango,2026-11-20 19:03:03.152208+00,escritura_nodo_c,f,0.192,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:03.354321+00,lectura_local_a,t,0.279,
+rango,2026-11-20 19:03:03.355424+00,lectura_nodo_c,t,0.137,
+rango,2026-11-20 19:03:03.35615+00,lectura_global,t,143.332,
+rango,2026-11-20 19:03:03.500175+00,escritura_nodo_c,f,0.163,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:03.702167+00,lectura_local_a,t,0.226,
+rango,2026-11-20 19:03:03.703213+00,lectura_nodo_c,t,0.165,
+rango,2026-11-20 19:03:03.703963+00,lectura_global,t,142.152,
+rango,2026-11-20 19:03:03.846852+00,escritura_nodo_c,f,0.163,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:04.048834+00,lectura_local_a,t,0.23,
+rango,2026-11-20 19:03:04.049772+00,lectura_nodo_c,t,0.129,
+rango,2026-11-20 19:03:04.050437+00,lectura_global,t,142.757,
+rango,2026-11-20 19:03:04.194105+00,escritura_nodo_c,f,0.155,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:04.396104+00,lectura_local_a,t,0.247,
+rango,2026-11-20 19:03:04.397141+00,lectura_nodo_c,t,0.159,
+rango,2026-11-20 19:03:04.397844+00,lectura_global,t,142.834,
+rango,2026-11-20 19:03:04.541395+00,escritura_nodo_c,f,0.162,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:04.743382+00,lectura_local_a,t,0.293,
+rango,2026-11-20 19:03:04.744581+00,lectura_nodo_c,t,0.167,
+rango,2026-11-20 19:03:04.745291+00,lectura_global,t,142.975,
+rango,2026-11-20 19:03:04.889044+00,escritura_nodo_c,f,0.212,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:05.091268+00,lectura_local_a,t,0.281,
+rango,2026-11-20 19:03:05.096105+00,lectura_nodo_c,t,0.229,
+rango,2026-11-20 19:03:05.098423+00,lectura_global,t,142.68,
+rango,2026-11-20 19:03:05.242139+00,escritura_nodo_c,f,0.165,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:05.444392+00,lectura_local_a,t,0.388,
+rango,2026-11-20 19:03:05.446273+00,lectura_nodo_c,t,0.186,
+rango,2026-11-20 19:03:05.44711+00,lectura_global,t,142.742,
+rango,2026-11-20 19:03:05.590721+00,escritura_nodo_c,f,0.162,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:05.792897+00,lectura_local_a,t,0.29,
+rango,2026-11-20 19:03:05.794178+00,lectura_nodo_c,t,0.143,
+rango,2026-11-20 19:03:05.794887+00,lectura_global,t,142.876,
+rango,2026-11-20 19:03:05.939259+00,escritura_nodo_c,f,0.188,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:06.141403+00,lectura_local_a,t,0.247,
+rango,2026-11-20 19:03:06.142505+00,lectura_nodo_c,t,0.142,
+rango,2026-11-20 19:03:06.143233+00,lectura_global,t,143.496,
+rango,2026-11-20 19:03:06.287811+00,escritura_nodo_c,f,0.152,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:06.489964+00,lectura_local_a,t,0.301,
+rango,2026-11-20 19:03:06.491996+00,lectura_nodo_c,t,0.212,
+rango,2026-11-20 19:03:06.49304+00,lectura_global,t,143.574,
+rango,2026-11-20 19:03:06.637507+00,escritura_nodo_c,f,0.161,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:06.839539+00,lectura_local_a,t,0.235,
+rango,2026-11-20 19:03:06.840811+00,lectura_nodo_c,t,0.133,
+rango,2026-11-20 19:03:06.841533+00,lectura_global,t,143.057,
+rango,2026-11-20 19:03:06.985571+00,escritura_nodo_c,f,0.246,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:07.187754+00,lectura_local_a,t,0.24,
+rango,2026-11-20 19:03:07.189248+00,lectura_nodo_c,t,0.133,
+rango,2026-11-20 19:03:07.189887+00,lectura_global,t,143.545,
+rango,2026-11-20 19:03:07.334192+00,escritura_nodo_c,f,0.16,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:07.536216+00,lectura_local_a,t,0.231,
+rango,2026-11-20 19:03:07.537259+00,lectura_nodo_c,t,0.135,
+rango,2026-11-20 19:03:07.537892+00,lectura_global,t,143.781,
+rango,2026-11-20 19:03:07.682437+00,escritura_nodo_c,f,0.173,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:07.884496+00,lectura_local_a,t,0.304,
+rango,2026-11-20 19:03:07.885632+00,lectura_nodo_c,t,0.172,
+rango,2026-11-20 19:03:07.886346+00,lectura_global,t,143.84,
+rango,2026-11-20 19:03:08.033369+00,escritura_nodo_c,f,0.178,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:08.235525+00,lectura_local_a,t,0.23,
+rango,2026-11-20 19:03:08.236676+00,lectura_nodo_c,t,0.13,
+rango,2026-11-20 19:03:08.237352+00,lectura_global,t,144.614,
+rango,2026-11-20 19:03:08.383574+00,escritura_nodo_c,f,0.173,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:08.58617+00,lectura_local_a,t,1.845,
+rango,2026-11-20 19:03:08.594358+00,lectura_nodo_c,t,1.543,
+rango,2026-11-20 19:03:08.60036+00,lectura_global,t,157.618,
+rango,2026-11-20 19:03:08.762368+00,escritura_nodo_c,f,1.317,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:08.971701+00,lectura_local_a,t,1.618,
+rango,2026-11-20 19:03:08.977124+00,lectura_nodo_c,t,1.046,
+rango,2026-11-20 19:03:08.982197+00,lectura_global,t,149.411,
+rango,2026-11-20 19:03:09.13333+00,escritura_nodo_c,f,0.168,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:09.335443+00,lectura_local_a,t,0.244,
+rango,2026-11-20 19:03:09.33653+00,lectura_nodo_c,t,0.131,
+rango,2026-11-20 19:03:09.33718+00,lectura_global,t,143.69,
+rango,2026-11-20 19:03:09.481767+00,escritura_nodo_c,f,0.203,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:09.683915+00,lectura_local_a,t,0.236,
+rango,2026-11-20 19:03:09.685071+00,lectura_nodo_c,t,0.122,
+rango,2026-11-20 19:03:09.68571+00,lectura_global,t,143.78,
+rango,2026-11-20 19:03:09.831354+00,escritura_nodo_c,f,0.176,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:10.032427+00,lectura_local_a,t,0.237,
+rango,2026-11-20 19:03:10.033904+00,lectura_nodo_c,t,0.121,
+rango,2026-11-20 19:03:10.034542+00,lectura_global,t,143.707,
+rango,2026-11-20 19:03:10.179135+00,escritura_nodo_c,f,0.212,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:10.381263+00,lectura_local_a,t,0.273,
+rango,2026-11-20 19:03:10.382395+00,lectura_nodo_c,t,0.187,
+rango,2026-11-20 19:03:10.383229+00,lectura_global,t,143.184,
+rango,2026-11-20 19:03:10.528262+00,escritura_nodo_c,f,0.259,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:10.729566+00,lectura_local_a,t,0.413,
+rango,2026-11-20 19:03:10.731539+00,lectura_nodo_c,t,0.252,
+rango,2026-11-20 19:03:10.732411+00,lectura_global,t,143.862,
+rango,2026-11-20 19:03:10.877148+00,escritura_nodo_c,f,0.164,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:11.079259+00,lectura_local_a,t,0.894,
+rango,2026-11-20 19:03:11.081931+00,lectura_nodo_c,t,0.227,
+rango,2026-11-20 19:03:11.082737+00,lectura_global,t,143.905,
+rango,2026-11-20 19:03:11.22784+00,escritura_nodo_c,f,0.215,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:11.429949+00,lectura_local_a,t,0.353,
+rango,2026-11-20 19:03:11.431872+00,lectura_nodo_c,t,0.182,
+rango,2026-11-20 19:03:11.432588+00,lectura_global,t,143.893,
+rango,2026-11-20 19:03:11.578239+00,escritura_nodo_c,f,0.211,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:11.780442+00,lectura_local_a,t,0.241,
+rango,2026-11-20 19:03:11.781453+00,lectura_nodo_c,t,0.151,
+rango,2026-11-20 19:03:11.782136+00,lectura_global,t,143.531,
+rango,2026-11-20 19:03:11.927724+00,escritura_nodo_c,f,0.212,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:12.129874+00,lectura_local_a,t,0.318,
+rango,2026-11-20 19:03:12.131491+00,lectura_nodo_c,t,0.181,
+rango,2026-11-20 19:03:12.132251+00,lectura_global,t,143.42,
+rango,2026-11-20 19:03:12.276621+00,escritura_nodo_c,f,0.187,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:12.4787+00,lectura_local_a,t,0.31,
+rango,2026-11-20 19:03:12.479968+00,lectura_nodo_c,t,0.227,
+rango,2026-11-20 19:03:12.480961+00,lectura_global,t,143.859,
+rango,2026-11-20 19:03:12.625731+00,escritura_nodo_c,f,0.186,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:12.827819+00,lectura_local_a,t,0.23,
+rango,2026-11-20 19:03:12.829044+00,lectura_nodo_c,t,0.158,
+rango,2026-11-20 19:03:12.829857+00,lectura_global,t,143.559,
+rango,2026-11-20 19:03:12.974847+00,escritura_nodo_c,f,0.223,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:13.177474+00,lectura_local_a,t,0.576,
+rango,2026-11-20 19:03:13.180003+00,lectura_nodo_c,t,0.254,
+rango,2026-11-20 19:03:13.180971+00,lectura_global,t,143.644,
+rango,2026-11-20 19:03:13.325738+00,escritura_nodo_c,f,0.187,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:13.527795+00,lectura_local_a,t,0.428,
+rango,2026-11-20 19:03:13.530062+00,lectura_nodo_c,t,0.253,
+rango,2026-11-20 19:03:13.530995+00,lectura_global,t,143.819,
+rango,2026-11-20 19:03:13.6764+00,escritura_nodo_c,f,0.213,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:13.878761+00,lectura_local_a,t,0.37,
+rango,2026-11-20 19:03:13.880465+00,lectura_nodo_c,t,0.207,
+rango,2026-11-20 19:03:13.881356+00,lectura_global,t,143.856,
+rango,2026-11-20 19:03:14.026752+00,escritura_nodo_c,f,0.202,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:14.229186+00,lectura_local_a,t,0.327,
+rango,2026-11-20 19:03:14.230852+00,lectura_nodo_c,t,0.206,
+rango,2026-11-20 19:03:14.231691+00,lectura_global,t,144.025,
+rango,2026-11-20 19:03:14.377348+00,escritura_nodo_c,f,0.233,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:14.579594+00,lectura_local_a,t,0.308,
+rango,2026-11-20 19:03:14.581438+00,lectura_nodo_c,t,0.192,
+rango,2026-11-20 19:03:14.582516+00,lectura_global,t,143.93,
+rango,2026-11-20 19:03:14.727903+00,escritura_nodo_c,f,0.265,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:14.931073+00,lectura_local_a,t,0.284,
+rango,2026-11-20 19:03:14.932074+00,lectura_nodo_c,t,0.144,
+rango,2026-11-20 19:03:14.932755+00,lectura_global,t,144.594,
+rango,2026-11-20 19:03:15.079137+00,escritura_nodo_c,f,0.226,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:15.28147+00,lectura_local_a,t,0.229,
+rango,2026-11-20 19:03:15.282528+00,lectura_nodo_c,t,0.127,
+rango,2026-11-20 19:03:15.28319+00,lectura_global,t,143.457,
+rango,2026-11-20 19:03:15.428278+00,escritura_nodo_c,f,0.166,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:15.630566+00,lectura_local_a,t,0.228,
+rango,2026-11-20 19:03:15.632023+00,lectura_nodo_c,t,0.135,
+rango,2026-11-20 19:03:15.63271+00,lectura_global,t,143.143,
+rango,2026-11-20 19:03:15.777077+00,escritura_nodo_c,f,0.185,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:15.979335+00,lectura_local_a,t,0.295,
+rango,2026-11-20 19:03:15.981447+00,lectura_nodo_c,t,0.141,
+rango,2026-11-20 19:03:15.982187+00,lectura_global,t,143.051,
+rango,2026-11-20 19:03:16.126538+00,escritura_nodo_c,f,0.193,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:16.328668+00,lectura_local_a,t,0.317,
+rango,2026-11-20 19:03:16.330625+00,lectura_nodo_c,t,0.163,
+rango,2026-11-20 19:03:16.331382+00,lectura_global,t,143.231,
+rango,2026-11-20 19:03:16.47573+00,escritura_nodo_c,f,0.188,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:16.677909+00,lectura_local_a,t,0.343,
+rango,2026-11-20 19:03:16.680072+00,lectura_nodo_c,t,0.173,
+rango,2026-11-20 19:03:16.680866+00,lectura_global,t,143.135,
+rango,2026-11-20 19:03:16.825747+00,escritura_nodo_c,f,0.226,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:17.02796+00,lectura_local_a,t,0.316,
+rango,2026-11-20 19:03:17.029428+00,lectura_nodo_c,t,0.176,
+rango,2026-11-20 19:03:17.030158+00,lectura_global,t,143.302,
+rango,2026-11-20 19:03:17.174516+00,escritura_nodo_c,f,0.202,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:17.376587+00,lectura_local_a,t,0.357,
+rango,2026-11-20 19:03:17.379292+00,lectura_nodo_c,t,0.226,
+rango,2026-11-20 19:03:17.380106+00,lectura_global,t,143.319,
+rango,2026-11-20 19:03:17.524406+00,escritura_nodo_c,f,0.188,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:17.726642+00,lectura_local_a,t,0.455,
+rango,2026-11-20 19:03:17.729388+00,lectura_nodo_c,t,0.23,
+rango,2026-11-20 19:03:17.730329+00,lectura_global,t,143.229,
+rango,2026-11-20 19:03:17.874344+00,escritura_nodo_c,f,0.152,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:18.076758+00,lectura_local_a,t,0.549,
+rango,2026-11-20 19:03:18.078709+00,lectura_nodo_c,t,0.253,
+rango,2026-11-20 19:03:18.079665+00,lectura_global,t,142.921,
+rango,2026-11-20 19:03:18.22391+00,escritura_nodo_c,f,0.192,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:18.426265+00,lectura_local_a,t,0.514,
+rango,2026-11-20 19:03:18.428611+00,lectura_nodo_c,t,0.208,
+rango,2026-11-20 19:03:18.429379+00,lectura_global,t,143.115,
+rango,2026-11-20 19:03:18.574158+00,escritura_nodo_c,f,0.18,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:18.776166+00,lectura_local_a,t,0.238,
+rango,2026-11-20 19:03:18.778044+00,lectura_nodo_c,t,0.232,
+rango,2026-11-20 19:03:18.779056+00,lectura_global,t,142.996,
+rango,2026-11-20 19:03:18.923195+00,escritura_nodo_c,f,0.232,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:19.125343+00,lectura_local_a,t,0.298,
+rango,2026-11-20 19:03:19.127082+00,lectura_nodo_c,t,0.183,
+rango,2026-11-20 19:03:19.128334+00,lectura_global,t,143.293,
+rango,2026-11-20 19:03:19.272845+00,escritura_nodo_c,f,0.205,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:19.47511+00,lectura_local_a,t,0.506,
+rango,2026-11-20 19:03:19.4768+00,lectura_nodo_c,t,0.147,
+rango,2026-11-20 19:03:19.477686+00,lectura_global,t,143.097,
+rango,2026-11-20 19:03:19.621755+00,escritura_nodo_c,f,0.173,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:19.823899+00,lectura_local_a,t,0.438,
+rango,2026-11-20 19:03:19.825333+00,lectura_nodo_c,t,0.164,
+rango,2026-11-20 19:03:19.82604+00,lectura_global,t,143.271,
+rango,2026-11-20 19:03:19.970328+00,escritura_nodo_c,f,0.193,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:20.172487+00,lectura_local_a,t,0.423,
+rango,2026-11-20 19:03:20.174568+00,lectura_nodo_c,t,0.166,
+rango,2026-11-20 19:03:20.175312+00,lectura_global,t,143.395,
+rango,2026-11-20 19:03:20.319624+00,escritura_nodo_c,f,0.187,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:20.521896+00,lectura_local_a,t,0.398,
+rango,2026-11-20 19:03:20.523392+00,lectura_nodo_c,t,0.158,
+rango,2026-11-20 19:03:20.524105+00,lectura_global,t,143.068,
+rango,2026-11-20 19:03:20.668168+00,escritura_nodo_c,f,0.165,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:20.870263+00,lectura_local_a,t,0.382,
+rango,2026-11-20 19:03:20.8715+00,lectura_nodo_c,t,0.135,
+rango,2026-11-20 19:03:20.872153+00,lectura_global,t,143.192,
+rango,2026-11-20 19:03:21.016129+00,escritura_nodo_c,f,0.16,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:21.218237+00,lectura_local_a,t,0.469,
+rango,2026-11-20 19:03:21.220237+00,lectura_nodo_c,t,0.15,
+rango,2026-11-20 19:03:21.221034+00,lectura_global,t,142.873,
+rango,2026-11-20 19:03:21.365439+00,escritura_nodo_c,f,0.159,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:21.567648+00,lectura_local_a,t,0.338,
+rango,2026-11-20 19:03:21.5695+00,lectura_nodo_c,t,0.151,
+rango,2026-11-20 19:03:21.570195+00,lectura_global,t,142.954,
+rango,2026-11-20 19:03:21.714698+00,escritura_nodo_c,f,0.168,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:21.917006+00,lectura_local_a,t,0.351,
+rango,2026-11-20 19:03:21.919027+00,lectura_nodo_c,t,0.156,
+rango,2026-11-20 19:03:21.919848+00,lectura_global,t,143.823,
+rango,2026-11-20 19:03:22.064751+00,escritura_nodo_c,f,0.161,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:22.267001+00,lectura_local_a,t,0.239,
+rango,2026-11-20 19:03:22.268238+00,lectura_nodo_c,t,0.129,
+rango,2026-11-20 19:03:22.26891+00,lectura_global,t,143.641,
+rango,2026-11-20 19:03:22.41335+00,escritura_nodo_c,f,0.158,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:22.615434+00,lectura_local_a,t,0.242,
+rango,2026-11-20 19:03:22.61736+00,lectura_nodo_c,t,0.129,
+rango,2026-11-20 19:03:22.61801+00,lectura_global,t,143.06,
+rango,2026-11-20 19:03:22.761941+00,escritura_nodo_c,f,0.189,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:22.964087+00,lectura_local_a,t,0.272,
+rango,2026-11-20 19:03:22.966192+00,lectura_nodo_c,t,0.131,
+rango,2026-11-20 19:03:22.966895+00,lectura_global,t,143.619,
+rango,2026-11-20 19:03:23.112046+00,escritura_nodo_c,f,0.164,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:23.314175+00,lectura_local_a,t,0.276,
+rango,2026-11-20 19:03:23.315546+00,lectura_nodo_c,t,0.136,
+rango,2026-11-20 19:03:23.316383+00,lectura_global,t,143.577,
+rango,2026-11-20 19:03:23.461549+00,escritura_nodo_c,f,0.163,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:23.663579+00,lectura_local_a,t,0.24,
+rango,2026-11-20 19:03:23.664584+00,lectura_nodo_c,t,0.125,
+rango,2026-11-20 19:03:23.665226+00,lectura_global,t,143.346,
+rango,2026-11-20 19:03:23.810403+00,escritura_nodo_c,f,0.185,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:24.012643+00,lectura_local_a,t,0.228,
+rango,2026-11-20 19:03:24.013848+00,lectura_nodo_c,t,0.132,
+rango,2026-11-20 19:03:24.014484+00,lectura_global,t,142.926,
+rango,2026-11-20 19:03:24.158495+00,escritura_nodo_c,f,0.179,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:24.36084+00,lectura_local_a,t,0.243,
+rango,2026-11-20 19:03:24.362385+00,lectura_nodo_c,t,0.136,
+rango,2026-11-20 19:03:24.363372+00,lectura_global,t,143.823,
+rango,2026-11-20 19:03:24.509179+00,escritura_nodo_c,f,0.242,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:24.71156+00,lectura_local_a,t,0.27,
+rango,2026-11-20 19:03:24.71385+00,lectura_nodo_c,t,0.127,
+rango,2026-11-20 19:03:24.714492+00,lectura_global,t,143.019,
+rango,2026-11-20 19:03:24.860272+00,escritura_nodo_c,f,0.179,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:25.063152+00,lectura_local_a,t,0.384,
+rango,2026-11-20 19:03:25.065983+00,lectura_nodo_c,t,0.15,
+rango,2026-11-20 19:03:25.067363+00,lectura_global,t,143.942,
+rango,2026-11-20 19:03:25.213122+00,escritura_nodo_c,f,0.159,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:25.416056+00,lectura_local_a,t,0.208,
+rango,2026-11-20 19:03:25.418031+00,lectura_nodo_c,t,0.179,
+rango,2026-11-20 19:03:25.419803+00,lectura_global,t,144.343,
+rango,2026-11-20 19:03:25.566495+00,escritura_nodo_c,f,0.188,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:25.769628+00,lectura_local_a,t,0.282,
+rango,2026-11-20 19:03:25.770916+00,lectura_nodo_c,t,0.135,
+rango,2026-11-20 19:03:25.771832+00,lectura_global,t,143.713,
+rango,2026-11-20 19:03:25.917255+00,escritura_nodo_c,f,0.197,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:26.119548+00,lectura_local_a,t,0.41,
+rango,2026-11-20 19:03:26.121868+00,lectura_nodo_c,t,0.156,
+rango,2026-11-20 19:03:26.122607+00,lectura_global,t,144.141,
+rango,2026-11-20 19:03:26.268757+00,escritura_nodo_c,f,0.19,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:26.47094+00,lectura_local_a,t,0.493,
+rango,2026-11-20 19:03:26.473004+00,lectura_nodo_c,t,0.137,
+rango,2026-11-20 19:03:26.473722+00,lectura_global,t,143.792,
+rango,2026-11-20 19:03:26.61927+00,escritura_nodo_c,f,0.208,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:26.821447+00,lectura_local_a,t,0.347,
+rango,2026-11-20 19:03:26.82273+00,lectura_nodo_c,t,0.132,
+rango,2026-11-20 19:03:26.823378+00,lectura_global,t,144.003,
+rango,2026-11-20 19:03:26.969165+00,escritura_nodo_c,f,0.215,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:27.171505+00,lectura_local_a,t,0.234,
+rango,2026-11-20 19:03:27.172804+00,lectura_nodo_c,t,0.139,
+rango,2026-11-20 19:03:27.173466+00,lectura_global,t,143.583,
+rango,2026-11-20 19:03:27.318615+00,escritura_nodo_c,f,0.155,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:27.520781+00,lectura_local_a,t,0.494,
+rango,2026-11-20 19:03:27.523111+00,lectura_nodo_c,t,0.147,
+rango,2026-11-20 19:03:27.524036+00,lectura_global,t,143.775,
+rango,2026-11-20 19:03:27.668852+00,escritura_nodo_c,f,0.157,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:27.870953+00,lectura_local_a,t,0.297,
+rango,2026-11-20 19:03:27.872907+00,lectura_nodo_c,t,0.131,
+rango,2026-11-20 19:03:27.873617+00,lectura_global,t,143.248,
+rango,2026-11-20 19:03:28.017676+00,escritura_nodo_c,f,0.175,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:28.219756+00,lectura_local_a,t,0.233,
+rango,2026-11-20 19:03:28.220849+00,lectura_nodo_c,t,0.126,
+rango,2026-11-20 19:03:28.221512+00,lectura_global,t,143.239,
+rango,2026-11-20 19:03:28.365736+00,escritura_nodo_c,f,0.158,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:28.56776+00,lectura_local_a,t,0.348,
+rango,2026-11-20 19:03:28.569507+00,lectura_nodo_c,t,0.132,
+rango,2026-11-20 19:03:28.570191+00,lectura_global,t,143.931,
+rango,2026-11-20 19:03:28.714937+00,escritura_nodo_c,f,0.158,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:28.917148+00,lectura_local_a,t,0.479,
+rango,2026-11-20 19:03:28.918649+00,lectura_nodo_c,t,0.15,
+rango,2026-11-20 19:03:28.919343+00,lectura_global,t,143.668,
+rango,2026-11-20 19:03:29.063764+00,escritura_nodo_c,f,0.16,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:29.264788+00,lectura_local_a,t,0.323,
+rango,2026-11-20 19:03:29.266844+00,lectura_nodo_c,t,0.164,
+rango,2026-11-20 19:03:29.267595+00,lectura_global,t,143.412,
+rango,2026-11-20 19:03:29.41191+00,escritura_nodo_c,f,0.16,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:29.614009+00,lectura_local_a,t,0.222,
+rango,2026-11-20 19:03:29.615226+00,lectura_nodo_c,t,0.153,
+rango,2026-11-20 19:03:29.615873+00,lectura_global,t,144.545,
+rango,2026-11-20 19:03:29.761407+00,escritura_nodo_c,f,0.156,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:29.963525+00,lectura_local_a,t,0.328,
+rango,2026-11-20 19:03:29.964762+00,lectura_nodo_c,t,0.127,
+rango,2026-11-20 19:03:29.965419+00,lectura_global,t,143.552,
+rango,2026-11-20 19:03:30.109745+00,escritura_nodo_c,f,0.161,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:30.311764+00,lectura_local_a,t,0.244,
+rango,2026-11-20 19:03:30.312885+00,lectura_nodo_c,t,0.141,
+rango,2026-11-20 19:03:30.313577+00,lectura_global,t,142.829,
+rango,2026-11-20 19:03:30.457502+00,escritura_nodo_c,f,0.176,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:30.659597+00,lectura_local_a,t,0.248,
+rango,2026-11-20 19:03:30.661171+00,lectura_nodo_c,t,0.163,
+rango,2026-11-20 19:03:30.662128+00,lectura_global,t,143.216,
+rango,2026-11-20 19:03:30.806407+00,escritura_nodo_c,f,0.179,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:31.007825+00,lectura_local_a,t,0.243,
+rango,2026-11-20 19:03:31.008963+00,lectura_nodo_c,t,0.19,
+rango,2026-11-20 19:03:31.009748+00,lectura_global,t,142.716,
+rango,2026-11-20 19:03:31.153287+00,escritura_nodo_c,f,0.157,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:31.354363+00,lectura_local_a,t,0.237,
+rango,2026-11-20 19:03:31.355667+00,lectura_nodo_c,t,0.158,
+rango,2026-11-20 19:03:31.356511+00,lectura_global,t,142.601,
+rango,2026-11-20 19:03:31.500022+00,escritura_nodo_c,f,0.166,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:31.70219+00,lectura_local_a,t,0.237,
+rango,2026-11-20 19:03:31.70357+00,lectura_nodo_c,t,0.146,
+rango,2026-11-20 19:03:31.704292+00,lectura_global,t,142.51,
+rango,2026-11-20 19:03:31.847807+00,escritura_nodo_c,f,0.157,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:32.049924+00,lectura_local_a,t,0.407,
+rango,2026-11-20 19:03:32.051431+00,lectura_nodo_c,t,0.156,
+rango,2026-11-20 19:03:32.052161+00,lectura_global,t,143.627,
+rango,2026-11-20 19:03:32.197347+00,escritura_nodo_c,f,0.163,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:32.399432+00,lectura_local_a,t,0.285,
+rango,2026-11-20 19:03:32.400602+00,lectura_nodo_c,t,0.133,
+rango,2026-11-20 19:03:32.401254+00,lectura_global,t,142.978,
+rango,2026-11-20 19:03:32.545332+00,escritura_nodo_c,f,0.16,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:32.747428+00,lectura_local_a,t,0.274,
+rango,2026-11-20 19:03:32.749289+00,lectura_nodo_c,t,0.142,
+rango,2026-11-20 19:03:32.750006+00,lectura_global,t,142.701,
+rango,2026-11-20 19:03:32.893987+00,escritura_nodo_c,f,0.168,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:33.096098+00,lectura_local_a,t,0.239,
+rango,2026-11-20 19:03:33.098056+00,lectura_nodo_c,t,0.158,
+rango,2026-11-20 19:03:33.098779+00,lectura_global,t,143.219,
+rango,2026-11-20 19:03:33.243754+00,escritura_nodo_c,f,0.16,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:33.445841+00,lectura_local_a,t,0.325,
+rango,2026-11-20 19:03:33.447531+00,lectura_nodo_c,t,0.14,
+rango,2026-11-20 19:03:33.44824+00,lectura_global,t,142.904,
+rango,2026-11-20 19:03:33.592319+00,escritura_nodo_c,f,0.16,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:33.794365+00,lectura_local_a,t,0.246,
+rango,2026-11-20 19:03:33.795588+00,lectura_nodo_c,t,0.139,
+rango,2026-11-20 19:03:33.796295+00,lectura_global,t,143.118,
+rango,2026-11-20 19:03:33.940842+00,escritura_nodo_c,f,0.177,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:34.143248+00,lectura_local_a,t,0.292,
+rango,2026-11-20 19:03:34.145244+00,lectura_nodo_c,t,0.184,
+rango,2026-11-20 19:03:34.145969+00,lectura_global,t,142.892,
+rango,2026-11-20 19:03:34.290726+00,escritura_nodo_c,f,0.217,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:34.491941+00,lectura_local_a,t,0.236,
+rango,2026-11-20 19:03:34.493439+00,lectura_nodo_c,t,0.172,
+rango,2026-11-20 19:03:34.4942+00,lectura_global,t,142.909,
+rango,2026-11-20 19:03:34.638975+00,escritura_nodo_c,f,0.214,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:34.841341+00,lectura_local_a,t,0.268,
+rango,2026-11-20 19:03:34.84335+00,lectura_nodo_c,t,0.2,
+rango,2026-11-20 19:03:34.84413+00,lectura_global,t,347.656,
+rango,2026-11-20 19:03:35.193427+00,escritura_nodo_c,f,0.164,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:35.395384+00,lectura_local_a,t,0.24,
+rango,2026-11-20 19:03:35.396746+00,lectura_nodo_c,t,0.154,
+rango,2026-11-20 19:03:35.397581+00,lectura_global,t,71.972,
+rango,2026-11-20 19:03:35.471129+00,escritura_nodo_c,f,0.229,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:35.673238+00,lectura_local_a,t,0.295,
+rango,2026-11-20 19:03:35.675173+00,lectura_nodo_c,t,0.153,
+rango,2026-11-20 19:03:35.676046+00,lectura_global,t,72.327,
+rango,2026-11-20 19:03:35.750161+00,escritura_nodo_c,f,0.2,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:35.952365+00,lectura_local_a,t,0.36,
+rango,2026-11-20 19:03:35.954735+00,lectura_nodo_c,t,0.156,
+rango,2026-11-20 19:03:35.955526+00,lectura_global,t,72.395,
+rango,2026-11-20 19:03:36.029564+00,escritura_nodo_c,f,0.205,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:36.231724+00,lectura_local_a,t,0.249,
+rango,2026-11-20 19:03:36.232975+00,lectura_nodo_c,t,0.17,
+rango,2026-11-20 19:03:36.233721+00,lectura_global,t,143.05,
+rango,2026-11-20 19:03:36.381877+00,escritura_nodo_c,f,0.282,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:36.584232+00,lectura_local_a,t,0.319,
+rango,2026-11-20 19:03:36.585815+00,lectura_nodo_c,t,0.191,
+rango,2026-11-20 19:03:36.586519+00,lectura_global,t,142.68,
+rango,2026-11-20 19:03:36.730266+00,escritura_nodo_c,f,0.229,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:36.932359+00,lectura_local_a,t,0.297,
+rango,2026-11-20 19:03:36.933668+00,lectura_nodo_c,t,0.18,
+rango,2026-11-20 19:03:36.934371+00,lectura_global,t,143.92,
+rango,2026-11-20 19:03:37.079986+00,escritura_nodo_c,f,0.246,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:37.282181+00,lectura_local_a,t,0.309,
+rango,2026-11-20 19:03:37.284195+00,lectura_nodo_c,t,0.164,
+rango,2026-11-20 19:03:37.284899+00,lectura_global,t,142.574,
+rango,2026-11-20 19:03:37.428558+00,escritura_nodo_c,f,0.167,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:37.629916+00,lectura_local_a,t,0.341,
+rango,2026-11-20 19:03:37.630834+00,lectura_nodo_c,t,0.193,
+rango,2026-11-20 19:03:37.631799+00,lectura_global,t,72.211,
+rango,2026-11-20 19:03:37.705686+00,escritura_nodo_c,f,0.308,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:37.908041+00,lectura_local_a,t,0.25,
+rango,2026-11-20 19:03:37.90943+00,lectura_nodo_c,t,0.167,
+rango,2026-11-20 19:03:37.910148+00,lectura_global,t,72.532,
+rango,2026-11-20 19:03:37.983965+00,escritura_nodo_c,f,0.158,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:38.186052+00,lectura_local_a,t,0.293,
+rango,2026-11-20 19:03:38.187986+00,lectura_nodo_c,t,0.349,
+rango,2026-11-20 19:03:38.189425+00,lectura_global,t,72.122,
+rango,2026-11-20 19:03:38.263146+00,escritura_nodo_c,f,0.198,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:38.46526+00,lectura_local_a,t,0.252,
+rango,2026-11-20 19:03:38.467208+00,lectura_nodo_c,t,0.199,
+rango,2026-11-20 19:03:38.467972+00,lectura_global,t,72.123,
+rango,2026-11-20 19:03:38.541764+00,escritura_nodo_c,f,0.16,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:38.743854+00,lectura_local_a,t,0.262,
+rango,2026-11-20 19:03:38.745254+00,lectura_nodo_c,t,0.163,
+rango,2026-11-20 19:03:38.746088+00,lectura_global,t,132.542,
+rango,2026-11-20 19:03:38.880382+00,escritura_nodo_c,f,0.182,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:39.082428+00,lectura_local_a,t,0.255,
+rango,2026-11-20 19:03:39.083223+00,lectura_nodo_c,t,0.199,
+rango,2026-11-20 19:03:39.084075+00,lectura_global,t,148.075,
+rango,2026-11-20 19:03:39.233376+00,escritura_nodo_c,f,0.176,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:39.43537+00,lectura_local_a,t,0.261,
+rango,2026-11-20 19:03:39.436853+00,lectura_nodo_c,t,0.232,
+rango,2026-11-20 19:03:39.439124+00,lectura_global,t,143.677,
+rango,2026-11-20 19:03:39.584746+00,escritura_nodo_c,f,0.189,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:39.786906+00,lectura_local_a,t,0.342,
+rango,2026-11-20 19:03:39.78897+00,lectura_nodo_c,t,0.208,
+rango,2026-11-20 19:03:39.789765+00,lectura_global,t,143.247,
+rango,2026-11-20 19:03:39.934216+00,escritura_nodo_c,f,0.333,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:40.136502+00,lectura_local_a,t,0.261,
+rango,2026-11-20 19:03:40.13762+00,lectura_nodo_c,t,0.151,
+rango,2026-11-20 19:03:40.138383+00,lectura_global,t,142.88,
+rango,2026-11-20 19:03:40.282347+00,escritura_nodo_c,f,0.178,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:40.484515+00,lectura_local_a,t,0.259,
+rango,2026-11-20 19:03:40.485971+00,lectura_nodo_c,t,0.215,
+rango,2026-11-20 19:03:40.486884+00,lectura_global,t,142.98,
+rango,2026-11-20 19:03:40.630721+00,escritura_nodo_c,f,0.159,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:40.832794+00,lectura_local_a,t,0.273,
+rango,2026-11-20 19:03:40.834128+00,lectura_nodo_c,t,0.153,
+rango,2026-11-20 19:03:40.834895+00,lectura_global,t,142.43,
+rango,2026-11-20 19:03:40.977978+00,escritura_nodo_c,f,0.162,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:41.180057+00,lectura_local_a,t,0.326,
+rango,2026-11-20 19:03:41.181289+00,lectura_nodo_c,t,0.16,
+rango,2026-11-20 19:03:41.182047+00,lectura_global,t,143.052,
+rango,2026-11-20 19:03:41.325936+00,escritura_nodo_c,f,0.156,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:41.528076+00,lectura_local_a,t,0.231,
+rango,2026-11-20 19:03:41.529213+00,lectura_nodo_c,t,0.129,
+rango,2026-11-20 19:03:41.529874+00,lectura_global,t,142.694,
+rango,2026-11-20 19:03:41.673373+00,escritura_nodo_c,f,0.161,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:41.875394+00,lectura_local_a,t,0.241,
+rango,2026-11-20 19:03:41.876559+00,lectura_nodo_c,t,0.153,
+rango,2026-11-20 19:03:41.877208+00,lectura_global,t,142.722,
+rango,2026-11-20 19:03:42.021504+00,escritura_nodo_c,f,0.221,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:42.223783+00,lectura_local_a,t,0.24,
+rango,2026-11-20 19:03:42.225016+00,lectura_nodo_c,t,0.142,
+rango,2026-11-20 19:03:42.225643+00,lectura_global,t,143.464,
+rango,2026-11-20 19:03:42.370174+00,escritura_nodo_c,f,0.205,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:42.572288+00,lectura_local_a,t,0.235,
+rango,2026-11-20 19:03:42.573286+00,lectura_nodo_c,t,0.131,
+rango,2026-11-20 19:03:42.573936+00,lectura_global,t,143.047,
+rango,2026-11-20 19:03:42.718044+00,escritura_nodo_c,f,0.169,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:42.920114+00,lectura_local_a,t,0.247,
+rango,2026-11-20 19:03:42.921288+00,lectura_nodo_c,t,0.217,
+rango,2026-11-20 19:03:42.922185+00,lectura_global,t,142.986,
+rango,2026-11-20 19:03:43.06617+00,escritura_nodo_c,f,0.157,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:43.26819+00,lectura_local_a,t,0.239,
+rango,2026-11-20 19:03:43.270328+00,lectura_nodo_c,t,0.211,
+rango,2026-11-20 19:03:43.271291+00,lectura_global,t,142.868,
+rango,2026-11-20 19:03:43.415404+00,escritura_nodo_c,f,0.194,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:43.617539+00,lectura_local_a,t,0.316,
+rango,2026-11-20 19:03:43.619436+00,lectura_nodo_c,t,0.136,
+rango,2026-11-20 19:03:43.620523+00,lectura_global,t,143.127,
+rango,2026-11-20 19:03:43.765389+00,escritura_nodo_c,f,0.178,la tabla rango.pedidos_c es una replica de solo lectura
+rango,2026-11-20 19:03:43.967484+00,lectura_local_a,t,0.409,
+rango,2026-11-20 19:03:43.969494+00,lectura_nodo_c,t,0.192,
+rango,2026-11-20 19:03:43.970326+00,lectura_global,t,143.494,
+rango,2026-11-20 19:03:44.115544+00,escritura_nodo_c,t,726.408,
+rango,2026-11-20 19:03:45.044941+00,lectura_local_a,t,0.423,
+rango,2026-11-20 19:03:45.046996+00,lectura_nodo_c,t,285.325,
+rango,2026-11-20 19:03:45.333272+00,lectura_global,t,431.026,
+rango,2026-11-20 19:03:45.765005+00,escritura_nodo_c,t,285.447,
+rango,2026-11-20 19:03:46.253395+00,lectura_local_a,t,0.35,
+rango,2026-11-20 19:03:46.255446+00,lectura_nodo_c,t,283.97,
+rango,2026-11-20 19:03:46.54116+00,lectura_global,t,427.67,
+rango,2026-11-20 19:03:46.969727+00,escritura_nodo_c,t,285.166,
+rango,2026-11-20 19:03:47.4578+00,lectura_local_a,t,0.214,
+rango,2026-11-20 19:03:47.459525+00,lectura_nodo_c,t,283.788,
+rango,2026-11-20 19:03:47.744278+00,lectura_global,t,427.048,
+rango,2026-11-20 19:03:48.17231+00,escritura_nodo_c,t,285.995,
+rango,2026-11-20 19:03:48.66065+00,lectura_local_a,t,0.22,
+rango,2026-11-20 19:03:48.661834+00,lectura_nodo_c,t,283.943,
+rango,2026-11-20 19:03:48.947618+00,lectura_global,t,427.489,
+rango,2026-11-20 19:03:49.376565+00,escritura_nodo_c,t,286.81,
+rango,2026-11-20 19:03:49.866949+00,lectura_local_a,t,0.628,
+rango,2026-11-20 19:03:49.869678+00,lectura_nodo_c,t,283.544,
+rango,2026-11-20 19:03:50.154058+00,lectura_global,t,427.07,
+rango,2026-11-20 19:03:50.582977+00,escritura_nodo_c,t,286.926,
+rango,2026-11-20 19:03:51.07214+00,lectura_local_a,t,0.226,
+rango,2026-11-20 19:03:51.074188+00,lectura_nodo_c,t,283.621,
+rango,2026-11-20 19:03:51.359956+00,lectura_global,t,427.969,
+rango,2026-11-20 19:03:51.78968+00,escritura_nodo_c,t,286.149,
+rango,2026-11-20 19:03:52.279217+00,lectura_local_a,t,0.262,
+rango,2026-11-20 19:03:52.281144+00,lectura_nodo_c,t,284.849,
+rango,2026-11-20 19:03:52.568153+00,lectura_global,t,428.519,
+rango,2026-11-20 19:03:52.998392+00,escritura_nodo_c,t,286.098,
+rango,2026-11-20 19:03:53.487502+00,lectura_local_a,t,0.233,
+rango,2026-11-20 19:03:53.488828+00,lectura_nodo_c,t,285.248,
+rango,2026-11-20 19:03:53.775972+00,lectura_global,t,428.086,
+rango,2026-11-20 19:03:54.205639+00,escritura_nodo_c,t,285.894,
+rango,2026-11-20 19:03:54.693953+00,lectura_local_a,t,0.414,
+rango,2026-11-20 19:03:54.696492+00,lectura_nodo_c,t,284.421,
+rango,2026-11-20 19:03:54.982128+00,lectura_global,t,427.029,
+rango,2026-11-20 19:03:55.41106+00,escritura_nodo_c,t,285.548,
+rango,2026-11-20 19:03:55.899875+00,lectura_local_a,t,0.465,
+rango,2026-11-20 19:03:55.902215+00,lectura_nodo_c,t,283.857,
+rango,2026-11-20 19:03:56.187884+00,lectura_global,t,428.175,
+rango,2026-11-20 19:03:56.617796+00,escritura_nodo_c,t,285.565,
+rango,2026-11-20 19:03:57.105157+00,lectura_local_a,t,0.212,
+rango,2026-11-20 19:03:57.106095+00,lectura_nodo_c,t,283.807,
+rango,2026-11-20 19:03:57.391458+00,lectura_global,t,427.612,
+rango,2026-11-20 19:03:57.82039+00,escritura_nodo_c,t,285.724,
+rango,2026-11-20 19:03:58.308739+00,lectura_local_a,t,0.243,
+rango,2026-11-20 19:03:58.310679+00,lectura_nodo_c,t,284.033,
+rango,2026-11-20 19:03:58.59625+00,lectura_global,t,428.476,
+rango,2026-11-20 19:03:59.026342+00,escritura_nodo_c,t,285.901,
+rango,2026-11-20 19:03:59.515445+00,lectura_local_a,t,0.377,
+rango,2026-11-20 19:03:59.517412+00,lectura_nodo_c,t,283.989,
+rango,2026-11-20 19:03:59.803081+00,lectura_global,t,427.482,
+rango,2026-11-20 19:04:00.232481+00,escritura_nodo_c,t,285.676,
+rango,2026-11-20 19:04:00.720434+00,lectura_local_a,t,0.22,
+rango,2026-11-20 19:04:00.722161+00,lectura_nodo_c,t,284.366,
+rango,2026-11-20 19:04:01.007786+00,lectura_global,t,426.674,
+rango,2026-11-20 19:04:01.435448+00,escritura_nodo_c,t,286.758,
+rango,2026-11-20 19:04:01.924132+00,lectura_local_a,t,0.272,
+rango,2026-11-20 19:04:01.925669+00,lectura_nodo_c,t,284.245,
+rango,2026-11-20 19:04:02.211572+00,lectura_global,t,429.003,
+rango,2026-11-20 19:04:02.642548+00,escritura_nodo_c,t,286.136,
+rango,2026-11-20 19:04:03.130998+00,lectura_local_a,t,0.248,
+rango,2026-11-20 19:04:03.132957+00,lectura_nodo_c,t,284.276,
+rango,2026-11-20 19:04:03.419018+00,lectura_global,t,427.157,
+rango,2026-11-20 19:04:03.850214+00,escritura_nodo_c,t,285.677,
+rango,2026-11-20 19:04:04.338554+00,lectura_local_a,t,0.226,
+rango,2026-11-20 19:04:04.340606+00,lectura_nodo_c,t,283.29,
+rango,2026-11-20 19:04:04.626205+00,lectura_global,t,427.025,
+rango,2026-11-20 19:04:05.054168+00,escritura_nodo_c,t,284.581,
+rango,2026-11-20 19:04:05.539981+00,lectura_local_a,t,0.28,
+rango,2026-11-20 19:04:05.541636+00,lectura_nodo_c,t,283.387,
+rango,2026-11-20 19:04:05.827723+00,lectura_global,t,427.711,
+rango,2026-11-20 19:04:06.257103+00,escritura_nodo_c,t,285.012,
+rango,2026-11-20 19:04:06.744409+00,lectura_local_a,t,0.329,
+rango,2026-11-20 19:04:06.746587+00,lectura_nodo_c,t,284.977,
+rango,2026-11-20 19:04:07.033447+00,lectura_global,t,427.514,
+rango,2026-11-20 19:04:07.462698+00,escritura_nodo_c,t,285.819,
+rango,2026-11-20 19:04:07.95059+00,lectura_local_a,t,0.216,
+rango,2026-11-20 19:04:07.951929+00,lectura_nodo_c,t,283.597,
+rango,2026-11-20 19:04:08.2365+00,lectura_global,t,426.057,
+rango,2026-11-20 19:04:08.663734+00,escritura_nodo_c,t,284.455,
+rango,2026-11-20 19:04:09.150555+00,lectura_local_a,t,0.222,
+rango,2026-11-20 19:04:09.152518+00,lectura_nodo_c,t,283.851,
+rango,2026-11-20 19:04:09.438064+00,lectura_global,t,427.404,
+rango,2026-11-20 19:04:09.866273+00,escritura_nodo_c,t,286.506,
+rango,2026-11-20 19:04:10.355188+00,lectura_local_a,t,0.279,
+rango,2026-11-20 19:04:10.356759+00,lectura_nodo_c,t,283.206,
+rango,2026-11-20 19:04:10.64213+00,lectura_global,t,426.765,
+rango,2026-11-20 19:04:11.070677+00,escritura_nodo_c,t,285.296,
+rango,2026-11-20 19:04:11.559323+00,lectura_local_a,t,0.236,
+rango,2026-11-20 19:04:11.561037+00,lectura_nodo_c,t,283.896,
+rango,2026-11-20 19:04:11.846718+00,lectura_global,t,427.297,
+rango,2026-11-20 19:04:12.275666+00,escritura_nodo_c,t,286.01,
+rango,2026-11-20 19:04:12.763308+00,lectura_local_a,t,0.283,
+rango,2026-11-20 19:04:12.765257+00,lectura_nodo_c,t,283.549,
+rango,2026-11-20 19:04:13.050495+00,lectura_global,t,426.94,
+rango,2026-11-20 19:04:13.480138+00,escritura_nodo_c,t,286.514,
+rango,2026-11-20 19:04:13.96953+00,lectura_local_a,t,0.222,
+rango,2026-11-20 19:04:13.971354+00,lectura_nodo_c,t,283.864,
+rango,2026-11-20 19:04:14.256163+00,lectura_global,t,428.078,
+rango,2026-11-20 19:04:14.685799+00,escritura_nodo_c,t,285.868,
+rango,2026-11-20 19:04:15.175006+00,lectura_local_a,t,0.428,
+rango,2026-11-20 19:04:15.176543+00,lectura_nodo_c,t,284.104,
+rango,2026-11-20 19:04:15.46269+00,lectura_global,t,427.826,
+rango,2026-11-20 19:04:15.892653+00,escritura_nodo_c,t,286.561,
+rango,2026-11-20 19:04:16.381345+00,lectura_local_a,t,0.22,
+rango,2026-11-20 19:04:16.383142+00,lectura_nodo_c,t,283.407,
+rango,2026-11-20 19:04:16.668075+00,lectura_global,t,427.565,
+rango,2026-11-20 19:04:17.09764+00,escritura_nodo_c,t,286.139,
+rango,2026-11-20 19:04:17.586813+00,lectura_local_a,t,0.305,
+rango,2026-11-20 19:04:17.588979+00,lectura_nodo_c,t,284.364,
+rango,2026-11-20 19:04:17.874913+00,lectura_global,t,428.156,
+rango,2026-11-20 19:04:18.304266+00,escritura_nodo_c,t,286.093,
+rango,2026-11-20 19:04:18.792547+00,lectura_local_a,t,0.3,
+rango,2026-11-20 19:04:18.794559+00,lectura_nodo_c,t,284.484,
+rango,2026-11-20 19:04:19.08065+00,lectura_global,t,427.559,
+rango,2026-11-20 19:04:19.509418+00,escritura_nodo_c,t,285.122,
+rango,2026-11-20 19:04:19.996853+00,lectura_local_a,t,0.228,
+rango,2026-11-20 19:04:19.998034+00,lectura_nodo_c,t,283.387,
+rango,2026-11-20 19:04:20.282961+00,lectura_global,t,427.962,
+rango,2026-11-20 19:04:20.711939+00,escritura_nodo_c,t,285.669,
