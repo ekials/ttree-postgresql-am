@@ -8,3 +8,4 @@ referencias/
 ESTRUCTURA_PROYECTO.txt
 benchmarks/data/
 distributed/data/
+distributed/results/pgbench/*.log
