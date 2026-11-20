@@ -3,3 +3,8 @@
 *.bc
 .deps/
 __pycache__/
+referencias/
+*.pdf
+ESTRUCTURA_PROYECTO.txt
+benchmarks/data/
+distributed/data/
