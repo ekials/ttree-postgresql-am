@@ -1,0 +1,21 @@
+fecha: 2026-11-20T14:08:00-05:00
+commit: 49b52d0
+TT_MAX_KEYS verificado en el indice: 4
+host: Linux 6.18.58.1-microsoft-standard-WSL2 x86_64
+docker: 29.1.3 cpus=8 memoria=8069480448
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+5) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=off
+block_size=8192
+checkpoint_timeout=1800s
+effective_cache_size=5242888kB
+fsync=on
+jit=on
+maintenance_work_mem=524288kB
+max_parallel_workers_per_gather=2
+max_wal_size=8192MB
+random_page_cost=4
+shared_buffers=3932168kB
+synchronous_commit=on
+work_mem=4096kB
+sesion de medicion: max_parallel_workers_per_gather=0 jit=off enable_bitmapscan=off enable_indexonlyscan=off
+con indice: enable_seqscan=off

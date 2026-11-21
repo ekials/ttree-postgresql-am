@@ -1,0 +1,1287 @@
+==== d1 n=100000 btree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '8504'
+Aggregate  (cost=8.32..8.33 rows=1 width=16) (actual time=0.009..0.009 rows=1.00 loops=1)
+  Buffers: shared hit=3
+  ->  Index Scan using t_idx on t  (cost=0.29..8.31 rows=1 width=4) (actual time=0.005..0.006 rows=1.00 loops=1)
+        Index Cond: (k = 8504)
+        Index Searches: 1
+        Buffers: shared hit=3
+Planning Time: 0.039 ms
+Execution Time: 0.020 ms
+
+==== d1 n=100000 btree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '205437'
+Aggregate  (cost=8.32..8.33 rows=1 width=16) (actual time=0.013..0.014 rows=1.00 loops=1)
+  Buffers: shared hit=2
+  ->  Index Scan using t_idx on t  (cost=0.29..8.31 rows=1 width=4) (actual time=0.011..0.011 rows=0.00 loops=1)
+        Index Cond: (k = 205437)
+        Index Searches: 1
+        Buffers: shared hit=2
+Planning Time: 0.091 ms
+Execution Time: 0.029 ms
+
+==== d1 n=100000 btree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '45445' AND '45795'
+Aggregate  (cost=22.69..22.70 rows=1 width=16) (actual time=0.064..0.064 rows=1.00 loops=1)
+  Buffers: shared hit=5
+  ->  Index Scan using t_idx on t  (cost=0.29..20.81 rows=376 width=4) (actual time=0.014..0.044 rows=351.00 loops=1)
+        Index Cond: ((k >= 45445) AND (k <= 45795))
+        Index Searches: 1
+        Buffers: shared hit=5
+Planning Time: 0.029 ms
+Execution Time: 0.072 ms
+
+==== d1 n=100000 sin_indice w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '8504'
+Aggregate  (cost=1698.01..1698.02 rows=1 width=16) (actual time=1.596..1.596 rows=1.00 loops=1)
+  Buffers: shared hit=448
+  ->  Seq Scan on t  (cost=0.00..1698.00 rows=1 width=4) (actual time=0.156..1.593 rows=1.00 loops=1)
+        Filter: (k = 8504)
+        Rows Removed by Filter: 99999
+        Buffers: shared hit=448
+Planning Time: 0.038 ms
+Execution Time: 1.622 ms
+
+==== d1 n=100000 sin_indice w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '205437'
+Aggregate  (cost=1698.01..1698.02 rows=1 width=16) (actual time=1.650..1.650 rows=1.00 loops=1)
+  Buffers: shared hit=448
+  ->  Seq Scan on t  (cost=0.00..1698.00 rows=1 width=4) (actual time=1.648..1.648 rows=0.00 loops=1)
+        Filter: (k = 205437)
+        Rows Removed by Filter: 100000
+        Buffers: shared hit=448
+Planning Time: 0.018 ms
+Execution Time: 1.657 ms
+
+==== d1 n=100000 sin_indice w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '45445' AND '45795'
+Aggregate  (cost=1949.80..1949.81 rows=1 width=16) (actual time=1.736..1.737 rows=1.00 loops=1)
+  Buffers: shared hit=448
+  ->  Seq Scan on t  (cost=0.00..1948.00 rows=360 width=4) (actual time=0.733..1.723 rows=351.00 loops=1)
+        Filter: ((k >= 45445) AND (k <= 45795))
+        Rows Removed by Filter: 99649
+        Buffers: shared hit=448
+Planning Time: 0.031 ms
+Execution Time: 1.745 ms
+
+==== d1 n=100000 ttree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '8504'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.023..0.023 rows=1.00 loops=1)
+  Buffers: shared hit=17
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.019..0.019 rows=1.00 loops=1)
+        Index Cond: (k = 8504)
+        Index Searches: 1
+        Buffers: shared hit=17
+Planning Time: 0.052 ms
+Execution Time: 0.040 ms
+
+==== d1 n=100000 ttree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '205437'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.022..0.023 rows=1.00 loops=1)
+  Buffers: shared hit=16
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.020..0.020 rows=0.00 loops=1)
+        Index Cond: (k = 205437)
+        Index Searches: 1
+        Buffers: shared hit=16
+Planning Time: 0.057 ms
+Execution Time: 0.039 ms
+
+==== d1 n=100000 ttree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '45445' AND '45795'
+Aggregate  (cost=1288.10..1288.11 rows=1 width=16) (actual time=0.181..0.182 rows=1.00 loops=1)
+  Buffers: shared hit=106
+  ->  Index Scan using t_idx on t  (cost=0.00..1286.48 rows=324 width=4) (actual time=0.120..0.156 rows=351.00 loops=1)
+        Index Cond: ((k >= 45445) AND (k <= 45795))
+        Index Searches: 1
+        Buffers: shared hit=106
+Planning Time: 0.043 ms
+Execution Time: 0.198 ms
+
+==== d1 n=500000 btree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '6685'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.010..0.011 rows=1.00 loops=1)
+  Buffers: shared hit=4
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.007..0.007 rows=1.00 loops=1)
+        Index Cond: (k = 6685)
+        Index Searches: 1
+        Buffers: shared hit=4
+Planning Time: 0.036 ms
+Execution Time: 0.047 ms
+
+==== d1 n=500000 btree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1266531'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.016..0.016 rows=1.00 loops=1)
+  Buffers: shared hit=3
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.013..0.013 rows=0.00 loops=1)
+        Index Cond: (k = 1266531)
+        Index Searches: 1
+        Buffers: shared hit=3
+Planning Time: 0.050 ms
+Execution Time: 0.032 ms
+
+==== d1 n=500000 btree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '6222' AND '6477'
+Aggregate  (cost=15.52..15.53 rows=1 width=16) (actual time=0.057..0.057 rows=1.00 loops=1)
+  Buffers: shared hit=6
+  ->  Index Scan using t_idx on t  (cost=0.42..14.30 rows=244 width=4) (actual time=0.011..0.040 rows=256.00 loops=1)
+        Index Cond: ((k >= 6222) AND (k <= 6477))
+        Index Searches: 1
+        Buffers: shared hit=6
+Planning Time: 0.030 ms
+Execution Time: 0.066 ms
+
+==== d1 n=500000 sin_indice w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '6685'
+Aggregate  (cost=8490.00..8490.01 rows=1 width=16) (actual time=8.346..8.347 rows=1.00 loops=1)
+  Buffers: shared hit=2240
+  ->  Seq Scan on t  (cost=0.00..8490.00 rows=1 width=4) (actual time=0.132..8.343 rows=1.00 loops=1)
+        Filter: (k = 6685)
+        Rows Removed by Filter: 499999
+        Buffers: shared hit=2240
+Planning Time: 0.038 ms
+Execution Time: 8.357 ms
+
+==== d1 n=500000 sin_indice w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1266531'
+Aggregate  (cost=8490.00..8490.01 rows=1 width=16) (actual time=8.240..8.241 rows=1.00 loops=1)
+  Buffers: shared hit=2240
+  ->  Seq Scan on t  (cost=0.00..8490.00 rows=1 width=4) (actual time=8.237..8.238 rows=0.00 loops=1)
+        Filter: (k = 1266531)
+        Rows Removed by Filter: 500000
+        Buffers: shared hit=2240
+Planning Time: 0.015 ms
+Execution Time: 8.250 ms
+
+==== d1 n=500000 sin_indice w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '6222' AND '6477'
+Aggregate  (cost=9741.26..9741.27 rows=1 width=16) (actual time=9.335..9.336 rows=1.00 loops=1)
+  Buffers: shared hit=2240
+  ->  Seq Scan on t  (cost=0.00..9740.00 rows=253 width=4) (actual time=0.107..9.324 rows=256.00 loops=1)
+        Filter: ((k >= 6222) AND (k <= 6477))
+        Rows Removed by Filter: 499744
+        Buffers: shared hit=2240
+Planning Time: 0.019 ms
+Execution Time: 9.345 ms
+
+==== d1 n=500000 ttree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '6685'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.029..0.029 rows=1.00 loops=1)
+  Buffers: shared hit=19
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.026..0.026 rows=1.00 loops=1)
+        Index Cond: (k = 6685)
+        Index Searches: 1
+        Buffers: shared hit=19
+Planning Time: 0.034 ms
+Execution Time: 0.044 ms
+
+==== d1 n=500000 ttree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1266531'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.023..0.024 rows=1.00 loops=1)
+  Buffers: shared hit=18
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.021..0.021 rows=0.00 loops=1)
+        Index Cond: (k = 1266531)
+        Index Searches: 1
+        Buffers: shared hit=18
+Planning Time: 0.032 ms
+Execution Time: 0.037 ms
+
+==== d1 n=500000 ttree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '6222' AND '6477'
+Aggregate  (cost=1242.45..1242.46 rows=1 width=16) (actual time=0.123..0.123 rows=1.00 loops=1)
+  Buffers: shared hit=83
+  ->  Index Scan using t_idx on t  (cost=0.00..1241.16 rows=258 width=4) (actual time=0.081..0.106 rows=256.00 loops=1)
+        Index Cond: ((k >= 6222) AND (k <= 6477))
+        Index Searches: 1
+        Buffers: shared hit=83
+Planning Time: 0.029 ms
+Execution Time: 0.133 ms
+
+==== d1 n=1000000 btree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '411198'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.016..0.016 rows=1.00 loops=1)
+  Buffers: shared hit=4
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.012..0.013 rows=1.00 loops=1)
+        Index Cond: (k = 411198)
+        Index Searches: 1
+        Buffers: shared hit=4
+Planning Time: 0.112 ms
+Execution Time: 0.031 ms
+
+==== d1 n=1000000 btree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '-780501'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.008..0.008 rows=1.00 loops=1)
+  Buffers: shared hit=3
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.007..0.007 rows=0.00 loops=1)
+        Index Cond: (k = '-780501'::integer)
+        Index Searches: 1
+        Buffers: shared hit=3
+Planning Time: 0.025 ms
+Execution Time: 0.016 ms
+
+==== d1 n=1000000 btree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '216697' AND '217000'
+Aggregate  (cost=17.43..17.44 rows=1 width=16) (actual time=0.059..0.060 rows=1.00 loops=1)
+  Buffers: shared hit=6
+  ->  Index Scan using t_idx on t  (cost=0.42..15.82 rows=320 width=4) (actual time=0.014..0.041 rows=304.00 loops=1)
+        Index Cond: ((k >= 216697) AND (k <= 217000))
+        Index Searches: 1
+        Buffers: shared hit=6
+Planning Time: 0.043 ms
+Execution Time: 0.069 ms
+
+==== d1 n=1000000 sin_indice w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '411198'
+Aggregate  (cost=16980.01..16980.01 rows=1 width=16) (actual time=17.092..17.093 rows=1.00 loops=1)
+  Buffers: shared hit=4480
+  ->  Seq Scan on t  (cost=0.00..16980.00 rows=1 width=4) (actual time=6.661..17.088 rows=1.00 loops=1)
+        Filter: (k = 411198)
+        Rows Removed by Filter: 999999
+        Buffers: shared hit=4480
+Planning Time: 0.024 ms
+Execution Time: 17.109 ms
+
+==== d1 n=1000000 sin_indice w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '-780501'
+Aggregate  (cost=16980.01..16980.01 rows=1 width=16) (actual time=16.762..16.763 rows=1.00 loops=1)
+  Buffers: shared hit=4480
+  ->  Seq Scan on t  (cost=0.00..16980.00 rows=1 width=4) (actual time=16.759..16.759 rows=0.00 loops=1)
+        Filter: (k = '-780501'::integer)
+        Rows Removed by Filter: 1000000
+        Buffers: shared hit=4480
+Planning Time: 0.017 ms
+Execution Time: 16.772 ms
+
+==== d1 n=1000000 sin_indice w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '216697' AND '217000'
+Aggregate  (cost=19481.48..19481.49 rows=1 width=16) (actual time=18.777..18.778 rows=1.00 loops=1)
+  Buffers: shared hit=4480
+  ->  Seq Scan on t  (cost=0.00..19480.00 rows=296 width=4) (actual time=3.857..18.763 rows=304.00 loops=1)
+        Filter: ((k >= 216697) AND (k <= 217000))
+        Rows Removed by Filter: 999696
+        Buffers: shared hit=4480
+Planning Time: 0.026 ms
+Execution Time: 18.792 ms
+
+==== d1 n=1000000 ttree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '411198'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.033..0.034 rows=1.00 loops=1)
+  Buffers: shared hit=18
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.028..0.029 rows=1.00 loops=1)
+        Index Cond: (k = 411198)
+        Index Searches: 1
+        Buffers: shared hit=18
+Planning Time: 0.050 ms
+Execution Time: 0.053 ms
+
+==== d1 n=1000000 ttree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '-780501'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.027..0.027 rows=1.00 loops=1)
+  Buffers: shared hit=18
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.025..0.025 rows=0.00 loops=1)
+        Index Cond: (k = '-780501'::integer)
+        Index Searches: 1
+        Buffers: shared hit=18
+Planning Time: 0.027 ms
+Execution Time: 0.036 ms
+
+==== d1 n=1000000 ttree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '216697' AND '217000'
+Aggregate  (cost=1568.00..1568.01 rows=1 width=16) (actual time=0.178..0.178 rows=1.00 loops=1)
+  Buffers: shared hit=97
+  ->  Index Scan using t_idx on t  (cost=0.00..1566.40 rows=320 width=4) (actual time=0.095..0.143 rows=304.00 loops=1)
+        Index Cond: ((k >= 216697) AND (k <= 217000))
+        Index Searches: 1
+        Buffers: shared hit=97
+Planning Time: 0.165 ms
+Execution Time: 0.199 ms
+
+==== d2 n=100000 btree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1456507499'
+Aggregate  (cost=8.32..8.33 rows=1 width=16) (actual time=0.014..0.014 rows=1.00 loops=1)
+  Buffers: shared hit=3
+  ->  Index Scan using t_idx on t  (cost=0.29..8.31 rows=1 width=4) (actual time=0.009..0.009 rows=1.00 loops=1)
+        Index Cond: (k = 1456507499)
+        Index Searches: 1
+        Buffers: shared hit=3
+Planning Time: 0.057 ms
+Execution Time: 0.033 ms
+
+==== d2 n=100000 btree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1724449840'
+Aggregate  (cost=8.32..8.33 rows=1 width=16) (actual time=0.009..0.009 rows=1.00 loops=1)
+  Buffers: shared hit=2
+  ->  Index Scan using t_idx on t  (cost=0.29..8.31 rows=1 width=4) (actual time=0.007..0.007 rows=0.00 loops=1)
+        Index Cond: (k = 1724449840)
+        Index Searches: 1
+        Buffers: shared hit=2
+Planning Time: 0.027 ms
+Execution Time: 0.018 ms
+
+==== d2 n=100000 btree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '159355501' AND '161223688'
+Aggregate  (cost=294.24..294.25 rows=1 width=16) (actual time=0.184..0.184 rows=1.00 loops=1)
+  Buffers: shared hit=94
+  ->  Index Scan using t_idx on t  (cost=0.29..293.85 rows=78 width=4) (actual time=0.018..0.124 rows=93.00 loops=1)
+        Index Cond: ((k >= 159355501) AND (k <= 161223688))
+        Index Searches: 1
+        Buffers: shared hit=94
+Planning Time: 0.063 ms
+Execution Time: 0.202 ms
+
+==== d2 n=100000 sin_indice w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1456507499'
+Aggregate  (cost=1698.01..1698.02 rows=1 width=16) (actual time=1.513..1.514 rows=1.00 loops=1)
+  Buffers: shared hit=448
+  ->  Seq Scan on t  (cost=0.00..1698.00 rows=1 width=4) (actual time=0.318..1.511 rows=1.00 loops=1)
+        Filter: (k = 1456507499)
+        Rows Removed by Filter: 99999
+        Buffers: shared hit=448
+Planning Time: 0.016 ms
+Execution Time: 1.521 ms
+
+==== d2 n=100000 sin_indice w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1724449840'
+Aggregate  (cost=1698.01..1698.02 rows=1 width=16) (actual time=1.528..1.528 rows=1.00 loops=1)
+  Buffers: shared hit=448
+  ->  Seq Scan on t  (cost=0.00..1698.00 rows=1 width=4) (actual time=1.526..1.526 rows=0.00 loops=1)
+        Filter: (k = 1724449840)
+        Rows Removed by Filter: 100000
+        Buffers: shared hit=448
+Planning Time: 0.014 ms
+Execution Time: 1.534 ms
+
+==== d2 n=100000 sin_indice w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '159355501' AND '161223688'
+Aggregate  (cost=1948.41..1948.42 rows=1 width=16) (actual time=1.826..1.827 rows=1.00 loops=1)
+  Buffers: shared hit=448
+  ->  Seq Scan on t  (cost=0.00..1948.00 rows=83 width=4) (actual time=0.024..1.820 rows=93.00 loops=1)
+        Filter: ((k >= 159355501) AND (k <= 161223688))
+        Rows Removed by Filter: 99907
+        Buffers: shared hit=448
+Planning Time: 0.018 ms
+Execution Time: 1.833 ms
+
+==== d2 n=100000 ttree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1456507499'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.015..0.016 rows=1.00 loops=1)
+  Buffers: shared hit=17
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.012..0.013 rows=1.00 loops=1)
+        Index Cond: (k = 1456507499)
+        Index Searches: 1
+        Buffers: shared hit=17
+Planning Time: 0.050 ms
+Execution Time: 0.025 ms
+
+==== d2 n=100000 ttree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1724449840'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.015..0.016 rows=1.00 loops=1)
+  Buffers: shared hit=15
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.013..0.013 rows=0.00 loops=1)
+        Index Cond: (k = 1724449840)
+        Index Searches: 1
+        Buffers: shared hit=15
+Planning Time: 0.039 ms
+Execution Time: 0.030 ms
+
+==== d2 n=100000 ttree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '159355501' AND '161223688'
+Aggregate  (cost=386.02..386.03 rows=1 width=16) (actual time=0.089..0.089 rows=1.00 loops=1)
+  Buffers: shared hit=130
+  ->  Index Scan using t_idx on t  (cost=0.00..385.62 rows=81 width=4) (actual time=0.029..0.081 rows=93.00 loops=1)
+        Index Cond: ((k >= 159355501) AND (k <= 161223688))
+        Index Searches: 1
+        Buffers: shared hit=130
+Planning Time: 0.031 ms
+Execution Time: 0.098 ms
+
+==== d2 n=500000 btree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '258049896'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.011..0.011 rows=1.00 loops=1)
+  Buffers: shared hit=4
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.008..0.008 rows=1.00 loops=1)
+        Index Cond: (k = 258049896)
+        Index Searches: 1
+        Buffers: shared hit=4
+Planning Time: 0.036 ms
+Execution Time: 0.023 ms
+
+==== d2 n=500000 btree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1610611593'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.008..0.008 rows=1.00 loops=1)
+  Buffers: shared hit=3
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.007..0.007 rows=0.00 loops=1)
+        Index Cond: (k = 1610611593)
+        Index Searches: 1
+        Buffers: shared hit=3
+Planning Time: 0.022 ms
+Execution Time: 0.015 ms
+
+==== d2 n=500000 btree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '715056465' AND '717918529'
+Aggregate  (cost=2260.37..2260.38 rows=1 width=16) (actual time=0.447..0.448 rows=1.00 loops=1)
+  Buffers: shared hit=663
+  ->  Index Scan using t_idx on t  (cost=0.42..2257.18 rows=638 width=4) (actual time=0.016..0.408 rows=658.00 loops=1)
+        Index Cond: ((k >= 715056465) AND (k <= 717918529))
+        Index Searches: 1
+        Buffers: shared hit=663
+Planning Time: 0.039 ms
+Execution Time: 0.459 ms
+
+==== d2 n=500000 sin_indice w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '258049896'
+Aggregate  (cost=8490.00..8490.01 rows=1 width=16) (actual time=7.969..7.970 rows=1.00 loops=1)
+  Buffers: shared hit=2240
+  ->  Seq Scan on t  (cost=0.00..8490.00 rows=1 width=4) (actual time=3.470..7.966 rows=1.00 loops=1)
+        Filter: (k = 258049896)
+        Rows Removed by Filter: 499999
+        Buffers: shared hit=2240
+Planning Time: 0.016 ms
+Execution Time: 7.978 ms
+
+==== d2 n=500000 sin_indice w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1610611593'
+Aggregate  (cost=8490.00..8490.01 rows=1 width=16) (actual time=8.273..8.274 rows=1.00 loops=1)
+  Buffers: shared hit=2240
+  ->  Seq Scan on t  (cost=0.00..8490.00 rows=1 width=4) (actual time=8.271..8.271 rows=0.00 loops=1)
+        Filter: (k = 1610611593)
+        Rows Removed by Filter: 500000
+        Buffers: shared hit=2240
+Planning Time: 0.016 ms
+Execution Time: 8.282 ms
+
+==== d2 n=500000 sin_indice w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '715056465' AND '717918529'
+Aggregate  (cost=9743.44..9743.45 rows=1 width=16) (actual time=10.814..10.814 rows=1.00 loops=1)
+  Buffers: shared hit=2240
+  ->  Seq Scan on t  (cost=0.00..9740.00 rows=689 width=4) (actual time=0.004..10.781 rows=658.00 loops=1)
+        Filter: ((k >= 715056465) AND (k <= 717918529))
+        Rows Removed by Filter: 499342
+        Buffers: shared hit=2240
+Planning Time: 0.019 ms
+Execution Time: 10.821 ms
+
+==== d2 n=500000 ttree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '258049896'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.014..0.014 rows=1.00 loops=1)
+  Buffers: shared hit=19
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.011..0.012 rows=1.00 loops=1)
+        Index Cond: (k = 258049896)
+        Index Searches: 1
+        Buffers: shared hit=19
+Planning Time: 0.022 ms
+Execution Time: 0.022 ms
+
+==== d2 n=500000 ttree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1610611593'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.024..0.024 rows=1.00 loops=1)
+  Buffers: shared hit=15
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.022..0.022 rows=0.00 loops=1)
+        Index Cond: (k = 1610611593)
+        Index Searches: 1
+        Buffers: shared hit=15
+Planning Time: 0.030 ms
+Execution Time: 0.034 ms
+
+==== d2 n=500000 ttree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '715056465' AND '717918529'
+Aggregate  (cost=2908.05..2908.06 rows=1 width=16) (actual time=0.644..0.644 rows=1.00 loops=1)
+  Buffers: shared hit=838
+  ->  Index Scan using t_idx on t  (cost=0.00..2904.84 rows=642 width=4) (actual time=0.122..0.608 rows=658.00 loops=1)
+        Index Cond: ((k >= 715056465) AND (k <= 717918529))
+        Index Searches: 1
+        Buffers: shared hit=838
+Planning Time: 0.038 ms
+Execution Time: 0.658 ms
+
+==== d2 n=1000000 btree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1110599373'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.018..0.019 rows=1.00 loops=1)
+  Buffers: shared hit=4
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.012..0.013 rows=1.00 loops=1)
+        Index Cond: (k = 1110599373)
+        Index Searches: 1
+        Buffers: shared hit=4
+Planning Time: 0.074 ms
+Execution Time: 0.042 ms
+
+==== d2 n=1000000 btree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '643044715'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.007..0.007 rows=1.00 loops=1)
+  Buffers: shared hit=3
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.006..0.006 rows=0.00 loops=1)
+        Index Cond: (k = 643044715)
+        Index Searches: 1
+        Buffers: shared hit=3
+Planning Time: 0.021 ms
+Execution Time: 0.014 ms
+
+==== d2 n=1000000 btree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '1386636486' AND '1388244139'
+Aggregate  (cost=2605.75..2605.76 rows=1 width=16) (actual time=0.798..0.799 rows=1.00 loops=1)
+  Buffers: shared hit=727
+  ->  Index Scan using t_idx on t  (cost=0.42..2602.28 rows=694 width=4) (actual time=0.013..0.734 rows=722.00 loops=1)
+        Index Cond: ((k >= 1386636486) AND (k <= 1388244139))
+        Index Searches: 1
+        Buffers: shared hit=727
+Planning Time: 0.025 ms
+Execution Time: 0.810 ms
+
+==== d2 n=1000000 sin_indice w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1110599373'
+Aggregate  (cost=16980.01..16980.01 rows=1 width=16) (actual time=16.628..16.629 rows=1.00 loops=1)
+  Buffers: shared hit=4480
+  ->  Seq Scan on t  (cost=0.00..16980.00 rows=1 width=4) (actual time=12.356..16.623 rows=1.00 loops=1)
+        Filter: (k = 1110599373)
+        Rows Removed by Filter: 999999
+        Buffers: shared hit=4480
+Planning Time: 0.018 ms
+Execution Time: 16.640 ms
+
+==== d2 n=1000000 sin_indice w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '643044715'
+Aggregate  (cost=16980.01..16980.01 rows=1 width=16) (actual time=16.358..16.358 rows=1.00 loops=1)
+  Buffers: shared hit=4480
+  ->  Seq Scan on t  (cost=0.00..16980.00 rows=1 width=4) (actual time=16.355..16.356 rows=0.00 loops=1)
+        Filter: (k = 643044715)
+        Rows Removed by Filter: 1000000
+        Buffers: shared hit=4480
+Planning Time: 0.018 ms
+Execution Time: 16.367 ms
+
+==== d2 n=1000000 sin_indice w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '1386636486' AND '1388244139'
+Aggregate  (cost=19483.58..19483.58 rows=1 width=16) (actual time=20.869..20.870 rows=1.00 loops=1)
+  Buffers: shared hit=4480
+  ->  Seq Scan on t  (cost=0.00..19480.00 rows=715 width=4) (actual time=0.012..20.828 rows=722.00 loops=1)
+        Filter: ((k >= 1386636486) AND (k <= 1388244139))
+        Rows Removed by Filter: 999278
+        Buffers: shared hit=4480
+Planning Time: 0.019 ms
+Execution Time: 20.881 ms
+
+==== d2 n=1000000 ttree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1110599373'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.027..0.028 rows=1.00 loops=1)
+  Buffers: shared hit=20
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.025..0.026 rows=1.00 loops=1)
+        Index Cond: (k = 1110599373)
+        Index Searches: 1
+        Buffers: shared hit=20
+Planning Time: 0.024 ms
+Execution Time: 0.036 ms
+
+==== d2 n=1000000 ttree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '643044715'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.022..0.022 rows=1.00 loops=1)
+  Buffers: shared hit=19
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.020..0.021 rows=0.00 loops=1)
+        Index Cond: (k = 643044715)
+        Index Searches: 1
+        Buffers: shared hit=19
+Planning Time: 0.022 ms
+Execution Time: 0.030 ms
+
+==== d2 n=1000000 ttree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '1386636486' AND '1388244139'
+Aggregate  (cost=3233.00..3233.01 rows=1 width=16) (actual time=0.678..0.679 rows=1.00 loops=1)
+  Buffers: shared hit=923
+  ->  Index Scan using t_idx on t  (cost=0.00..3229.60 rows=680 width=4) (actual time=0.174..0.641 rows=722.00 loops=1)
+        Index Cond: ((k >= 1386636486) AND (k <= 1388244139))
+        Index Searches: 1
+        Buffers: shared hit=923
+Planning Time: 0.027 ms
+Execution Time: 0.688 ms
+
+==== d3 n=100000 btree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '104173'
+Aggregate  (cost=8.32..8.33 rows=1 width=16) (actual time=0.021..0.021 rows=1.00 loops=1)
+  Buffers: shared hit=3
+  ->  Index Scan using t_idx on t  (cost=0.29..8.31 rows=1 width=4) (actual time=0.014..0.015 rows=1.00 loops=1)
+        Index Cond: (k = 104173)
+        Index Searches: 1
+        Buffers: shared hit=3
+Planning Time: 0.076 ms
+Execution Time: 0.049 ms
+
+==== d3 n=100000 btree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1567434381'
+Aggregate  (cost=8.32..8.33 rows=1 width=16) (actual time=0.008..0.008 rows=1.00 loops=1)
+  Buffers: shared hit=2
+  ->  Index Scan using t_idx on t  (cost=0.29..8.31 rows=1 width=4) (actual time=0.006..0.007 rows=0.00 loops=1)
+        Index Cond: (k = 1567434381)
+        Index Searches: 1
+        Buffers: shared hit=2
+Planning Time: 0.030 ms
+Execution Time: 0.018 ms
+
+==== d3 n=100000 btree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '278494082' AND '280283632'
+Aggregate  (cost=338.56..338.57 rows=1 width=16) (actual time=0.190..0.190 rows=1.00 loops=1)
+  Buffers: shared hit=94
+  ->  Index Scan using t_idx on t  (cost=0.29..338.10 rows=91 width=4) (actual time=0.016..0.175 rows=92.00 loops=1)
+        Index Cond: ((k >= 278494082) AND (k <= 280283632))
+        Index Searches: 1
+        Buffers: shared hit=94
+Planning Time: 0.055 ms
+Execution Time: 0.207 ms
+
+==== d3 n=100000 sin_indice w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '104173'
+Aggregate  (cost=1698.01..1698.02 rows=1 width=16) (actual time=1.664..1.665 rows=1.00 loops=1)
+  Buffers: shared hit=448
+  ->  Seq Scan on t  (cost=0.00..1698.00 rows=1 width=4) (actual time=0.855..1.662 rows=1.00 loops=1)
+        Filter: (k = 104173)
+        Rows Removed by Filter: 99999
+        Buffers: shared hit=448
+Planning Time: 0.016 ms
+Execution Time: 1.671 ms
+
+==== d3 n=100000 sin_indice w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1567434381'
+Aggregate  (cost=1698.01..1698.02 rows=1 width=16) (actual time=1.573..1.573 rows=1.00 loops=1)
+  Buffers: shared hit=448
+  ->  Seq Scan on t  (cost=0.00..1698.00 rows=1 width=4) (actual time=1.572..1.572 rows=0.00 loops=1)
+        Filter: (k = 1567434381)
+        Rows Removed by Filter: 100000
+        Buffers: shared hit=448
+Planning Time: 0.016 ms
+Execution Time: 1.580 ms
+
+==== d3 n=100000 sin_indice w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '278494082' AND '280283632'
+Aggregate  (cost=1948.45..1948.46 rows=1 width=16) (actual time=1.839..1.840 rows=1.00 loops=1)
+  Buffers: shared hit=448
+  ->  Seq Scan on t  (cost=0.00..1948.00 rows=90 width=4) (actual time=0.060..1.833 rows=92.00 loops=1)
+        Filter: ((k >= 278494082) AND (k <= 280283632))
+        Rows Removed by Filter: 99908
+        Buffers: shared hit=448
+Planning Time: 0.020 ms
+Execution Time: 1.846 ms
+
+==== d3 n=100000 ttree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '104173'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.015..0.015 rows=1.00 loops=1)
+  Buffers: shared hit=17
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.012..0.012 rows=1.00 loops=1)
+        Index Cond: (k = 104173)
+        Index Searches: 1
+        Buffers: shared hit=17
+Planning Time: 0.024 ms
+Execution Time: 0.023 ms
+
+==== d3 n=100000 ttree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1567434381'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.011..0.011 rows=1.00 loops=1)
+  Buffers: shared hit=16
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.010..0.010 rows=0.00 loops=1)
+        Index Cond: (k = 1567434381)
+        Index Searches: 1
+        Buffers: shared hit=16
+Planning Time: 0.019 ms
+Execution Time: 0.018 ms
+
+==== d3 n=100000 ttree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '278494082' AND '280283632'
+Aggregate  (cost=426.27..426.28 rows=1 width=16) (actual time=0.164..0.165 rows=1.00 loops=1)
+  Buffers: shared hit=128
+  ->  Index Scan using t_idx on t  (cost=0.00..425.82 rows=91 width=4) (actual time=0.028..0.156 rows=92.00 loops=1)
+        Index Cond: ((k >= 278494082) AND (k <= 280283632))
+        Index Searches: 1
+        Buffers: shared hit=128
+Planning Time: 0.026 ms
+Execution Time: 0.174 ms
+
+==== d3 n=500000 btree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '151411794'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.007..0.007 rows=1.00 loops=1)
+  Buffers: shared hit=4
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.005..0.005 rows=1.00 loops=1)
+        Index Cond: (k = 151411794)
+        Index Searches: 1
+        Buffers: shared hit=4
+Planning Time: 0.022 ms
+Execution Time: 0.015 ms
+
+==== d3 n=500000 btree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '369057012'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.007..0.007 rows=1.00 loops=1)
+  Buffers: shared hit=3
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.005..0.006 rows=0.00 loops=1)
+        Index Cond: (k = 369057012)
+        Index Searches: 1
+        Buffers: shared hit=3
+Planning Time: 0.029 ms
+Execution Time: 0.015 ms
+
+==== d3 n=500000 btree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '615251732' AND '618110148'
+Aggregate  (cost=2408.73..2408.74 rows=1 width=16) (actual time=1.093..1.095 rows=1.00 loops=1)
+  Buffers: shared hit=675
+  ->  Index Scan using t_idx on t  (cost=0.42..2405.30 rows=687 width=4) (actual time=0.009..0.954 rows=670.00 loops=1)
+        Index Cond: ((k >= 615251732) AND (k <= 618110148))
+        Index Searches: 1
+        Buffers: shared hit=675
+Planning Time: 0.031 ms
+Execution Time: 1.113 ms
+
+==== d3 n=500000 sin_indice w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '151411794'
+Aggregate  (cost=8490.00..8490.01 rows=1 width=16) (actual time=8.156..8.156 rows=1.00 loops=1)
+  Buffers: shared hit=2240
+  ->  Seq Scan on t  (cost=0.00..8490.00 rows=1 width=4) (actual time=6.663..8.152 rows=1.00 loops=1)
+        Filter: (k = 151411794)
+        Rows Removed by Filter: 499999
+        Buffers: shared hit=2240
+Planning Time: 0.016 ms
+Execution Time: 8.164 ms
+
+==== d3 n=500000 sin_indice w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '369057012'
+Aggregate  (cost=8490.00..8490.01 rows=1 width=16) (actual time=8.681..8.682 rows=1.00 loops=1)
+  Buffers: shared hit=2240
+  ->  Seq Scan on t  (cost=0.00..8490.00 rows=1 width=4) (actual time=8.678..8.679 rows=0.00 loops=1)
+        Filter: (k = 369057012)
+        Rows Removed by Filter: 500000
+        Buffers: shared hit=2240
+Planning Time: 0.013 ms
+Execution Time: 8.692 ms
+
+==== d3 n=500000 sin_indice w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '615251732' AND '618110148'
+Aggregate  (cost=9743.51..9743.52 rows=1 width=16) (actual time=10.674..10.675 rows=1.00 loops=1)
+  Buffers: shared hit=2240
+  ->  Seq Scan on t  (cost=0.00..9740.00 rows=702 width=4) (actual time=0.061..10.636 rows=670.00 loops=1)
+        Filter: ((k >= 615251732) AND (k <= 618110148))
+        Rows Removed by Filter: 499330
+        Buffers: shared hit=2240
+Planning Time: 0.021 ms
+Execution Time: 10.685 ms
+
+==== d3 n=500000 ttree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '151411794'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.020..0.020 rows=1.00 loops=1)
+  Buffers: shared hit=19
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.017..0.017 rows=1.00 loops=1)
+        Index Cond: (k = 151411794)
+        Index Searches: 1
+        Buffers: shared hit=19
+Planning Time: 0.028 ms
+Execution Time: 0.030 ms
+
+==== d3 n=500000 ttree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '369057012'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.014..0.015 rows=1.00 loops=1)
+  Buffers: shared hit=18
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.013..0.013 rows=0.00 loops=1)
+        Index Cond: (k = 369057012)
+        Index Searches: 1
+        Buffers: shared hit=18
+Planning Time: 0.023 ms
+Execution Time: 0.023 ms
+
+==== d3 n=500000 ttree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '615251732' AND '618110148'
+Aggregate  (cost=3185.78..3185.79 rows=1 width=16) (actual time=0.516..0.516 rows=1.00 loops=1)
+  Buffers: shared hit=856
+  ->  Index Scan using t_idx on t  (cost=0.00..3182.22 rows=711 width=4) (actual time=0.099..0.468 rows=670.00 loops=1)
+        Index Cond: ((k >= 615251732) AND (k <= 618110148))
+        Index Searches: 1
+        Buffers: shared hit=856
+Planning Time: 0.031 ms
+Execution Time: 0.527 ms
+
+==== d3 n=1000000 btree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1335403144'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.009..0.010 rows=1.00 loops=1)
+  Buffers: shared hit=4
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.006..0.007 rows=1.00 loops=1)
+        Index Cond: (k = 1335403144)
+        Index Searches: 1
+        Buffers: shared hit=4
+Planning Time: 0.033 ms
+Execution Time: 0.021 ms
+
+==== d3 n=1000000 btree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1577635216'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.011..0.011 rows=1.00 loops=1)
+  Buffers: shared hit=3
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.009..0.009 rows=0.00 loops=1)
+        Index Cond: (k = 1577635216)
+        Index Searches: 1
+        Buffers: shared hit=3
+Planning Time: 0.032 ms
+Execution Time: 0.021 ms
+
+==== d3 n=1000000 btree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '1335403144' AND '1336327293'
+Aggregate  (cost=1578.46..1578.47 rows=1 width=16) (actual time=0.348..0.348 rows=1.00 loops=1)
+  Buffers: shared hit=440
+  ->  Index Scan using t_idx on t  (cost=0.42..1576.43 rows=407 width=4) (actual time=0.010..0.325 rows=436.00 loops=1)
+        Index Cond: ((k >= 1335403144) AND (k <= 1336327293))
+        Index Searches: 1
+        Buffers: shared hit=440
+Planning Time: 0.025 ms
+Execution Time: 0.356 ms
+
+==== d3 n=1000000 sin_indice w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1335403144'
+Aggregate  (cost=16980.01..16980.01 rows=1 width=16) (actual time=16.241..16.242 rows=1.00 loops=1)
+  Buffers: shared hit=4480
+  ->  Seq Scan on t  (cost=0.00..16980.00 rows=1 width=4) (actual time=14.351..16.237 rows=1.00 loops=1)
+        Filter: (k = 1335403144)
+        Rows Removed by Filter: 999999
+        Buffers: shared hit=4480
+Planning Time: 0.017 ms
+Execution Time: 16.251 ms
+
+==== d3 n=1000000 sin_indice w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1577635216'
+Aggregate  (cost=16980.01..16980.01 rows=1 width=16) (actual time=16.091..16.092 rows=1.00 loops=1)
+  Buffers: shared hit=4480
+  ->  Seq Scan on t  (cost=0.00..16980.00 rows=1 width=4) (actual time=16.088..16.089 rows=0.00 loops=1)
+        Filter: (k = 1577635216)
+        Rows Removed by Filter: 1000000
+        Buffers: shared hit=4480
+Planning Time: 0.016 ms
+Execution Time: 16.100 ms
+
+==== d3 n=1000000 sin_indice w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '1335403144' AND '1336327293'
+Aggregate  (cost=19482.15..19482.16 rows=1 width=16) (actual time=21.258..21.259 rows=1.00 loops=1)
+  Buffers: shared hit=4480
+  ->  Seq Scan on t  (cost=0.00..19480.00 rows=431 width=4) (actual time=0.020..21.224 rows=436.00 loops=1)
+        Filter: ((k >= 1335403144) AND (k <= 1336327293))
+        Rows Removed by Filter: 999564
+        Buffers: shared hit=4480
+Planning Time: 0.020 ms
+Execution Time: 21.273 ms
+
+==== d3 n=1000000 ttree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1335403144'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.029..0.030 rows=1.00 loops=1)
+  Buffers: shared hit=20
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.024..0.025 rows=1.00 loops=1)
+        Index Cond: (k = 1335403144)
+        Index Searches: 1
+        Buffers: shared hit=20
+Planning Time: 0.058 ms
+Execution Time: 0.051 ms
+
+==== d3 n=1000000 ttree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '1577635216'
+Aggregate  (cost=8.02..8.03 rows=1 width=16) (actual time=0.023..0.023 rows=1.00 loops=1)
+  Buffers: shared hit=17
+  ->  Index Scan using t_idx on t  (cost=0.00..8.02 rows=1 width=4) (actual time=0.021..0.021 rows=0.00 loops=1)
+        Index Cond: (k = 1577635216)
+        Index Searches: 1
+        Buffers: shared hit=17
+Planning Time: 0.037 ms
+Execution Time: 0.037 ms
+
+==== d3 n=1000000 ttree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '1335403144' AND '1336327293'
+Aggregate  (cost=2066.65..2066.66 rows=1 width=16) (actual time=0.842..0.842 rows=1.00 loops=1)
+  Buffers: shared hit=564
+  ->  Index Scan using t_idx on t  (cost=0.00..2064.52 rows=426 width=4) (actual time=0.205..0.778 rows=436.00 loops=1)
+        Index Cond: ((k >= 1335403144) AND (k <= 1336327293))
+        Index Searches: 1
+        Buffers: shared hit=564
+Planning Time: 0.030 ms
+Execution Time: 0.855 ms
+
+==== d4 n=100000 btree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'w6u72x1h45jbzwyoo5xdnrtylr'
+Aggregate  (cost=8.44..8.45 rows=1 width=16) (actual time=0.005..0.005 rows=1.00 loops=1)
+  Buffers: shared hit=4
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.004..0.004 rows=1.00 loops=1)
+        Index Cond: ((k)::text = 'w6u72x1h45jbzwyoo5xdnrtylr'::text)
+        Index Searches: 1
+        Buffers: shared hit=4
+Planning Time: 0.018 ms
+Execution Time: 0.011 ms
+
+==== d4 n=100000 btree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'cqqfv2jhq'
+Aggregate  (cost=8.44..8.45 rows=1 width=16) (actual time=0.005..0.005 rows=1.00 loops=1)
+  Buffers: shared hit=3
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.004..0.004 rows=0.00 loops=1)
+        Index Cond: ((k)::text = 'cqqfv2jhq'::text)
+        Index Searches: 1
+        Buffers: shared hit=3
+Planning Time: 0.016 ms
+Execution Time: 0.010 ms
+
+==== d4 n=100000 btree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '4c9gx0kzce388gqrqq7fv' AND '4dh49rxp0zgr590zrxa'
+Aggregate  (cost=133.21..133.22 rows=1 width=16) (actual time=0.045..0.045 rows=1.00 loops=1)
+  Buffers: shared hit=91
+  ->  Index Scan using t_idx on t  (cost=0.42..133.05 rows=32 width=4) (actual time=0.006..0.040 rows=87.00 loops=1)
+        Index Cond: (((k)::text >= '4c9gx0kzce388gqrqq7fv'::text) AND ((k)::text <= '4dh49rxp0zgr590zrxa'::text))
+        Index Searches: 1
+        Buffers: shared hit=91
+Planning Time: 0.020 ms
+Execution Time: 0.051 ms
+
+==== d4 n=100000 sin_indice w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'w6u72x1h45jbzwyoo5xdnrtylr'
+Aggregate  (cost=1954.01..1954.02 rows=1 width=16) (actual time=1.930..1.931 rows=1.00 loops=1)
+  Buffers: shared hit=704
+  ->  Seq Scan on t  (cost=0.00..1954.00 rows=1 width=4) (actual time=1.164..1.927 rows=1.00 loops=1)
+        Filter: ((k)::text = 'w6u72x1h45jbzwyoo5xdnrtylr'::text)
+        Rows Removed by Filter: 99999
+        Buffers: shared hit=704
+Planning Time: 0.018 ms
+Execution Time: 1.939 ms
+
+==== d4 n=100000 sin_indice w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'cqqfv2jhq'
+Aggregate  (cost=1954.01..1954.02 rows=1 width=16) (actual time=2.013..2.013 rows=1.00 loops=1)
+  Buffers: shared hit=704
+  ->  Seq Scan on t  (cost=0.00..1954.00 rows=1 width=4) (actual time=2.011..2.011 rows=0.00 loops=1)
+        Filter: ((k)::text = 'cqqfv2jhq'::text)
+        Rows Removed by Filter: 100000
+        Buffers: shared hit=704
+Planning Time: 0.013 ms
+Execution Time: 2.019 ms
+
+==== d4 n=100000 sin_indice w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN '4c9gx0kzce388gqrqq7fv' AND '4dh49rxp0zgr590zrxa'
+Aggregate  (cost=2204.16..2204.17 rows=1 width=16) (actual time=3.358..3.359 rows=1.00 loops=1)
+  Buffers: shared hit=704
+  ->  Seq Scan on t  (cost=0.00..2204.00 rows=31 width=4) (actual time=0.013..3.349 rows=87.00 loops=1)
+        Filter: (((k)::text >= '4c9gx0kzce388gqrqq7fv'::text) AND ((k)::text <= '4dh49rxp0zgr590zrxa'::text))
+        Rows Removed by Filter: 99913
+        Buffers: shared hit=704
+Planning Time: 0.020 ms
+Execution Time: 3.367 ms
+
+==== d4 n=500000 btree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'djt0ceps7i9n1hewpanrvr'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.006..0.006 rows=1.00 loops=1)
+  Buffers: shared hit=4
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.004..0.004 rows=1.00 loops=1)
+        Index Cond: ((k)::text = 'djt0ceps7i9n1hewpanrvr'::text)
+        Index Searches: 1
+        Buffers: shared hit=4
+Planning Time: 0.017 ms
+Execution Time: 0.012 ms
+
+==== d4 n=500000 btree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'olslrp0qr4p0x5wupvocm5'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.006..0.006 rows=1.00 loops=1)
+  Buffers: shared hit=3
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.005..0.005 rows=0.00 loops=1)
+        Index Cond: ((k)::text = 'olslrp0qr4p0x5wupvocm5'::text)
+        Index Searches: 1
+        Buffers: shared hit=3
+Planning Time: 0.015 ms
+Execution Time: 0.012 ms
+
+==== d4 n=500000 btree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN 'dfv864el07kpl4gw' AND 'di6a7qb062pisphrss7iagyawfqlwcp'
+Aggregate  (cost=809.50..809.51 rows=1 width=16) (actual time=0.452..0.452 rows=1.00 loops=1)
+  Buffers: shared hit=928
+  ->  Index Scan using t_idx on t  (cost=0.42..808.48 rows=204 width=4) (actual time=0.005..0.417 rows=921.00 loops=1)
+        Index Cond: (((k)::text >= 'dfv864el07kpl4gw'::text) AND ((k)::text <= 'di6a7qb062pisphrss7iagyawfqlwcp'::text))
+        Index Searches: 1
+        Buffers: shared hit=928
+Planning Time: 0.021 ms
+Execution Time: 0.458 ms
+
+==== d4 n=500000 sin_indice w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'djt0ceps7i9n1hewpanrvr'
+Aggregate  (cost=9770.00..9770.01 rows=1 width=16) (actual time=10.195..10.196 rows=1.00 loops=1)
+  Buffers: shared hit=3520
+  ->  Seq Scan on t  (cost=0.00..9770.00 rows=1 width=4) (actual time=8.334..10.191 rows=1.00 loops=1)
+        Filter: ((k)::text = 'djt0ceps7i9n1hewpanrvr'::text)
+        Rows Removed by Filter: 499999
+        Buffers: shared hit=3520
+Planning Time: 0.018 ms
+Execution Time: 10.206 ms
+
+==== d4 n=500000 sin_indice w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'olslrp0qr4p0x5wupvocm5'
+Aggregate  (cost=9770.00..9770.01 rows=1 width=16) (actual time=11.206..11.207 rows=1.00 loops=1)
+  Buffers: shared hit=3520
+  ->  Seq Scan on t  (cost=0.00..9770.00 rows=1 width=4) (actual time=11.202..11.202 rows=0.00 loops=1)
+        Filter: ((k)::text = 'olslrp0qr4p0x5wupvocm5'::text)
+        Rows Removed by Filter: 500000
+        Buffers: shared hit=3520
+Planning Time: 0.017 ms
+Execution Time: 11.220 ms
+
+==== d4 n=500000 sin_indice w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN 'dfv864el07kpl4gw' AND 'di6a7qb062pisphrss7iagyawfqlwcp'
+Aggregate  (cost=11023.82..11023.83 rows=1 width=16) (actual time=15.543..15.544 rows=1.00 loops=1)
+  Buffers: shared hit=3520
+  ->  Seq Scan on t  (cost=0.00..11020.00 rows=764 width=4) (actual time=0.010..15.499 rows=921.00 loops=1)
+        Filter: (((k)::text >= 'dfv864el07kpl4gw'::text) AND ((k)::text <= 'di6a7qb062pisphrss7iagyawfqlwcp'::text))
+        Rows Removed by Filter: 499079
+        Buffers: shared hit=3520
+Planning Time: 0.023 ms
+Execution Time: 15.554 ms
+
+==== d4 n=1000000 btree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'r6m2j3iv7xiu1l1vfc237q6nbvr'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.008..0.008 rows=1.00 loops=1)
+  Buffers: shared hit=4
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.006..0.006 rows=1.00 loops=1)
+        Index Cond: ((k)::text = 'r6m2j3iv7xiu1l1vfc237q6nbvr'::text)
+        Index Searches: 1
+        Buffers: shared hit=4
+Planning Time: 0.024 ms
+Execution Time: 0.015 ms
+
+==== d4 n=1000000 btree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '63nlpe4sim6fchjqc9uu5u8vzzxpz1bf'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.014..0.014 rows=1.00 loops=1)
+  Buffers: shared hit=3
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.012..0.012 rows=0.00 loops=1)
+        Index Cond: ((k)::text = '63nlpe4sim6fchjqc9uu5u8vzzxpz1bf'::text)
+        Index Searches: 1
+        Buffers: shared hit=3
+Planning Time: 0.051 ms
+Execution Time: 0.024 ms
+
+==== d4 n=1000000 btree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN 'pfrlbwpuwxffs0q5vke' AND 'pfwh2ez0t457zpg3inr3060fy'
+Aggregate  (cost=60.77..60.78 rows=1 width=16) (actual time=0.134..0.134 rows=1.00 loops=1)
+  Buffers: shared hit=102
+  ->  Index Scan using t_idx on t  (cost=0.42..60.70 rows=14 width=4) (actual time=0.013..0.127 rows=99.00 loops=1)
+        Index Cond: (((k)::text >= 'pfrlbwpuwxffs0q5vke'::text) AND ((k)::text <= 'pfwh2ez0t457zpg3inr3060fy'::text))
+        Index Searches: 1
+        Buffers: shared hit=102
+Planning Time: 0.029 ms
+Execution Time: 0.141 ms
+
+==== d4 n=1000000 sin_indice w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'r6m2j3iv7xiu1l1vfc237q6nbvr'
+Aggregate  (cost=19476.01..19476.01 rows=1 width=16) (actual time=20.263..20.264 rows=1.00 loops=1)
+  Buffers: shared hit=6976
+  ->  Seq Scan on t  (cost=0.00..19476.00 rows=1 width=4) (actual time=10.910..20.257 rows=1.00 loops=1)
+        Filter: ((k)::text = 'r6m2j3iv7xiu1l1vfc237q6nbvr'::text)
+        Rows Removed by Filter: 999999
+        Buffers: shared hit=6976
+Planning Time: 0.019 ms
+Execution Time: 20.277 ms
+
+==== d4 n=1000000 sin_indice w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = '63nlpe4sim6fchjqc9uu5u8vzzxpz1bf'
+Aggregate  (cost=19476.01..19476.01 rows=1 width=16) (actual time=20.636..20.637 rows=1.00 loops=1)
+  Buffers: shared hit=6976
+  ->  Seq Scan on t  (cost=0.00..19476.00 rows=1 width=4) (actual time=20.632..20.633 rows=0.00 loops=1)
+        Filter: ((k)::text = '63nlpe4sim6fchjqc9uu5u8vzzxpz1bf'::text)
+        Rows Removed by Filter: 1000000
+        Buffers: shared hit=6976
+Planning Time: 0.029 ms
+Execution Time: 20.651 ms
+
+==== d4 n=1000000 sin_indice w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN 'pfrlbwpuwxffs0q5vke' AND 'pfwh2ez0t457zpg3inr3060fy'
+Aggregate  (cost=21976.24..21976.25 rows=1 width=16) (actual time=28.442..28.443 rows=1.00 loops=1)
+  Buffers: shared hit=6976
+  ->  Seq Scan on t  (cost=0.00..21976.00 rows=48 width=4) (actual time=0.274..28.426 rows=99.00 loops=1)
+        Filter: (((k)::text >= 'pfrlbwpuwxffs0q5vke'::text) AND ((k)::text <= 'pfwh2ez0t457zpg3inr3060fy'::text))
+        Rows Removed by Filter: 999901
+        Buffers: shared hit=6976
+Planning Time: 0.023 ms
+Execution Time: 28.453 ms
+
+==== d5 n=100000 btree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'cusco-santiago-aiicd2tvgz'
+Aggregate  (cost=8.44..8.45 rows=1 width=16) (actual time=0.006..0.006 rows=1.00 loops=1)
+  Buffers: shared hit=4
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.004..0.004 rows=1.00 loops=1)
+        Index Cond: ((k)::text = 'cusco-santiago-aiicd2tvgz'::text)
+        Index Searches: 1
+        Buffers: shared hit=4
+Planning Time: 0.025 ms
+Execution Time: 0.013 ms
+
+==== d5 n=100000 btree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'arequipa-cayma-4spyvyncnb'
+Aggregate  (cost=8.44..8.45 rows=1 width=16) (actual time=0.006..0.006 rows=1.00 loops=1)
+  Buffers: shared hit=3
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.005..0.005 rows=0.00 loops=1)
+        Index Cond: ((k)::text = 'arequipa-cayma-4spyvyncnb'::text)
+        Index Searches: 1
+        Buffers: shared hit=3
+Planning Time: 0.019 ms
+Execution Time: 0.012 ms
+
+==== d5 n=100000 btree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN 'cusco-wanchaq-nj15hl65ms' AND 'cusco-wanchaq-pvrgj04imu'
+Aggregate  (cost=1816.01..1816.02 rows=1 width=16) (actual time=0.248..0.249 rows=1.00 loops=1)
+  Buffers: shared hit=668
+  ->  Index Scan using t_idx on t  (cost=0.42..1812.87 rows=627 width=4) (actual time=0.008..0.221 rows=661.00 loops=1)
+        Index Cond: (((k)::text >= 'cusco-wanchaq-nj15hl65ms'::text) AND ((k)::text <= 'cusco-wanchaq-pvrgj04imu'::text))
+        Index Searches: 1
+        Buffers: shared hit=668
+Planning Time: 0.029 ms
+Execution Time: 0.254 ms
+
+==== d5 n=100000 sin_indice w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'cusco-santiago-aiicd2tvgz'
+Aggregate  (cost=2018.01..2018.02 rows=1 width=16) (actual time=2.151..2.151 rows=1.00 loops=1)
+  Buffers: shared hit=768
+  ->  Seq Scan on t  (cost=0.00..2018.00 rows=1 width=4) (actual time=0.847..2.149 rows=1.00 loops=1)
+        Filter: ((k)::text = 'cusco-santiago-aiicd2tvgz'::text)
+        Rows Removed by Filter: 99999
+        Buffers: shared hit=768
+Planning Time: 0.032 ms
+Execution Time: 2.159 ms
+
+==== d5 n=100000 sin_indice w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'arequipa-cayma-4spyvyncnb'
+Aggregate  (cost=2018.01..2018.02 rows=1 width=16) (actual time=2.158..2.158 rows=1.00 loops=1)
+  Buffers: shared hit=768
+  ->  Seq Scan on t  (cost=0.00..2018.00 rows=1 width=4) (actual time=2.156..2.156 rows=0.00 loops=1)
+        Filter: ((k)::text = 'arequipa-cayma-4spyvyncnb'::text)
+        Rows Removed by Filter: 100000
+        Buffers: shared hit=768
+Planning Time: 0.014 ms
+Execution Time: 2.167 ms
+
+==== d5 n=100000 sin_indice w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN 'cusco-wanchaq-nj15hl65ms' AND 'cusco-wanchaq-pvrgj04imu'
+Aggregate  (cost=2270.88..2270.89 rows=1 width=16) (actual time=2.986..2.986 rows=1.00 loops=1)
+  Buffers: shared hit=768
+  ->  Seq Scan on t  (cost=0.00..2268.00 rows=575 width=4) (actual time=0.004..2.960 rows=661.00 loops=1)
+        Filter: (((k)::text >= 'cusco-wanchaq-nj15hl65ms'::text) AND ((k)::text <= 'cusco-wanchaq-pvrgj04imu'::text))
+        Rows Removed by Filter: 99339
+        Buffers: shared hit=768
+Planning Time: 0.031 ms
+Execution Time: 2.993 ms
+
+==== d5 n=500000 btree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'arequipa-yanahuara-g6801kvevx'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.007..0.008 rows=1.00 loops=1)
+  Buffers: shared hit=4
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.005..0.005 rows=1.00 loops=1)
+        Index Cond: ((k)::text = 'arequipa-yanahuara-g6801kvevx'::text)
+        Index Searches: 1
+        Buffers: shared hit=4
+Planning Time: 0.021 ms
+Execution Time: 0.014 ms
+
+==== d5 n=500000 btree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'lima-surco-wcv7xcug70'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.006..0.006 rows=1.00 loops=1)
+  Buffers: shared hit=3
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.005..0.006 rows=0.00 loops=1)
+        Index Cond: ((k)::text = 'lima-surco-wcv7xcug70'::text)
+        Index Searches: 1
+        Buffers: shared hit=3
+Planning Time: 0.016 ms
+Execution Time: 0.012 ms
+
+==== d5 n=500000 btree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN 'cusco-santiago-0ypg0ilsoh' AND 'cusco-santiago-1kmxxdm1y0'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.465..0.465 rows=1.00 loops=1)
+  Buffers: shared hit=839
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.008..0.435 rows=831.00 loops=1)
+        Index Cond: (((k)::text >= 'cusco-santiago-0ypg0ilsoh'::text) AND ((k)::text <= 'cusco-santiago-1kmxxdm1y0'::text))
+        Index Searches: 1
+        Buffers: shared hit=839
+Planning Time: 0.023 ms
+Execution Time: 0.471 ms
+
+==== d5 n=500000 sin_indice w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'arequipa-yanahuara-g6801kvevx'
+Aggregate  (cost=10090.00..10090.01 rows=1 width=16) (actual time=10.870..10.871 rows=1.00 loops=1)
+  Buffers: shared hit=3840
+  ->  Seq Scan on t  (cost=0.00..10090.00 rows=1 width=4) (actual time=5.494..10.866 rows=1.00 loops=1)
+        Filter: ((k)::text = 'arequipa-yanahuara-g6801kvevx'::text)
+        Rows Removed by Filter: 499999
+        Buffers: shared hit=3840
+Planning Time: 0.020 ms
+Execution Time: 10.881 ms
+
+==== d5 n=500000 sin_indice w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'lima-surco-wcv7xcug70'
+Aggregate  (cost=10090.00..10090.01 rows=1 width=16) (actual time=10.925..10.925 rows=1.00 loops=1)
+  Buffers: shared hit=3840
+  ->  Seq Scan on t  (cost=0.00..10090.00 rows=1 width=4) (actual time=10.921..10.922 rows=0.00 loops=1)
+        Filter: ((k)::text = 'lima-surco-wcv7xcug70'::text)
+        Rows Removed by Filter: 500000
+        Buffers: shared hit=3840
+Planning Time: 0.016 ms
+Execution Time: 10.934 ms
+
+==== d5 n=500000 sin_indice w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN 'cusco-santiago-0ypg0ilsoh' AND 'cusco-santiago-1kmxxdm1y0'
+Aggregate  (cost=11340.00..11340.01 rows=1 width=16) (actual time=18.644..18.646 rows=1.00 loops=1)
+  Buffers: shared hit=3840
+  ->  Seq Scan on t  (cost=0.00..11340.00 rows=1 width=4) (actual time=0.014..18.581 rows=831.00 loops=1)
+        Filter: (((k)::text >= 'cusco-santiago-0ypg0ilsoh'::text) AND ((k)::text <= 'cusco-santiago-1kmxxdm1y0'::text))
+        Rows Removed by Filter: 499169
+        Buffers: shared hit=3840
+Planning Time: 0.026 ms
+Execution Time: 18.656 ms
+
+==== d5 n=1000000 btree w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'lima-surco-r4c8vsw9mu'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.007..0.007 rows=1.00 loops=1)
+  Buffers: shared hit=4
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.005..0.005 rows=1.00 loops=1)
+        Index Cond: ((k)::text = 'lima-surco-r4c8vsw9mu'::text)
+        Index Searches: 1
+        Buffers: shared hit=4
+Planning Time: 0.031 ms
+Execution Time: 0.014 ms
+
+==== d5 n=1000000 btree w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'puno-juliaca-7lj4pe4ohr'
+Aggregate  (cost=8.45..8.46 rows=1 width=16) (actual time=0.006..0.007 rows=1.00 loops=1)
+  Buffers: shared hit=3
+  ->  Index Scan using t_idx on t  (cost=0.42..8.44 rows=1 width=4) (actual time=0.006..0.006 rows=0.00 loops=1)
+        Index Cond: ((k)::text = 'puno-juliaca-7lj4pe4ohr'::text)
+        Index Searches: 1
+        Buffers: shared hit=3
+Planning Time: 0.017 ms
+Execution Time: 0.012 ms
+
+==== d5 n=1000000 btree w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN 'lima-san-isidro-pwry9grf74' AND 'lima-san-isidro-q4ml0llte9'
+Aggregate  (cost=1461.62..1461.63 rows=1 width=16) (actual time=0.371..0.372 rows=1.00 loops=1)
+  Buffers: shared hit=584
+  ->  Index Scan using t_idx on t  (cost=0.42..1459.78 rows=368 width=4) (actual time=0.006..0.350 rows=577.00 loops=1)
+        Index Cond: (((k)::text >= 'lima-san-isidro-pwry9grf74'::text) AND ((k)::text <= 'lima-san-isidro-q4ml0llte9'::text))
+        Index Searches: 1
+        Buffers: shared hit=584
+Planning Time: 0.022 ms
+Execution Time: 0.377 ms
+
+==== d5 n=1000000 sin_indice w1 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'lima-surco-r4c8vsw9mu'
+Aggregate  (cost=20116.01..20116.01 rows=1 width=16) (actual time=22.591..22.592 rows=1.00 loops=1)
+  Buffers: shared hit=7616
+  ->  Seq Scan on t  (cost=0.00..20116.00 rows=1 width=4) (actual time=12.528..22.585 rows=1.00 loops=1)
+        Filter: ((k)::text = 'lima-surco-r4c8vsw9mu'::text)
+        Rows Removed by Filter: 999999
+        Buffers: shared hit=7616
+Planning Time: 0.020 ms
+Execution Time: 22.605 ms
+
+==== d5 n=1000000 sin_indice w2 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k = 'puno-juliaca-7lj4pe4ohr'
+Aggregate  (cost=20116.01..20116.01 rows=1 width=16) (actual time=22.055..22.057 rows=1.00 loops=1)
+  Buffers: shared hit=7616
+  ->  Seq Scan on t  (cost=0.00..20116.00 rows=1 width=4) (actual time=22.052..22.052 rows=0.00 loops=1)
+        Filter: ((k)::text = 'puno-juliaca-7lj4pe4ohr'::text)
+        Rows Removed by Filter: 1000000
+        Buffers: shared hit=7616
+Planning Time: 0.018 ms
+Execution Time: 22.068 ms
+
+==== d5 n=1000000 sin_indice w4 ====
+SELECT count(*), sum(pay) FROM public.t WHERE k BETWEEN 'lima-san-isidro-pwry9grf74' AND 'lima-san-isidro-q4ml0llte9'
+Aggregate  (cost=22617.86..22617.87 rows=1 width=16) (actual time=27.962..27.964 rows=1.00 loops=1)
+  Buffers: shared hit=7616
+  ->  Seq Scan on t  (cost=0.00..22616.00 rows=372 width=4) (actual time=0.033..27.923 rows=577.00 loops=1)
+        Filter: (((k)::text >= 'lima-san-isidro-pwry9grf74'::text) AND ((k)::text <= 'lima-san-isidro-q4ml0llte9'::text))
+        Rows Removed by Filter: 999423
+        Buffers: shared hit=7616
+Planning Time: 0.029 ms
+Execution Time: 27.974 ms
+
