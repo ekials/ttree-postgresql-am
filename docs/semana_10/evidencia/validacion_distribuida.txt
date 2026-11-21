@@ -1,0 +1,228 @@
+Validacion final del entorno distribuido desde cero (detener.sh --limpiar, build --no-cache, levantar.sh, validar_latencias.sh, consultas.sh, caida_nodo.sh rango y hash)
+Fecha: 2026-11-20, commit 25ad035
+
+[2026-11-20 23:20:21] construyendo y levantando los nodos A, B y C
+latencias simuladas eliminadas
+[2026-11-20 23:20:31] esquema en nodo_a
+[2026-11-20 23:20:32] esquema en nodo_b
+[2026-11-20 23:20:33] esquema en nodo_c
+ set_config 
+------------
+ a
+(1 row)
+ set_config 
+------------
+ b
+(1 row)
+ set_config 
+------------
+ c
+(1 row)
+[2026-11-20 23:20:37] cargando productos en nodo_a (se replican a B y C)
+ setseed 
+---------
+(1 row)
+[2026-11-20 23:20:38] generando y distribuyendo clientes, pedidos y detalle desde nodo_a
+ setseed 
+---------
+(1 row)
+[2026-11-20 23:22:00] esperando sincronizacion de replicas
+[2026-11-20 23:22:15] replicas sincronizadas
+[2026-11-20 23:22:15] creando indices btree sobre id_cliente en los tres nodos
+[2026-11-20 23:22:29] verificando fragmentacion
+Pager usage is off.
+SET
+== cobertura y solapamiento de fragmentos (consultado desde el nodo A) ==
+CREATE TABLE
+DO
+ estrategia |  tabla   |        fragmento        | filas  | min_cliente | max_cliente 
+------------+----------+-------------------------+--------+-------------+-------------
+ hash       | clientes | hash.clientes_a         | 100375 |           2 |      300000
+ hash       | clientes | remoto.hash_clientes_b  |  99822 |           3 |      299999
+ hash       | clientes | remoto.hash_clientes_c  |  99803 |           1 |      299998
+ hash       | detalle  | hash.detalle_a          | 669316 |           2 |      300000
+ hash       | detalle  | remoto.hash_detalle_b   | 666530 |           3 |      299999
+ hash       | detalle  | remoto.hash_detalle_c   | 664154 |           1 |      299998
+ hash       | pedidos  | hash.pedidos_a          | 334796 |           2 |      300000
+ hash       | pedidos  | remoto.hash_pedidos_b   | 332827 |           3 |      299999
+ hash       | pedidos  | remoto.hash_pedidos_c   | 332377 |           1 |      299998
+ rango      | clientes | rango.clientes_a        | 100000 |           1 |      100000
+ rango      | clientes | remoto.rango_clientes_b | 100000 |      100001 |      200000
+ rango      | clientes | remoto.rango_clientes_c | 100000 |      200001 |      300000
+ rango      | detalle  | rango.detalle_a         | 667720 |           1 |      100000
+ rango      | detalle  | remoto.rango_detalle_b  | 663772 |      100002 |      200000
+ rango      | detalle  | remoto.rango_detalle_c  | 668508 |      200001 |      300000
+ rango      | pedidos  | rango.pedidos_a         | 334256 |           1 |      100000
+ rango      | pedidos  | remoto.rango_pedidos_b  | 331767 |      100002 |      200000
+ rango      | pedidos  | remoto.rango_pedidos_c  | 333977 |      200001 |      300000
+(18 rows)
+CREATE TABLE
+DO
+ estrategia |  tabla   |                          prueba                          | ok |      detalle      
+------------+----------+----------------------------------------------------------+----+-------------------
+ hash       | clientes | cobertura: filas globales = filas generadas              | t  | 300000 / 300000
+ hash       | clientes | reconstruccion: generadas EXCEPT ALL union de fragmentos | t  | 0
+ hash       | clientes | sin solapamiento: claves distintas = filas               | t  | 300000 / 300000
+ hash       | detalle  | cobertura: filas globales = filas generadas              | t  | 2000000 / 2000000
+ hash       | detalle  | reconstruccion: generadas EXCEPT ALL union de fragmentos | t  | 0
+ hash       | detalle  | sin solapamiento: claves distintas = filas               | t  | 2000000 / 2000000
+ hash       | pedidos  | cobertura: filas globales = filas generadas              | t  | 1000000 / 1000000
+ hash       | pedidos  | pedido en el mismo nodo que su cliente                   | t  | 0
+ hash       | pedidos  | reconstruccion: generadas EXCEPT ALL union de fragmentos | t  | 0
+ hash       | pedidos  | sin solapamiento: claves distintas = filas               | t  | 1000000 / 1000000
+ rango      | *        | predicado de rango respetado en cada fragmento           | t  | 0
+ rango      | clientes | cobertura: filas globales = filas generadas              | t  | 300000 / 300000
+ rango      | clientes | reconstruccion: generadas EXCEPT ALL union de fragmentos | t  | 0
+ rango      | clientes | sin solapamiento: claves distintas = filas               | t  | 300000 / 300000
+ rango      | detalle  | cobertura: filas globales = filas generadas              | t  | 2000000 / 2000000
+ rango      | detalle  | reconstruccion: generadas EXCEPT ALL union de fragmentos | t  | 0
+ rango      | detalle  | sin solapamiento: claves distintas = filas               | t  | 2000000 / 2000000
+ rango      | pedidos  | cobertura: filas globales = filas generadas              | t  | 1000000 / 1000000
+ rango      | pedidos  | reconstruccion: generadas EXCEPT ALL union de fragmentos | t  | 0
+ rango      | pedidos  | sin solapamiento: claves distintas = filas               | t  | 1000000 / 1000000
+(20 rows)
+    resultado    
+-----------------
+ VERIFICACION OK
+(1 row)
+ fallar_si_hay_error 
+---------------------
+                   1
+(1 row)
+nodo_a -> nodo_b: retardo de salida 10.0 ms (RTT objetivo 20 ms)
+nodo_a -> nodo_c: retardo de salida 20.0 ms (RTT objetivo 40 ms)
+nodo_b -> nodo_a: retardo de salida 10.0 ms (RTT objetivo 20 ms)
+nodo_b -> nodo_c: retardo de salida 12.5 ms (RTT objetivo 25 ms)
+nodo_c -> nodo_a: retardo de salida 20.0 ms (RTT objetivo 40 ms)
+nodo_c -> nodo_b: retardo de salida 12.5 ms (RTT objetivo 25 ms)
+fecha: 2026-11-20T23:23:08-05:00
+par;rtt_min_ms;rtt_prom_ms;rtt_max_ms (ping, 10 paquetes)
+nodo_a->nodo_b;20.229;20.744;24.076
+nodo_a->nodo_c;40.229;40.800;44.744
+nodo_b->nodo_a;20.224;20.556;21.125
+nodo_b->nodo_c;25.317;25.758;28.232
+nodo_c->nodo_a;40.227;40.397;40.525
+nodo_c->nodo_b;25.438;25.689;26.317
+reglas tc activas por nodo:
+-- nodo_a
+qdisc prio 1: root refcnt 9 bands 4 priomap 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+qdisc netem 10: parent 1:1 limit 1000 delay 10ms seed 8354825887107216262
+qdisc netem 20: parent 1:2 limit 1000 delay 20ms seed 9260583504551707921
+-- nodo_b
+qdisc prio 1: root refcnt 9 bands 4 priomap 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+qdisc netem 10: parent 1:1 limit 1000 delay 10ms seed 17220476784067321024
+qdisc netem 20: parent 1:2 limit 1000 delay 12.5ms seed 4319178551536375582
+-- nodo_c
+qdisc prio 1: root refcnt 9 bands 4 priomap 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+qdisc netem 10: parent 1:1 limit 1000 delay 20ms seed 1815011233552232664
+qdisc netem 20: parent 1:2 limit 1000 delay 12.5ms seed 4683219044980320769
+[2026-11-20 23:23:27] entorno distribuido listo
+a: PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+b: PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+c: PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+fecha: 2026-11-20T23:23:29-05:00
+par;rtt_min_ms;rtt_prom_ms;rtt_max_ms (ping, 10 paquetes)
+nodo_a->nodo_b;20.221;20.411;20.604
+nodo_a->nodo_c;40.266;40.503;40.663
+nodo_b->nodo_a;20.280;20.468;21.080
+nodo_b->nodo_c;25.239;26.820;39.198
+nodo_c->nodo_a;40.254;40.484;40.956
+nodo_c->nodo_b;25.224;25.452;25.675
+reglas tc activas por nodo:
+-- nodo_a
+qdisc prio 1: root refcnt 9 bands 4 priomap 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+qdisc netem 10: parent 1:1 limit 1000 delay 10ms seed 8354825887107216262
+qdisc netem 20: parent 1:2 limit 1000 delay 20ms seed 9260583504551707921
+-- nodo_b
+qdisc prio 1: root refcnt 9 bands 4 priomap 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+qdisc netem 10: parent 1:1 limit 1000 delay 10ms seed 17220476784067321024
+qdisc netem 20: parent 1:2 limit 1000 delay 12.5ms seed 4319178551536375582
+-- nodo_c
+qdisc prio 1: root refcnt 9 bands 4 priomap 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+qdisc netem 10: parent 1:1 limit 1000 delay 20ms seed 1815011233552232664
+qdisc netem 20: parent 1:2 limit 1000 delay 12.5ms seed 4683219044980320769
+== estrategia rango (indice btree, latencia con, 3 repeticiones) ==
+== estrategia hash (indice btree, latencia con, 3 repeticiones) ==
+           consulta           | estrategia | ms_mediana | filas | bytes_recibidos_a 
+------------------------------+------------+------------+-------+-------------------
+ q1_cliente_local_a           | hash       |       0.43 |    11 |                 0
+ q1_cliente_local_a           | rango      |       0.68 |     1 |                 0
+ q1_cliente_remoto_b          | hash       |     104.54 |     5 |              1237
+ q1_cliente_remoto_b          | rango      |     106.55 |     0 |               940
+ q1_cliente_remoto_c          | hash       |     204.13 |     1 |               999
+ q1_cliente_remoto_c          | rango      |     205.43 |     9 |              1480
+ q2_rango_1000_clientes       | hash       |     371.69 |     1 |             40662
+ q2_rango_1000_clientes       | rango      |     172.67 |     1 |             61077
+ q3_agregado_global_region    | hash       |   28272.95 |     3 |          23851567
+ q3_agregado_global_region    | rango      |   28397.50 |     3 |          24461598
+ q4_transferencia_semana      | hash       |     509.58 | 10006 |            422568
+ q4_transferencia_semana      | rango      |     506.43 | 10006 |            423903
+ q5_join_productos_replicados | hash       |     378.30 |     8 |             71413
+ q5_join_productos_replicados | rango      |     332.07 |     8 |            104294
+ q6_insercion_local_a         | hash       |       2.59 |     1 |                 0
+ q6_insercion_local_a         | rango      |       2.46 |     1 |                 0
+ q6_insercion_remota_c        | hash       |     206.50 |     1 |              1483
+ q6_insercion_remota_c        | rango      |     207.03 |     1 |              1469
+(18 rows)
+rango;2026-11-20 23:29:08.423447147-05:00;inicio sonda
+WARNING:  no connection to the server
+rango;2026-11-20 23:29:29.406943196-05:00;caida abrupta de nodo_c (SIGKILL)
+rango;2026-11-20 23:29:49.105328462-05:00;conmutacion manual: particiones de C apuntan a la replica local en A (solo lectura)
+rango;2026-11-20 23:30:52.727761644-05:00;nodo_c recuperado (WAL) y latencias reaplicadas
+rango;2026-11-20 23:30:53.345571077-05:00;retorno: particiones de C vuelven al nodo_c
+rango;2026-11-20 23:31:10.154488418-05:00;fin sonda
+consistencia de replicas tras la recuperacion (rango):
+  rango.clientes_a primario(nodo_a)=100000 replica(nodo_b)=100000 OK
+  rango.pedidos_a primario(nodo_a)=334260 replica(nodo_b)=334260 OK
+  rango.detalle_a primario(nodo_a)=667720 replica(nodo_b)=667720 OK
+  rango.clientes_b primario(nodo_b)=100000 replica(nodo_c)=100000 OK
+  rango.pedidos_b primario(nodo_b)=331767 replica(nodo_c)=331767 OK
+  rango.detalle_b primario(nodo_b)=663772 replica(nodo_c)=663772 OK
+  rango.clientes_c primario(nodo_c)=100000 replica(nodo_a)=100000 OK
+  rango.pedidos_c primario(nodo_c)=334010 replica(nodo_a)=334010 OK
+  rango.detalle_c primario(nodo_c)=668508 replica(nodo_a)=668508 OK
+  suscripciones en nodo_a:
+    sub_frag_c pid=2031 recibido=0/33CED358
+  suscripciones en nodo_b:
+    sub_ref_b pid=134 recibido=0/648B3308
+    sub_frag_a pid=143 recibido=0/648B3308
+    sub_ref_b pid=181 recibido=-
+    sub_frag_a pid=182 recibido=-
+  suscripciones en nodo_c:
+    sub_ref_c pid=81 recibido=0/648B3308
+    sub_frag_b pid=82 recibido=0/33DBBB78
+escritura_nodo_c: ok=29 error=231
+lectura_global: ok=212 error=48
+lectura_local_a: ok=260 error=0
+lectura_nodo_c: ok=213 error=47
+hash;2026-11-20 23:31:34.734941312-05:00;inicio sonda
+hash;2026-11-20 23:31:54.893760792-05:00;caida abrupta de nodo_c (SIGKILL)
+hash;2026-11-20 23:32:15.675837525-05:00;conmutacion manual: particiones de C apuntan a la replica local en A (solo lectura)
+hash;2026-11-20 23:33:03.343188474-05:00;nodo_c recuperado (WAL) y latencias reaplicadas
+hash;2026-11-20 23:33:04.122978289-05:00;retorno: particiones de C vuelven al nodo_c
+hash;2026-11-20 23:33:35.604790441-05:00;fin sonda
+consistencia de replicas tras la recuperacion (hash):
+  hash.clientes_a primario(nodo_a)=100375 replica(nodo_b)=100375 OK
+  hash.pedidos_a primario(nodo_a)=334800 replica(nodo_b)=334800 OK
+  hash.detalle_a primario(nodo_a)=669316 replica(nodo_b)=669316 OK
+  hash.clientes_b primario(nodo_b)=99822 replica(nodo_c)=99822 OK
+  hash.pedidos_b primario(nodo_b)=332827 replica(nodo_c)=332827 OK
+  hash.detalle_b primario(nodo_b)=666530 replica(nodo_c)=666530 OK
+  hash.clientes_c primario(nodo_c)=99803 replica(nodo_a)=99803 OK
+  hash.pedidos_c primario(nodo_c)=332416 replica(nodo_a)=332416 OK
+  hash.detalle_c primario(nodo_c)=664154 replica(nodo_a)=664154 OK
+  suscripciones en nodo_a:
+    sub_frag_c pid=2538 recibido=0/35130BE0
+  suscripciones en nodo_b:
+    sub_ref_b pid=134 recibido=0/64951D40
+    sub_frag_a pid=143 recibido=0/64951D40
+    sub_ref_b pid=181 recibido=-
+    sub_frag_a pid=182 recibido=-
+  suscripciones en nodo_c:
+    sub_ref_c pid=36 recibido=0/64951D40
+    sub_frag_b pid=37 recibido=0/33DBBB78
+escritura_nodo_c: ok=35 error=189
+lectura_global: ok=173 error=51
+lectura_local_a: ok=224 error=0
+lectura_nodo_c: ok=173 error=51
+==== VALIDACION DISTRIBUIDA OK ====

@@ -1,0 +1,13 @@
+estrategia;instante;evento
+rango;2026-11-20 23:29:08.423447147-05:00;inicio sonda
+rango;2026-11-20 23:29:29.406943196-05:00;caida abrupta de nodo_c (SIGKILL)
+rango;2026-11-20 23:29:49.105328462-05:00;conmutacion manual: particiones de C apuntan a la replica local en A (solo lectura)
+rango;2026-11-20 23:30:52.727761644-05:00;nodo_c recuperado (WAL) y latencias reaplicadas
+rango;2026-11-20 23:30:53.345571077-05:00;retorno: particiones de C vuelven al nodo_c
+rango;2026-11-20 23:31:10.154488418-05:00;fin sonda
+hash;2026-11-20 23:31:34.734941312-05:00;inicio sonda
+hash;2026-11-20 23:31:54.893760792-05:00;caida abrupta de nodo_c (SIGKILL)
+hash;2026-11-20 23:32:15.675837525-05:00;conmutacion manual: particiones de C apuntan a la replica local en A (solo lectura)
+hash;2026-11-20 23:33:03.343188474-05:00;nodo_c recuperado (WAL) y latencias reaplicadas
+hash;2026-11-20 23:33:04.122978289-05:00;retorno: particiones de C vuelven al nodo_c
+hash;2026-11-20 23:33:35.604790441-05:00;fin sonda

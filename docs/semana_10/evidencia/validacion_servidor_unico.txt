@@ -1,0 +1,354 @@
+Validacion final del servidor unico (salida filtrada de scripts/reset.sh, scripts/test.sh y tests/integration/reinicio.sh)
+Fecha: 2026-11-20, commit 7cc7fa4, imagen reconstruida con --no-cache
+
+>> TT_MAX_KEYS=4
+>> Bajando contenedores y borrando el volumen de datos...
+>> Reconstruyendo imagen y levantando...
+>> Listo. Extensión instalada:
+ttree 1.0
+>> Siguiente:  ./scripts/test.sh   o   ./scripts/demo.sh
+PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+libpq-dev 19.0-2.pgdg13+1
+libpq5:amd64 19.0-2.pgdg13+1
+postgresql-18 18.6-1.pgdg13+2
+postgresql-18-jit 18.6-1.pgdg13+2
+postgresql-server-dev-18 18.6-1.pgdg13+2
+ setseed 
+---------
+(1 row)
+psql:/tests/validar_tid.sql:14: NOTICE:  extension "ttree" already exists, skipping
+psql:/tests/validar_tid.sql:16: NOTICE:  table "t_build" does not exist, skipping
+psql:/tests/validar_tid.sql:16: NOTICE:  table "t_ins" does not exist, skipping
+psql:/tests/validar_tid.sql:16: NOTICE:  table "t_asc" does not exist, skipping
+psql:/tests/validar_tid.sql:16: NOTICE:  table "t_desc" does not exist, skipping
+psql:/tests/validar_tid.sql:16: NOTICE:  table "t_vacia" does not exist, skipping
+psql:/tests/validar_tid.sql:80: NOTICE:  t_build_tt  ->  OK nodos=7500 entradas=30000 borradas=0 altura=13
+ check_ok 
+----------
+(1 row)
+ comparar 
+----------
+(1 row)
+ check_ok 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:90: NOTICE:  t_ins_tt  ->  OK nodos=5896 entradas=20000 borradas=0 altura=15
+ comparar 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:99: NOTICE:  t_asc_tt  ->  OK nodos=4000 entradas=10000 borradas=0 altura=12
+ check_ok 
+----------
+(1 row)
+ comparar 
+----------
+(1 row)
+ check_ok 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:105: NOTICE:  t_desc_tt  ->  OK nodos=4000 entradas=10000 borradas=0 altura=12
+ comparar 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:112: NOTICE:  t_build_tt  ->  OK nodos=11521 entradas=40000 borradas=0 altura=16
+ check_ok 
+----------
+(1 row)
+ comparar 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:121: NOTICE:  t_ins_tt  ->  OK nodos=5896 entradas=20000 borradas=6666 altura=15
+ check_ok 
+----------
+(1 row)
+ comparar 
+----------
+(1 row)
+ check_ok 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:124: NOTICE:  t_ins_tt  ->  OK nodos=7319 entradas=25000 borradas=6666 altura=15
+ comparar 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:132: NOTICE:  t_vacia_tt  ->  OK nodos=0 entradas=0 borradas=0 altura=0
+ check_ok 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:134: NOTICE:  t_vacia_tt  ->  OK nodos=1 entradas=1 borradas=0 altura=1
+ check_ok 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:142: NOTICE:  t_ins_tt  ->  OK nodos=4584 entradas=18334 borradas=0 altura=13
+ check_ok 
+----------
+(1 row)
+ comparar 
+----------
+(1 row)
+==== TODAS LAS PRUEBAS OK ====
+psql:/tests/test_scan.sql:2: NOTICE:  extension "ttree" already exists, skipping
+psql:/tests/test_scan.sql:3: NOTICE:  table "s" does not exist, skipping
+CREATE EXTENSION
+DROP TABLE
+CREATE TABLE
+INSERT 0 20000
+INSERT 0 7
+CREATE INDEX
+ANALYZE
+SET
+SET
+         QUERY PLAN         
+----------------------------
+ Index Scan using s_tt on s
+   Index Cond: (k = 5)
+(2 rows)
+               QUERY PLAN                
+-----------------------------------------
+ Index Scan using s_tt on s
+   Index Cond: ((k >= 10) AND (k <= 20))
+(2 rows)
+         QUERY PLAN         
+----------------------------
+ Index Scan using s_tt on s
+   Index Cond: (k > 1990)
+(2 rows)
+CREATE FUNCTION
+psql:/tests/test_scan.sql:57: NOTICE:  consultas comparadas=615 diferencias=0
+DO
+DELETE 6747
+VACUUM
+INSERT 0 5000
+DO
+psql:/tests/test_scan.sql:73: NOTICE:  post-VACUUM: diferencias=0
+                     ttree_check                      
+------------------------------------------------------
+ OK nodos=7204 entradas=25005 borradas=6747 altura=14
+(1 row)
+SELECT 300
+SET
+SET
+               QUERY PLAN               
+----------------------------------------
+ Aggregate
+   ->  Nested Loop
+         ->  Seq Scan on o
+               Disabled: true
+         ->  Index Scan using s_tt on s
+               Index Cond: (k = o.v)
+(6 rows)
+ join_con_indice 
+-----------------
+            2816
+(1 row)
+SET
+SET
+SET
+ join_seqscan 
+--------------
+         2816
+(1 row)
+==== ESCANEO OK ====
+psql:/tests/regression/regresion_am.sql:8: NOTICE:  extension "ttree" already exists, skipping
+psql:/tests/regression/regresion_am.sql:10: NOTICE:  table "r_parcial" does not exist, skipping
+psql:/tests/regression/regresion_am.sql:10: NOTICE:  table "r_vac" does not exist, skipping
+psql:/tests/regression/regresion_am.sql:10: NOTICE:  table "r_ext" does not exist, skipping
+psql:/tests/regression/regresion_am.sql:10: NOTICE:  table "r_tx" does not exist, skipping
+-- R1: indice parcial sin condicion sobre la clave y filas con NULL
+-- R2: VACUUM con varias pasadas sobre el indice
+psql:/tests/regression/regresion_am.sql:86: NOTICE:  R2 reltuples heap=40000 indice=40000
+-- R3: extremos de int4, duplicados, operadores y condiciones combinadas
+-- R4: transacciones abortadas, TRUNCATE y CREATE INDEX CONCURRENTLY
+-- R5: el planner usa el indice en consultas selectivas (EXPLAIN ANALYZE, BUFFERS)
+psql:/tests/regression/regresion_am.sql:167: NOTICE:  R5 plan:
+Index Scan using r_tx_tt on r_tx (actual rows=1.00 loops=1)
+  Index Cond: (k = 17)
+  Index Searches: 1
+  Buffers: shared hit=15
+Planning:
+  Buffers: shared hit=16
+==== REGRESION OK ====
+NOTICE:  table "i_reinicio" does not exist, skipping
+antes del reinicio: OK nodos=17448 entradas=55000 borradas=10000 altura=15
+antes del reinicio: diferencias indice/heap=0
+tras reinicio ordenado: OK nodos=17448 entradas=55000 borradas=10000 altura=15
+tras reinicio ordenado: diferencias indice/heap=0
+tras caida y recuperacion desde WAL: OK nodos=22073 entradas=75000 borradas=10000 altura=16
+tras caida y recuperacion desde WAL: diferencias indice/heap=0
+==== REINICIO OK ====
+>> TT_MAX_KEYS=500
+>> Bajando contenedores y borrando el volumen de datos...
+>> Reconstruyendo imagen y levantando...
+>> Listo. Extensión instalada:
+ttree 1.0
+>> Siguiente:  ./scripts/test.sh   o   ./scripts/demo.sh
+PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+libpq-dev 19.0-2.pgdg13+1
+libpq5:amd64 19.0-2.pgdg13+1
+postgresql-18 18.6-1.pgdg13+2
+postgresql-18-jit 18.6-1.pgdg13+2
+postgresql-server-dev-18 18.6-1.pgdg13+2
+ setseed 
+---------
+(1 row)
+psql:/tests/validar_tid.sql:14: NOTICE:  extension "ttree" already exists, skipping
+psql:/tests/validar_tid.sql:16: NOTICE:  table "t_build" does not exist, skipping
+psql:/tests/validar_tid.sql:16: NOTICE:  table "t_ins" does not exist, skipping
+psql:/tests/validar_tid.sql:16: NOTICE:  table "t_asc" does not exist, skipping
+psql:/tests/validar_tid.sql:16: NOTICE:  table "t_desc" does not exist, skipping
+psql:/tests/validar_tid.sql:16: NOTICE:  table "t_vacia" does not exist, skipping
+ check_ok 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:80: NOTICE:  t_build_tt  ->  OK nodos=60 entradas=30000 borradas=0 altura=6
+ comparar 
+----------
+(1 row)
+ check_ok 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:90: NOTICE:  t_ins_tt  ->  OK nodos=57 entradas=20000 borradas=0 altura=7
+ comparar 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:99: NOTICE:  t_asc_tt  ->  OK nodos=38 entradas=10000 borradas=0 altura=6
+ check_ok 
+----------
+(1 row)
+ comparar 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:105: NOTICE:  t_desc_tt  ->  OK nodos=38 entradas=10000 borradas=0 altura=6
+ check_ok 
+----------
+(1 row)
+ comparar 
+----------
+(1 row)
+ check_ok 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:112: NOTICE:  t_build_tt  ->  OK nodos=104 entradas=40000 borradas=0 altura=8
+ comparar 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:121: NOTICE:  t_ins_tt  ->  OK nodos=57 entradas=20000 borradas=6666 altura=7
+ check_ok 
+----------
+(1 row)
+ comparar 
+----------
+(1 row)
+ check_ok 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:124: NOTICE:  t_ins_tt  ->  OK nodos=64 entradas=25000 borradas=6666 altura=7
+ comparar 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:132: NOTICE:  t_vacia_tt  ->  OK nodos=0 entradas=0 borradas=0 altura=0
+ check_ok 
+----------
+(1 row)
+ check_ok 
+----------
+(1 row)
+psql:/tests/validar_tid.sql:134: NOTICE:  t_vacia_tt  ->  OK nodos=1 entradas=1 borradas=0 altura=1
+psql:/tests/validar_tid.sql:142: NOTICE:  t_ins_tt  ->  OK nodos=37 entradas=18334 borradas=0 altura=6
+ check_ok 
+----------
+(1 row)
+ comparar 
+----------
+(1 row)
+==== TODAS LAS PRUEBAS OK ====
+psql:/tests/test_scan.sql:2: NOTICE:  extension "ttree" already exists, skipping
+CREATE EXTENSION
+psql:/tests/test_scan.sql:3: NOTICE:  table "s" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+INSERT 0 20000
+INSERT 0 7
+CREATE INDEX
+ANALYZE
+SET
+SET
+         QUERY PLAN         
+----------------------------
+ Index Scan using s_tt on s
+   Index Cond: (k = 5)
+(2 rows)
+               QUERY PLAN                
+-----------------------------------------
+ Index Scan using s_tt on s
+   Index Cond: ((k >= 10) AND (k <= 20))
+(2 rows)
+         QUERY PLAN         
+----------------------------
+ Index Scan using s_tt on s
+   Index Cond: (k > 1990)
+(2 rows)
+CREATE FUNCTION
+psql:/tests/test_scan.sql:57: NOTICE:  consultas comparadas=615 diferencias=0
+DO
+DELETE 6618
+VACUUM
+INSERT 0 5000
+psql:/tests/test_scan.sql:73: NOTICE:  post-VACUUM: diferencias=0
+DO
+                    ttree_check                    
+---------------------------------------------------
+ OK nodos=71 entradas=25005 borradas=6618 altura=7
+(1 row)
+SELECT 300
+SET
+SET
+               QUERY PLAN               
+----------------------------------------
+ Aggregate
+   ->  Nested Loop
+         ->  Seq Scan on o
+               Disabled: true
+         ->  Index Scan using s_tt on s
+               Index Cond: (k = o.v)
+(6 rows)
+ join_con_indice 
+-----------------
+            2893
+(1 row)
+SET
+SET
+SET
+ join_seqscan 
+--------------
+         2893
+(1 row)
+==== ESCANEO OK ====
+psql:/tests/regression/regresion_am.sql:8: NOTICE:  extension "ttree" already exists, skipping
+psql:/tests/regression/regresion_am.sql:10: NOTICE:  table "r_parcial" does not exist, skipping
+psql:/tests/regression/regresion_am.sql:10: NOTICE:  table "r_vac" does not exist, skipping
+psql:/tests/regression/regresion_am.sql:10: NOTICE:  table "r_ext" does not exist, skipping
+psql:/tests/regression/regresion_am.sql:10: NOTICE:  table "r_tx" does not exist, skipping
+-- R1: indice parcial sin condicion sobre la clave y filas con NULL
+-- R2: VACUUM con varias pasadas sobre el indice
+psql:/tests/regression/regresion_am.sql:86: NOTICE:  R2 reltuples heap=40000 indice=40000
+-- R3: extremos de int4, duplicados, operadores y condiciones combinadas
+-- R4: transacciones abortadas, TRUNCATE y CREATE INDEX CONCURRENTLY
+-- R5: el planner usa el indice en consultas selectivas (EXPLAIN ANALYZE, BUFFERS)
+psql:/tests/regression/regresion_am.sql:167: NOTICE:  R5 plan:
+Index Scan using r_tx_tt on r_tx (actual rows=1.00 loops=1)
+  Index Cond: (k = 17)
+  Index Searches: 1
+  Buffers: shared hit=8
+Planning:
+  Buffers: shared hit=16
+==== REGRESION OK ====
+NOTICE:  table "i_reinicio" does not exist, skipping
+antes del reinicio: OK nodos=150 entradas=55000 borradas=10000 altura=8
+antes del reinicio: diferencias indice/heap=0
+tras reinicio ordenado: OK nodos=150 entradas=55000 borradas=10000 altura=8
+tras reinicio ordenado: diferencias indice/heap=0
+tras caida y recuperacion desde WAL: OK nodos=213 entradas=75000 borradas=10000 altura=8
+tras caida y recuperacion desde WAL: diferencias indice/heap=0
+==== REINICIO OK ====
+==== VALIDACION SERVIDOR UNICO OK ====
