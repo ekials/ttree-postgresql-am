@@ -95,3 +95,4 @@ La estrategia hash se comporta igual (9 / 43 / 122 / 31 operaciones de lectura l
 - Durante la conmutación, el fragmento del nodo caído es de solo lectura. No hay elección de un nuevo primario ni reconciliación de escrituras.
 - Las transacciones que escriben en varios nodos usan el *commit* de `postgres_fdw`, que no es atómico entre nodos (no hay *two-phase commit*).
 - La replicación lógica es asíncrona: una lectura en la réplica puede no ver las últimas escrituras del primario.
+- Las mediciones de esta semana se tomaron con los nodos en PostgreSQL **18.7**, no 18.6. `apt-get install postgresql-server-dev-18` sin versión fija actualizaba el servidor de la imagen base. Se corrigió en la semana 10 fijando el paquete a `${PG_VERSION}`, y la puesta en marcha, la verificación, las latencias y la caída de nodo se repitieron sobre 18.6 (`docs/semana_10/README.md`).

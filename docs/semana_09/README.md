@@ -136,3 +136,4 @@ Ver la semana 8 y los gráficos `caida_rango.png` y `caida_hash.png`. Ninguna le
 - Coordinador único (A). No se midieron clientes conectados a B o C.
 - Los datos crecen ligeramente durante los experimentos, por las inserciones de Q6 y de pgbench (unos miles de filas sobre un millón).
 - El cliente elegido como «remoto en B» en la estrategia rango (id 100001) no tiene pedidos: Q1 mide el costo de la ida y vuelta con 0 filas.
+- Los experimentos se ejecutaron sobre PostgreSQL 18.7 (ver las limitaciones de la semana 8). Es una versión menor de corrección de errores; los experimentos no se repitieron sobre 18.6.
