@@ -5,7 +5,7 @@ FROM postgres:${PG_TAG}
 
 
 RUN apt-get update \
- && apt-get install -y --no-install-recommends build-essential postgresql-server-dev-${PG_MAJOR} \
+ && apt-get install -y --no-install-recommends build-essential postgresql-server-dev-${PG_MAJOR}=${PG_VERSION} \
  && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src/ttree
